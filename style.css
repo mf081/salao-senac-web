@@ -1,57 +1,151 @@
+/* Reset de margens e padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Definição de altura para html e body */
 html, body {
-    height: 100%; /* Garante que html e body ocupem 100% da altura */
-    margin: 0; /* Remove margens padrões */
+    height: 100%;
+    margin: 0;
 }
 
+/* Estilos gerais do body */
 body {
-    background-image: url('https://s3-alpha-sig.figma.com/img/c7ad/3551/ceb0c20ae26bd56c773dfee9f983ba78?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MX1iDU31u94IJIsh120yiIDgP97JD05z6Xo2dh9TYeaDKfKmxn8I4TKoH6DsXqxcsre4-dNvEyG8TK889FY3TJUDzx5HjF~IwB2sK75FeYlIjDrAurb-ok-THBb-6tSJLtD2s8IcbE6TBPls7kJ5romURBsF1vFGPoOqX77ijPQB60UbQIRdwdfzS49mpw2Y-~wVuwKaUdUNKb3Mf2nTsRQcVS-Z4KTCAsXoCqu12CN1f2somDqXb2PpX4mvPuMqvkIIso~rWE7~TylsPcEYgCjQrcSHPIqmY3n0wD3q~s13wEh7TR7srqZLnbMtcEGxZQ3snIIayB~itbc~-2U7Tg__');
-    background-size: cover; /* Faz a imagem cobrir todo o fundo */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
-    display: flex; /* Usar flexbox para centralização */
-    flex-direction: column; /* Adiciona flex direction */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 70px;
+    gap: 10px;
+    background-image: url(/img/senacfundoeditado-tonalidadev2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos do header e main */
+header, main {
+    padding: 10px;
+}
+
+/* Estilos da seção principal */
+main {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+/* Estilo da barra de navegação dentro do header */
+header nav {
+    width: 70%;
+}
+
+/* Estilos dos botões de navegação */
+.nav-btn {
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3.6px;
+    flex-shrink: 0;
+    border: none;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 35px;
+    cursor: pointer;
+    background: none;
+}
+
+/* Estilos gerais do header */
 header {
     display: flex;
-    flex-direction: row;
-    width: 100%; /* Garante que o header ocupe 100% da largura */
-    justify-content: space-between; /* Para alinhar os itens */
-    align-items: center; /* Alinha verticalmente */
-    justify-content: center;
-    top: 0; /* Posiciona o header no topo da página */
-    z-index: 1000; /* Garante que o header fique acima de outros elementos */
-
+    justify-content: space-between;
 }
 
-.linha-horizontal {
-    width: 1440px;
+/* Estilo da imagem no header */
+header > img {
+    width: 360px;
+    height: 328px;
+    margin-top: -45px;
+}
+
+/* Container da caixa com o título e botão */
+.content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio: 1 / 1;
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+
+/* Estilo do título dentro do container */
+.main-title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Croissant One", sans-serif;
+    font-size: 76px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Estilo do parágrafo abaixo do título */
+.sub-title {
+    width: 434px;
+    height: 70px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+/* Remover bordas e definir cor e padding para a navegação */
+nav {
+    border: none;
+    padding: 10px;
+}
+
+/* Estilo do botão de agendamento */
+.schedule-btn {
+    width: 504px;
+    height: 86.8px;
+    padding: 12px;
+    background: #482647;
+    border-radius: 5px;
+    border: 2px #754873 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 3.6px;
+}
+
+/* Estilo do texto dentro do botão de agendamento */
+.btn-text {
+    width: 279.114px;
+    height: 23.673px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "Playwrite US Modern";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 3.6px;
+}
+
+/* Estilo da linha horizontal */
+.divider {
+    width: 100%;
     height: 10px;
     background: rgba(137, 135, 135, 0.11);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    z-index: 1000; /* Garante que o header fique acima de outros elementos */
-
-    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 214px;
 }
-
-button {
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    background: none; /* Remove o fundo padrão */
-    border: none; /* Remove a borda padrão */
-    padding: 0; /* Remove o padding padrão */
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
