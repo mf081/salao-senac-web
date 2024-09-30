@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Garante que html e body ocupem 100% da altura */
+    margin: 0; /* Remove margens padrões */
+}
+
+body {
+    background-image: url('https://s3-alpha-sig.figma.com/img/c7ad/3551/ceb0c20ae26bd56c773dfee9f983ba78?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MX1iDU31u94IJIsh120yiIDgP97JD05z6Xo2dh9TYeaDKfKmxn8I4TKoH6DsXqxcsre4-dNvEyG8TK889FY3TJUDzx5HjF~IwB2sK75FeYlIjDrAurb-ok-THBb-6tSJLtD2s8IcbE6TBPls7kJ5romURBsF1vFGPoOqX77ijPQB60UbQIRdwdfzS49mpw2Y-~wVuwKaUdUNKb3Mf2nTsRQcVS-Z4KTCAsXoCqu12CN1f2somDqXb2PpX4mvPuMqvkIIso~rWE7~TylsPcEYgCjQrcSHPIqmY3n0wD3q~s13wEh7TR7srqZLnbMtcEGxZQ3snIIayB~itbc~-2U7Tg__');
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    display: flex; /* Usar flexbox para centralização */
+    flex-direction: column; /* Adiciona flex direction */
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Garante que o header ocupe 100% da largura */
+    justify-content: space-between; /* Para alinhar os itens */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center;
+    top: 0; /* Posiciona o header no topo da página */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+
+}
+
+.linha-horizontal {
+    width: 1440px;
+    height: 10px;
+    background: rgba(137, 135, 135, 0.11);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+
+    
+}
+
+button {
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    background: none; /* Remove o fundo padrão */
+    border: none; /* Remove a borda padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
