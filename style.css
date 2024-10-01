@@ -1,151 +1,102 @@
-/* Reset de margens e padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Definição de altura para html e body */
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-/* Estilos gerais do body */
-body {
-    height: 100vh;
+    margin: 0px;
+  }
+  
+  body {
+    /* min-height: 100vh; */
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 70px;
-    gap: 10px;
-    background-image: url(/img/senacfundoeditado-tonalidadev2.png);
-    background-size: cover;
-    background-position: center;
-}
-
-/* Estilos do header e main */
-header, main {
+    grid-template-rows: auto 1fr auto; /* Header, conteúdo e footer */
+    background-color: #141e20;
+  }
+  
+  .footer-top {
+    height: 25px;
+    border: 5px solid green;
+    color: green;
     padding: 10px;
-}
 
-/* Estilos da seção principal */
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Estilo da barra de navegação dentro do header */
-header nav {
+  }
+  
+  header,
+  main,
+  footer {
+    border: 5px solid green;
+    color: green;
+    padding: 10px;
+  }
+  
+  nav {
     width: 70%;
-}
-
-/* Estilos dos botões de navegação */
-.nav-btn {
-    color: white;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 3.6px;
-    flex-shrink: 0;
-    border: none;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 35px;
-    cursor: pointer;
-    background: none;
-}
-
-/* Estilos gerais do header */
-header {
+  }
+  
+  header {
     display: flex;
     justify-content: space-between;
-}
-
-/* Estilo da imagem no header */
-header > img {
-    width: 360px;
-    height: 328px;
-    margin-top: -45px;
-}
-
-/* Container da caixa com o título e botão */
-.content-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 700px;
-    aspect-ratio: 1 / 1;
-    background: rgba(0, 0, 0, 0.24);
-    border-radius: 10px;
-}
-
-/* Estilo do título dentro do container */
-.main-title {
-    color: #FFF;
-    text-align: center;
-    font-family: "Croissant One", sans-serif;
-    font-size: 76px;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/* Estilo do parágrafo abaixo do título */
-.sub-title {
-    width: 434px;
-    height: 70px;
-    color: #FFF;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 35px;
-}
-
-/* Remover bordas e definir cor e padding para a navegação */
-nav {
-    border: none;
-    padding: 10px;
-}
-
-/* Estilo do botão de agendamento */
-.schedule-btn {
-    width: 504px;
-    height: 86.8px;
-    padding: 12px;
-    background: #482647;
-    border-radius: 5px;
-    border: 2px #754873 solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-    letter-spacing: 3.6px;
-}
-
-/* Estilo do texto dentro do botão de agendamento */
-.btn-text {
-    width: 279.114px;
-    height: 23.673px;
+    height: 75px;
     flex-shrink: 0;
-    color: #FFF;
-    text-align: center;
-    font-family: "Playwrite US Modern";
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: 3.6px;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 100px;
+    grid-template-areas:
+      "h1"
+      "section01"
+      "section02";
+    gap: 10px;
+    flex-grow: 1;
+  }
+  
+  main>h1 {
+    grid-area: h1;
+  }
+  
+  .section-01 {
+    grid-area: section01;
+    height: 585px;
+  }
+  
+  .section-02 {
+    grid-area: section02;
+  }
+  
+  nav,
+  section {
+    border: 5px solid rgb(214, 214, 8);
+    color: rgb(214, 214, 8);
+    padding: 10px;
+  }
+  
+  section>article {
+    border: 5px solid blue;
+    color: blue;
+    height: 70px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+  footer {
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  border: 5px solid green;
+  color: green;
+  padding: 10px;
+  background-color: #141e20;
 }
 
-/* Estilo da linha horizontal */
-.divider {
-    width: 100%;
-    height: 10px;
-    background: rgba(137, 135, 135, 0.11);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    top: 214px;
-}
+  
+  
+  @media (max-width: 680px) {
+    main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 40px 1fr 100px;
+      grid-template-areas:
+        "h1"
+        "section01"
+        "section02";
+      gap: 10px;
+    }
+  }
+  
