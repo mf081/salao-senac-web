@@ -1,0 +1,120 @@
+/* Resetando margens de todos os elementos para 0 */
+* {
+  margin: 0px;
+}
+
+/* Estilização do corpo do documento */
+body {
+  /* min-height: 100vh; */ /* Comentado para evitar que a altura mínima ocupe toda a viewport */
+  display: grid; /* Usando grid layout */
+  grid-template-rows: auto 1fr auto; /* Definindo as linhas: cabeçalho, conteúdo principal e rodapé */
+  background-color: #141e20; /* Cor de fundo do corpo */
+}
+
+/* Estilização da parte superior do rodapé */
+.footer-top {
+  height: 25px; /* Altura do rodapé superior */
+  border: 5px solid green; /* Borda verde */
+  color: green; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilização do cabeçalho, conteúdo principal e rodapé */
+header,
+main,
+footer {
+  border: 5px solid green; /* Borda verde */
+  color: green; /* Cor do texto */
+  /* padding: 10px; */ /* Comentado para evitar espaçamento interno */
+}
+
+/* Definindo a largura do nav */
+nav {
+  width: 70%; /* Largura do elemento de navegação */
+}
+
+/* Estilização do cabeçalho */
+header {
+  display: flex; /* Usando flexbox para layout */
+  justify-content: space-between; /* Espaçando itens do cabeçalho */
+  height: 75px; /* Altura do cabeçalho */
+  flex-shrink: 0; /* Não permitir que o cabeçalho encolha */
+  margin-top: 10px; /* Para melhor visualização */
+  margin-bottom: 10px; /* Para melhor visualização */
+}
+
+/* Estilização do conteúdo principal */
+main {
+  display: grid; /* Usando grid layout para o conteúdo principal */
+  grid-template-columns: 1fr; /* Uma coluna */
+  grid-template-rows: 0px 1fr 100px; /* Linhas do grid: cabeçalho, conteúdo, rodapé */
+  grid-template-areas:
+      "h1" /* Área para o título */
+      "section01" /* Área para a primeira seção */
+      "section02"; /* Área para a segunda seção */
+  /* gap: 10px; */ /* Comentado para evitar espaço entre as áreas do grid */
+  flex-grow: 1; /* Permitir que o main cresça */
+  margin-top: 10px; /* Para melhor visualização */
+  margin-bottom: 10px; /* Para melhor visualização */
+}
+
+/* Estilização do título dentro do main */
+main > h1 {
+  grid-area: h1; /* Definindo área do grid para o título */
+}
+
+/* Estilização da primeira seção */
+.section-01 {
+  grid-area: section01; /* Definindo área do grid para a seção 1 */
+  height: 585px; /* Altura fixa */
+  width: 100%; /* Largura total */
+  /* margin-top: 10px; */ /* Para melhor visualização (comentado) */
+  margin-bottom: 10px; /* Para melhor visualização */
+}
+
+/* Estilização da segunda seção */
+.section-02 {
+  grid-area: section02; /* Definindo área do grid para a seção 2 */
+}
+
+/* Estilização do nav e seção */
+nav,
+section {
+  border: 5px solid rgb(214, 214, 8); /* Borda amarela */
+  color: rgb(214, 214, 8); /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilização dos artigos dentro da seção */
+section > article {
+  border: 5px solid blue; /* Borda azul */
+  color: blue; /* Cor do texto */
+  height: 70px; /* Altura fixa dos artigos */
+  margin-top: 5px; /* Espaçamento acima dos artigos */
+  padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilização do rodapé */
+footer {
+  /* position: fixed; */ /* Comentado para evitar rodapé fixo */
+  bottom: 0; /* Posicionar na parte inferior da página */
+  width: 100%; /* Largura total */
+  height: 70px; /* Altura do rodapé */
+  border: 5px solid green; /* Borda verde */
+  color: green; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #141e20; /* Cor de fundo do rodapé */
+}
+
+/* Media query para telas pequenas */
+@media (max-width: 680px) {
+  main {
+      grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+      grid-template-rows: 40px 1fr 100px; /* Ajuste nas linhas do grid */
+      grid-template-areas:
+          "h1" /* Área para o título */
+          "section01" /* Área para a primeira seção */
+          "section02"; /* Área para a segunda seção */
+      gap: 10px; /* Espaçamento entre as áreas do grid */
+  }
+}
