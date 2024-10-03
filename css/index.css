@@ -322,31 +322,53 @@ nav {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.section-image {
+.section-03-image {
     width: 100%;
     height: auto;
     filter: brightness(0.7); /* Escurece a imagem para destacar o texto */
 }
 
-.section-content {
+.section-03-content {
     position: absolute;
     bottom: 20px;
     left: 20px;
     color: white;
-    max-width: 300px; /* Limita a largura do conteúdo sobreposto */
+    max-width: 400px; /* Limita a largura do conteúdo sobreposto */
+    padding: 0 2rem;
 
 }
 
-.section-content h2 {
-    margin: 0;
-    font-size: 18px;
+.section03-content-h2 {
+    color: #FFF;
+    font-family: Syne;
+    font-size: 23.07px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.461px;
     text-transform: uppercase;
 }
 
-.section-content h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
+.section03-content-h1 {
+    color: #C8A180;
+    font-family: Syne;
+    font-size: 35.029px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.701px;
+    text-transform: uppercase;
+    
+}
+
+.section03-content-p{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.32px;
 }
 
 .section-03-container > button {
@@ -361,10 +383,22 @@ nav {
     bottom: 20px; /* Ajuste conforme necessário */
     left: 20px; /* Ajuste conforme necessário */
 }
+.section03-content-b{
+    width: 192.786px;
+    height: 43.069px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #D9B79A;
+    color: #313131;
+    text-align: center;
+    font-family: Syne;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 21px */
 
-.section-03-container > button:hover {
-    background-color: #5a2c55; /* Cor do botão ao passar o mouse */
 }
+
 
 
 
