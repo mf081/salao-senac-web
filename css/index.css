@@ -183,10 +183,189 @@ nav {
 
 .section-02-container {
     width: 100%;
-    height: 700px;
+    height: 960px;
     border: 5px solid rgb(112, 248, 85); /* Borda rosa */
     background: #FFF;
 }
+.section-02-container > h2 {
+    margin-top: 2rem;
+    color: #313131;
+    text-align: center;
+    font-family: "Croissant One";
+    font-size: 23.07px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.461px;
+    text-transform: uppercase;
+}
+.section-02-container > h1 {
+    color: #693B6D;
+    text-align: center;
+    font-family: "Croissant One";
+    font-size: 35.029px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.701px;
+    text-transform: uppercase;
+}
+
+.section-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 290px;
+    border-radius: 10px;
+    background-blend-mode: multiply;
+    border-radius: 10px;
+    border: 1.5px solid rgb(0, 0, 0); 
+    display: flex;
+    flex-direction: column; /* Alinhar os elementos verticalmente */
+    justify-content: space-between; /* Garante que o botão fique na parte inferior */
+
+}
+.card > h3{
+    color: #693B6D;
+    text-align: center;
+    font-family: "Croissant One";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 30.8px */
+    letter-spacing: 0.44px;
+}
+
+
+.description {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+    letter-spacing: 0.3px;
+
+}
+
+.price{
+    color: #020202;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: bold;
+    font-weight: 600;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: 0.36px;
+}
+
+.card > button{
+    border-radius: 3px;
+    background: #693B6D;
+    width: 193px;
+    height: 47px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 21px */
+    align-self: center; /* Centraliza o botão horizontalmente */
+
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5rem;
+
+}
+
+.location > h1{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 93.75% */
+}
+
+.section-03-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 504px;
+    margin: 0 auto;
+    border: 5px solid rgb(255, 0, 0); /* Borda rosa */
+
+}
+
+.img-left, .img-right {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.7); /* Escurece a imagem para destacar o texto */
+}
+
+.section-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    max-width: 300px; /* Limita a largura do conteúdo sobreposto */
+
+}
+
+.section-content h2 {
+    margin: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.section-content h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-03-container > button {
+    background-color: #693B6D; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute; /* Para posicionamento dentro da imagem */
+    bottom: 20px; /* Ajuste conforme necessário */
+    left: 20px; /* Ajuste conforme necessário */
+}
+
+.section-03-container > button:hover {
+    background-color: #5a2c55; /* Cor do botão ao passar o mouse */
+}
+
 
 
 
