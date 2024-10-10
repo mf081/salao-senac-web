@@ -73,7 +73,7 @@ nav {
 
 .nav-container {
     display: grid; /* Usar grid para organizar o conteúdo */
-    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    grid-template-columns: 2fr 1fr; /* Duas colunas */
     max-width: 1500px; /* Largura máxima */
     margin: 0 auto; /* Centraliza horizontalmente */
     align-items: center; /* Alinha itens verticalmente */
@@ -85,7 +85,6 @@ nav {
     display: flex; /* Flexbox para alinhamento */
     align-items: center; /* Alinha verticalmente */
     justify-content: left; /* Alinha à esquerda */
-    margin-right: 600px; /* Margem à direita */
 }
 
 .nav-right {
@@ -398,9 +397,6 @@ nav {
     line-height: 140%; /* 21px */
 
 }
-
-
-
 
 
 
