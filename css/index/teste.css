@@ -8,7 +8,7 @@ html, body {
     background-color: #141e20; /* Cor de fundo do corpo */
     display: flex; /* Usar flexbox para alinhar os elementos */
     flex-direction: column; /* Coluna como direção principal */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 
@@ -121,47 +121,179 @@ main{
     padding: 1rem 2rem; /* Padding para evitar que os elementos toquem as bordas */
     overflow: hidden; /* Impede que os elementos saiam do container */
     box-sizing: border-box; /* Garante que o padding seja incluído no tamanho total */
+    background-image: url(/img/background-container-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
+}
+
+.section-01-img {
+    display: flex;  /* Utiliza flexbox */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
 }
 
 .section-01-img > img {
-    position: relative;
-    left: 20px;
+    max-width: 100%; /* Para manter a responsividade da imagem */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-
-
-
-
-
-/* Media queries para responsividade */
-@media (max-width: 768px) {
-    .section-01-container {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
-    }
-
-    .nav-text {
-        margin-left: 20px; /* Ajusta margem em telas menores */
-    }
-
-    .header-container {
-        gap: 20px; /* Ajusta o espaço entre colunas do header */
-    }
+.section-01-text{
+    display: flex;
+    flex-direction: column;
 }
-@media (max-width: 768px) {
-    .section-01-content {
-      grid-template-columns: 1fr; /* Uma coluna em telas menores */
-      text-align: center; /* Centraliza texto */
-      height: auto; /* Remove altura fixa para melhor adaptação */
-    }
-  
-    .section-01-img {
-      display: flex;
-      justify-content: center;
-    }
-  
-    #muie-capa {
-      width: 80%; /* Ajusta largura da imagem em telas menores */
-      height: auto; /* Permite que a altura seja automática */
-    }
+.section-01-text h1 {
+    color: #FFF;
+    font-family: "Croissant One";
+    font-size: 46px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
+  .section-01-text p {
+    color: #FBF5F0;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 10px;
+  }  
+  
+  .section-01-text button {
+    width: 208px;
+    height: 53px;
+    border-radius: 3px;
+    background: #693B6D;
+    color: #FFF;
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+  }
+  
+  .section-01-text img.icon {
+    margin-left: 8px;
+    width: 20px;
+    height: auto;
+  }
+
+  .section-02-container {
+    width: 100%;
+    height: auto;
+    border: 5px solid rgb(112, 248, 85); /* Borda rosa */
+    background: #FFF;
+}
+
+.section-02-container > h2 {
+    margin-top: 2rem;
+    color: #313131;
+    text-align: center;
+    font-family: "Croissant One";
+    font-size: 23.07px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.461px;
+    text-transform: uppercase;
+}
+.section-02-container > h1 {
+    color: #693B6D;
+    text-align: center;
+    font-family: "Croissant One";
+    font-size: 35.029px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.701px;
+    text-transform: uppercase;
+}
+.section-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 290px;
+    border-radius: 10px;
+    background-blend-mode: multiply;
+    border-radius: 10px;
+    border: 1.5px solid rgb(0, 0, 0); 
+    display: flex;
+    flex-direction: column; /* Alinhar os elementos verticalmente */
+    justify-content: space-between; /* Garante que o botão fique na parte inferior */
+
+}
+.card > h3{
+    color: #693B6D;
+    text-align: center;
+    font-family: "Croissant One";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 30.8px */
+    letter-spacing: 0.44px;
+}
+.description {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+    letter-spacing: 0.3px;
+
+}
+.price{
+    color: #020202;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: bold;
+    font-weight: 600;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: 0.36px;
+}
+.card > button{
+    border-radius: 3px;
+    background: #693B6D;
+    width: 193px;
+    height: 47px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 21px */
+    align-self: center; /* Centraliza o botão horizontalmente */
+
+}
+.section-02-location{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    justify-content: center; /* Alinhamento horizontal */
+    margin-top: 2rem;
+}
+.section-02-location > h1{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 93.75% */
+}
+
+
+
