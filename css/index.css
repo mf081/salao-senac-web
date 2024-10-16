@@ -3,12 +3,14 @@
     box-sizing: border-box; /* Inclui padding e bordas nas dimensões */
 }
 
-body {
+html, body {
+    height: 100%; /* Garante que o body preencha toda a altura da página */
     background-color: #141e20; /* Cor de fundo do corpo */
     display: flex; /* Usar flexbox para alinhar os elementos */
     flex-direction: column; /* Coluna como direção principal */
-    align-items: center; /* Centraliza os itens */
+    flex-wrap: wrap;
 }
+
 
 header {
     width: 100%; /* Largura total do header */
@@ -414,3 +416,20 @@ nav {
         gap: 20px; /* Ajusta o espaço entre colunas do header */
     }
 }
+@media (max-width: 768px) {
+    .section-01-content {
+      grid-template-columns: 1fr; /* Uma coluna em telas menores */
+      text-align: center; /* Centraliza texto */
+      height: auto; /* Remove altura fixa para melhor adaptação */
+    }
+  
+    .section-01-img {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #muie-capa {
+      width: 80%; /* Ajusta largura da imagem em telas menores */
+      height: auto; /* Permite que a altura seja automática */
+    }
+  }
