@@ -284,7 +284,11 @@ main{
     flex-direction: row;
     align-items: center; /* Alinha o ícone e o texto verticalmente */
     justify-content: center; /* Alinhamento horizontal */
-    margin-top: 2rem;
+    /* margin-top: 2rem;
+    margin-bottom: 2rem; */
+    margin: 2rem 0;
+
+
 }
 .section-02-location > h1{
     color: #000;
@@ -296,4 +300,177 @@ main{
 }
 
 
+/* SEÇÃO 03 IMAGENS */
+
+
+.section-03-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 5px solid rgb(255, 0, 0); /* Borda rosa */
+}
+
+.img-left, .img-right {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-03-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.7); /* Escurece a imagem para destacar o texto */
+}
+
+.section-03-content {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    max-width: 640px; 
+    /* padding: 0 2rem; */
+    padding-bottom: 2rem ; 
+    padding-left: 4rem;
+
+}
+
+.section03-content-h2 {
+    color: #FFF;
+    font-family: Syne;
+    font-size: 23.07px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.461px;
+    text-transform: uppercase;
+}
+
+.section03-content-h1 {
+    color: #C8A180;
+    font-family: Syne;
+    font-size: 35.029px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.701px;
+    text-transform: uppercase;
+    
+}
+
+.section03-content-p{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.32px;
+}
+
+.section-03-container > button {
+    background-color: #693B6D; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute; /* Para posicionamento dentro da imagem */
+    bottom: 20px; /* Ajuste conforme necessário */
+    left: 20px; /* Ajuste conforme necessário */
+}
+.section03-content-b{
+    width: 192.786px;
+    height: 43.069px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #D9B79A;
+    color: #313131;
+    text-align: center;
+    font-family: Syne;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 21px */
+}
+
+.newsletter-container{
+    width: 100%;
+    height: auto;
+    background-image: url(/img/newsletter-background.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center;
+    padding: 3rem 0rem;
+}
+
+.newsletter-content > h2{
+    color: #D9B79A;
+    text-align: center;
+    font-family: Syne;
+    font-size: 23.07px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.461px;
+}
+
+.newsletter-content > h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Syne;
+    font-size: 35.029px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.701px;
+}
+.newsletter-content > p{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.32px;
+}
+
+.newsletter-content > input{
+    width: 429px;
+    height: 56px;
+    border-radius: 5px;
+    padding: 0 1rem; 
+
+    
+    
+}
+.newsletter-content > input::placeholder{
+    color: #8D8D8D;
+    font-family: Syne;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.newsletter-content > button{
+    border-radius: 5px;
+    background: #000;
+    width: 190px;
+    height: 56px;
+    color: #FFF;
+    text-align: center;
+    font-family: Syne;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+
+}
 
