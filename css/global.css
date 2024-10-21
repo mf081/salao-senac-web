@@ -1,0 +1,12 @@
+* {
+    margin: 0; /* Remove a margem padrão */
+    box-sizing: border-box; /* Inclui padding e bordas nas dimensões */
+}
+
+html, body {
+    height: 100%; /* Garante que o body preencha toda a altura da página */
+    background-color: #141e20; /* Cor de fundo do corpo */
+    display: flex; /* Usar flexbox para alinhar os elementos */
+    flex-direction: column; /* Coluna como direção principal */
+    /* flex-wrap: wrap; */
+}

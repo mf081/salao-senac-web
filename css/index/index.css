@@ -1,193 +1,84 @@
-* {
-    margin: 0; /* Remove a margem padrão */
-    box-sizing: border-box; /* Inclui padding e bordas nas dimensões */
-}
-
-html, body {
-    height: 100%; /* Garante que o body preencha toda a altura da página */
-    background-color: #141e20; /* Cor de fundo do corpo */
-    display: flex; /* Usar flexbox para alinhar os elementos */
-    flex-direction: column; /* Coluna como direção principal */
-    flex-wrap: wrap;
-}
-
-
-header {
-    width: 100%; /* Largura total do header */
-    border: 5px solid rgb(251, 255, 23); /* Borda amarela */
-    padding: 10px; /* Espaço interno */
-    display: flex; /* Usar flexbox para o header */
-    justify-content: center; /* Centraliza o conteúdo */
-    align-items: center; /* Alinhamento vertical centralizado */
-    height: 60px; /* Altura fixa */
-    background: #693B6D; /* Cor de fundo do header */
-}
-
-.header-container {
-    display: grid; /* Usar grid para organizar o conteúdo */
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-    max-width: 1800px; /* Largura máxima */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    align-items: center; /* Alinha itens verticalmente */
-    text-align: center; /* Centraliza texto */
-    gap: 480px; /* Espaço entre colunas (ajuste conforme necessário) */
-}
-
-.header-text {
-    color: #FFF; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    font-family: Inter; /* Fonte do texto */
-    font-size: 10px; /* Tamanho da fonte */
-    font-weight: 500; /* Peso da fonte */
-    line-height: normal; /* Altura da linha */
-    letter-spacing: 0.3px; /* Espaçamento entre letras */
-    margin-right: 25px; /* Margem à direita */
-}
-
-.header-icons {
-    margin-right: 10px; /* Espaço entre ícones */
-}
-
-.header-contact {
-    display: flex; /* Flexbox para alinhamento */
-    justify-content: flex-end; /* Alinha à direita */
-    align-items: center; /* Alinha verticalmente */
-}
-
-.header-contact-right {
-    display: flex; /* Flexbox para alinhamento */
-    gap: 15px; /* Espaço entre itens */
-    justify-content: flex-end; /* Alinha à direita */
-    align-items: center; /* Alinha verticalmente */
-}
-
-nav {
-    background: #2D2C2C; /* Cor de fundo do nav */
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05); /* Sombra */
-    width: 100%; /* Largura total */
-    border: 5px solid rgb(23, 255, 232); /* Borda verde */
-    padding: 10px; /* Espaço interno */
-    display: flex; /* Usar flexbox para o nav */
-    justify-content: center; /* Centraliza conteúdo */
-    align-items: center; /* Alinhamento vertical centralizado */
-    height: 134px; /* Altura fixa */
-}
-
-.nav-container {
-    display: grid; /* Usar grid para organizar o conteúdo */
-    grid-template-columns: 2fr 1fr; /* Duas colunas */
-    max-width: 1500px; /* Largura máxima */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    align-items: center; /* Alinha itens verticalmente */
-    text-align: center; /* Centraliza texto */
-    padding: 0 20px; /* Padding lateral */
-}
-
-.nav-img {
-    display: flex; /* Flexbox para alinhamento */
-    align-items: center; /* Alinha verticalmente */
-    justify-content: left; /* Alinha à esquerda */
-}
-
-.nav-right {
-    display: flex; /* Flexbox para alinhamento */
-    justify-content: flex-end; /* Alinha à direita */
-    align-items: center; /* Alinha verticalmente */
-}
-
-.nav-text {
-    color: #FFF; /* Cor do texto */
-    text-align: center; /* Centraliza texto */
-    font-family: Montserrat; /* Fonte do texto */
-    font-size: 15px; /* Tamanho da fonte */
-    font-style: normal; /* Estilo da fonte */
-    font-weight: 500; /* Peso da fonte */
-    line-height: normal; /* Altura da linha */
-    letter-spacing: 0.3px; /* Espaçamento entre letras */
-    text-transform: uppercase; /* Transforma texto em maiúsculas */
-    margin-left: 90px; /* Margem à esquerda */
+main{
+    display: flex;
+    flex-direction: column;
 }
 
 .section-01-container {
     border: 5px solid rgb(255, 36, 218); /* Borda rosa */
-    width: 100%; /* Largura total */
-    height: 320px; /* Altura fixa */
+    height: auto; /* Altura fixa */
     display: grid; /* Usar grid para organizar o conteúdo */
     grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-    background-image: url(/img/background-container-01.png); /* Imagem de fundo */
-    background-size: cover; /* Preenche a largura */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    gap: 20px; /* Espaço entre colunas */
-    padding: 0 2rem; /* Padding apenas nas bordas esquerda e direita */
+    padding: 1rem 2rem; /* Padding para evitar que os elementos toquem as bordas */
+    overflow: hidden; /* Impede que os elementos saiam do container */
+    box-sizing: border-box; /* Garante que o padding seja incluído no tamanho total */
+    background-image: url(/img/background-container-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .section-01-img {
-    position: relative; /* Para posicionamento relativo */
-    right: 13rem; /* Move para a direita */
+    display: flex;  /* Utiliza flexbox */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
 }
 
-#muie-capa {
-    position: absolute; /* Para posicionamento absoluto */
-    right: 140px; /* Move para a direita */
-    z-index: 2; /* Fica à frente */
-    top: 4px; /* Move para cima */
+.section-01-img > img {
+    max-width: 100%; /* Para manter a responsividade da imagem */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-.section-01-text > h1 {
-    color: #FFF; /* Cor do texto */
-    font-family: "Croissant One"; /* Fonte do texto */
-    font-size: 46.529px; /* Tamanho da fonte */
-    font-style: normal; /* Estilo da fonte */
-    font-weight: 400; /* Peso da fonte */
-    line-height: normal; /* Altura da linha */
-    letter-spacing: 0.931px; /* Espaçamento entre letras */
-    text-transform: uppercase; /* Transforma texto em maiúsculas */
+.section-01-text{
+    display: flex;
+    flex-direction: column;
 }
-
-.section-01-text > p {
-    color: #FBF5F0; /* Cor do texto */
-    font-family: Montserrat; /* Fonte do texto */
-    font-size: 18px; /* Tamanho da fonte */
-    font-style: normal; /* Estilo da fonte */
-    line-height: 140%; /* Altura da linha */
-    letter-spacing: 0.36px; /* Espaçamento entre letras */
+.section-01-text h1 {
+    color: #FFF;
+    font-family: "Croissant One";
+    font-size: 46px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .section-01-text p {
+    color: #FBF5F0;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.4;
     margin-top: 10px;
-}
-
-.section-01-text > button {
-    width: 208px; /* Largura do botão */
-    height: 53px; /* Altura do botão */
-    flex-shrink: 0; /* Não permite que o botão encolha */
-    border-radius: 3.365px; /* Bordas arredondadas */
-    background: #693B6D; /* Cor de fundo do botão */
-    color: #FFF; /* Cor do texto do botão */
-    font-family: 'Syne', sans-serif; /* Fonte do texto */
-    font-size: 16.827px; /* Tamanho da fonte */
-    font-style: normal; /* Estilo da fonte */
-    font-weight: 600; /* Peso da fonte */
-    line-height: 140%; /* Altura da linha */
-    display: flex; /* Usar flexbox para o conteúdo do botão */
-    justify-content: center; /* Centraliza conteúdo */
-    align-items: center; /* Alinha verticalmente */
-    border: none; /* Remove borda padrão */
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
-    transition: background 0.3s; /* Efeito de transição para o fundo */
+  }  
+  
+  .section-01-text button {
+    width: 208px;
+    height: 53px;
+    border-radius: 3px;
+    background: #693B6D;
+    color: #FFF;
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
     margin-top: 20px;
-}
+    gap: 10px;
+  }
+  
+  .section-01-text img.icon {
+    margin-left: 8px;
+    width: 20px;
+    height: auto;
+  }
 
-.section-01-text > img {
-    margin-left: 8px; /* Espaço entre o texto e a imagem */
-    width: 20px; /* Tamanho da imagem */
-    height: auto; /* Mantém proporção da imagem */
-}
-
-.section-02-container {
+  .section-02-container {
     width: 100%;
-    height: 960px;
+    height: auto;
     border: 5px solid rgb(112, 248, 85); /* Borda rosa */
     background: #FFF;
 }
+
 .section-02-container > h2 {
     margin-top: 2rem;
     color: #313131;
@@ -211,7 +102,6 @@ nav {
     letter-spacing: 0.701px;
     text-transform: uppercase;
 }
-
 .section-card-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -245,8 +135,6 @@ nav {
     line-height: 140%; /* 30.8px */
     letter-spacing: 0.44px;
 }
-
-
 .description {
     text-align: center;
     font-family: Montserrat;
@@ -257,7 +145,6 @@ nav {
     letter-spacing: 0.3px;
 
 }
-
 .price{
     color: #020202;
     text-align: center;
@@ -268,7 +155,6 @@ nav {
     line-height: 140%; /* 25.2px */
     letter-spacing: 0.36px;
 }
-
 .card > button{
     border-radius: 3px;
     background: #693B6D;
@@ -284,18 +170,18 @@ nav {
     align-self: center; /* Centraliza o botão horizontalmente */
 
 }
-
-.location{
+.section-02-location{
     display: flex;
     flex-direction: row;
     align-items: center; /* Alinha o ícone e o texto verticalmente */
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 5rem;
+    justify-content: center; /* Alinhamento horizontal */
+    /* margin-top: 2rem;
+    margin-bottom: 2rem; */
+    margin: 2rem 0;
+
 
 }
-
-.location > h1{
+.section-02-location > h1{
     color: #000;
     font-family: Montserrat;
     font-size: 32px;
@@ -303,133 +189,3 @@ nav {
     font-weight: 400;
     line-height: 30px; /* 93.75% */
 }
-
-.section-03-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    width: 100%;
-    height: 504px;
-    margin: 0 auto;
-    border: 5px solid rgb(255, 0, 0); /* Borda rosa */
-
-}
-
-.img-left, .img-right {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.section-03-image {
-    width: 100%;
-    height: auto;
-    filter: brightness(0.7); /* Escurece a imagem para destacar o texto */
-}
-
-.section-03-content {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    max-width: 400px; /* Limita a largura do conteúdo sobreposto */
-    padding: 0 2rem;
-
-}
-
-.section03-content-h2 {
-    color: #FFF;
-    font-family: Syne;
-    font-size: 23.07px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.461px;
-    text-transform: uppercase;
-}
-
-.section03-content-h1 {
-    color: #C8A180;
-    font-family: Syne;
-    font-size: 35.029px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.701px;
-    text-transform: uppercase;
-    
-}
-
-.section03-content-p{
-    color: #FFF;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 22.4px */
-    letter-spacing: 0.32px;
-}
-
-.section-03-container > button {
-    background-color: #693B6D; /* Cor de fundo do botão */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    position: absolute; /* Para posicionamento dentro da imagem */
-    bottom: 20px; /* Ajuste conforme necessário */
-    left: 20px; /* Ajuste conforme necessário */
-}
-.section03-content-b{
-    width: 192.786px;
-    height: 43.069px;
-    flex-shrink: 0;
-    border-radius: 3px;
-    background: #D9B79A;
-    color: #313131;
-    text-align: center;
-    font-family: Syne;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%; /* 21px */
-
-}
-
-
-
-/* Media queries para responsividade */
-@media (max-width: 768px) {
-    .section-01-container {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
-    }
-
-    .nav-text {
-        margin-left: 20px; /* Ajusta margem em telas menores */
-    }
-
-    .header-container {
-        gap: 20px; /* Ajusta o espaço entre colunas do header */
-    }
-}
-@media (max-width: 768px) {
-    .section-01-content {
-      grid-template-columns: 1fr; /* Uma coluna em telas menores */
-      text-align: center; /* Centraliza texto */
-      height: auto; /* Remove altura fixa para melhor adaptação */
-    }
-  
-    .section-01-img {
-      display: flex;
-      justify-content: center;
-    }
-  
-    #muie-capa {
-      width: 80%; /* Ajusta largura da imagem em telas menores */
-      height: auto; /* Permite que a altura seja automática */
-    }
-  }

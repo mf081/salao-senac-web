@@ -1,3 +1,113 @@
+* {
+    margin: 0; /* Remove a margem padrão */
+    box-sizing: border-box; /* Inclui padding e bordas nas dimensões */
+}
+
+html, body {
+    height: 100%; /* Garante que o body preencha toda a altura da página */
+    background-color: #141e20; /* Cor de fundo do corpo */
+    display: flex; /* Usar flexbox para alinhar os elementos */
+    flex-direction: column; /* Coluna como direção principal */
+    /* flex-wrap: wrap; */
+}
+
+
+header {
+    width: 100%; /* Largura total do header */
+    border: 5px solid rgb(251, 255, 23); /* Borda amarela */
+    padding: 10px; /* Espaço interno */
+    display: flex; /* Usar flexbox para o header */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinhamento vertical centralizado */
+    height: 60px; /* Altura fixa */
+    background: #693B6D; /* Cor de fundo do header */
+}
+
+.header-container {
+    display: grid; /* Usar grid para organizar o conteúdo */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    max-width: 1800px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha itens verticalmente */
+    text-align: center; /* Centraliza texto */
+    /* gap: 480px; Espaço entre colunas (ajuste conforme necessário) */
+}
+
+.header-text {
+    color: #FFF; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-family: Inter; /* Fonte do texto */
+    font-size: 10px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    line-height: normal; /* Altura da linha */
+    letter-spacing: 0.3px; /* Espaçamento entre letras */
+    margin-right: 25px; /* Margem à direita */
+}
+
+.header-icons {
+    margin-right: 10px; /* Espaço entre ícones */
+}
+
+.header-contact {
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: flex-end; /* Alinha à direita */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.header-contact-right {
+    display: flex; /* Flexbox para alinhamento */
+    gap: 15px; /* Espaço entre itens */
+    justify-content: flex-end; /* Alinha à direita */
+    align-items: center; /* Alinha verticalmente */
+}
+
+nav {
+    background: #2D2C2C; /* Cor de fundo do nav */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05); /* Sombra */
+    width: 100%; /* Largura total */
+    border: 5px solid rgb(23, 255, 232); /* Borda verde */
+    padding: 10px; /* Espaço interno */
+    display: flex; /* Usar flexbox para o nav */
+    justify-content: center; /* Centraliza conteúdo */
+    align-items: center; /* Alinhamento vertical centralizado */
+    height: 134px; /* Altura fixa */
+}
+
+.nav-container {
+    display: grid; /* Usar grid para organizar o conteúdo */
+    grid-template-columns: 2fr 1fr; /* Duas colunas */
+    max-width: 1500px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha itens verticalmente */
+    text-align: center; /* Centraliza texto */
+    padding: 0 20px; /* Padding lateral */
+}
+
+.nav-img {
+    display: flex; /* Flexbox para alinhamento */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: left; /* Alinha à esquerda */
+}
+
+.nav-right {
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: flex-end; /* Alinha à direita */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.nav-text {
+    color: #FFF; /* Cor do texto */
+    text-align: center; /* Centraliza texto */
+    font-family: Montserrat; /* Fonte do texto */
+    font-size: 15px; /* Tamanho da fonte */
+    font-style: normal; /* Estilo da fonte */
+    font-weight: 500; /* Peso da fonte */
+    line-height: normal; /* Altura da linha */
+    letter-spacing: 0.3px; /* Espaçamento entre letras */
+    text-transform: uppercase; /* Transforma texto em maiúsculas */
+    margin-left: 90px; /* Margem à esquerda */
+}
+
 main{
     display: flex;
     flex-direction: column;
