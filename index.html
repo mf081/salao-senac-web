@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/components/css/header.css">
     <link rel="stylesheet" href="/components/css/nav.css">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/index/index.css">
-    <link rel="stylesheet" href="/css/index/media-queries.css">
+    <link rel="stylesheet" href="/pages-css/index/section-01.css">
+    <link rel="stylesheet" href="/pages-css/index/section-02.css">
+    <link rel="stylesheet" href="/pages-css/index/testimonials.css">
+    <link rel="stylesheet" href="/pages-css/index/contact.css">
+    <link rel="stylesheet" href="/components/css/footer.css">
+    <link rel="stylesheet" href="/pages-css/index/media-queries.css">
 
     <title>Salão Senac | TechStorm</title>
 
@@ -45,13 +49,13 @@
             <div class="header-contact-right">
                 <span class="header-text">Siga-nos:</span>
                 <a href="https://www.instagram.com" target="_blank">
-                    <img src="/img/icons/instagram-icon.png" width="18" height="19" alt="Instagram">
+                    <img src="/img/icons/instagram-icon.png" width="18" height="19" alt="Instagram" class="header-icons">
                 </a>
                 <a href="https://www.tiktok.com" target="_blank">
-                    <img src="/img/icons/tiktok-icon.png" width="19" height="23" alt="TikTok">
+                    <img src="/img/icons/tiktok-icon.png" width="19" height="23" alt="TikTok" class="header-icons">
                 </a>
                 <a href="https://www.facebook.com" target="_blank">
-                    <img src="/img/icons/facebook-icon.png" width="20" height="21" alt="Facebook">
+                    <img src="/img/icons/facebook-icon.png" width="20" height="21" alt="Facebook" class="header-icons">
                 </a>
             </div>
         </div>
@@ -75,7 +79,6 @@
             <div class="section-01-img">
                 <img src="/img/muiecomquadrado.png" id="muie-capa" width="290px">
             </div>
-
             <div class="section-01-text">
                 <h1>Bem-vindo ao salão Empresa Pedagógica</h1>
                 <p>Ficou fácil dar aquele toque especial no seu visual! Reserve seu horário e conte com o cuidado personalizado que você merece. Seu momento de brilhar chegou.</p>
@@ -85,7 +88,6 @@
                 </button>
             </div>
         </section>
-
         <section class="section-02-container">
             <h2>Serviços</h2>
             <h1>Ofertados</h1>
@@ -144,7 +146,6 @@
                 <h1>Pernambuco - Av. Visconde de Suassuna, 500 - Santo Amaro - Recife</h1>
             </div>
         </section>
-
         <section class="testimonials-container">
             <h2>DEPOIMENTOS</h2>
             <div class="testimonial-card">
@@ -163,12 +164,37 @@
                 </div>
             </div>
         </section>
-        
-        
+        <section class="contact-container">
+            <div class="contact-text">
+                <h2>
+                    Ficou com alguma dúvida?
+                </h2>
+                <h1>
+                    FALE CONOSCO
+                </h1>
+                <p>
+                    Não perca mais tempo e entre agora em contato com nossa equipe de especialistas. Teremos o maior prazer em ajudar você.
+                </p>
+                <button class="contact-number typography-button">(00) 0000-0000</button>
+                <button class="contact-whatsapp typography-button">(00) 00000-0000</button>
+                <button class="contact-email typography-button">contato@buenobeauty.com.br</button>
+            </div>
+            <div class="contact-form">
+                <h2>Formulário de Contato</h2>
+                <input type="text" id="nome" class="form-control" placeholder="Nome Completo" required>
+                <div class="input-group">
+                    <input type="text" id="telefone" class="form-control" placeholder="Celular/Whatsapp" required>
+                    <input type="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+                <input type="text" id="mensagem" class="form-control mensagem" placeholder="Mensagem" required>
+                <button>Enviar Mensagem »</button>
+            </div>
+        </section> 
     </main>
 
-
+    <footer>
+        <div></div>
+    </footer>
 
 </body>
-
 </html>

@@ -1,0 +1,96 @@
+.testimonials-container {
+    position: relative; /* Define o posicionamento relativo para que os elementos filhos (como a película) possam ser posicionados em relação a este container */
+    text-align: center; /* Centraliza o texto dentro do container */
+    overflow: hidden; /* Impede que qualquer conteúdo que ultrapasse os limites do container seja exibido */
+    height: auto; /* Define a altura como automática para se ajustar ao conteúdo */
+    display: flex; /* Adicionado */
+    flex-direction: column; /* Adicionado */
+    align-items: center; /* Adicionado */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Película com a cor */
+.testimonials-container::before {
+    content: ''; /* Cria um elemento de conteúdo vazio para atuar como a película */
+    position: absolute; /* Posiciona este pseudo-elemento independentemente dos outros elementos */
+    top: 0; /* Posiciona no topo do container */
+    left: 0; /* Posiciona à esquerda do container */
+    width: 100%; /* Define a largura para cobrir 100% da largura do container */
+    height: 100%; /* Define a altura para cobrir 100% da altura do container */
+    background-color: rgba(89, 63, 169, 0.29); /* Cor roxa com 29% de opacidade, criando o efeito de película */
+    z-index: 1; /* Define a ordem da película abaixo do conteúdo (elementos com z-index maior irão aparecer acima) */
+}
+
+.testimonials-container > h2{
+    color: #693B6D;
+    text-align: center;
+    font-family: Syne;
+    font-size: 35.029px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.701px;
+}
+
+
+/* Conteúdo da seção */
+.testimonial-card {
+    position: relative; /* Define o conteúdo como relativo ao seu posicionamento padrão (essencial para funcionar com o z-index) */
+    z-index: 2; /* O conteúdo terá um z-index maior que o pseudo-elemento da película, garantindo que ele fique acima da película */
+    width: 600px;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    padding: 2rem 3rem;
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 5px;
+
+}
+.testiomnials-text{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.testiomnials-text > img {
+    height: 35px;
+}
+
+.testiomnials-text > p {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+.testimonial-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    margin-top: 2rem;
+    gap: 2rem;
+
+}
+
+.profile-name{
+    color: #000;
+    font-family: Syne;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.34px;
+}
+
+.profile-role{
+    color: #593FA9;
+    font-family: Syne;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.3px;
+}

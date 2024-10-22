@@ -10,3 +10,8 @@ html, body {
     flex-direction: column; /* Coluna como direção principal */
     /* flex-wrap: wrap; */
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+}
