@@ -1,22 +1,19 @@
 header {
     width: 100%; /* Largura total do header */
-    border: 5px solid rgb(251, 255, 23); /* Borda amarela */
     padding: 10px; /* Espaço interno */
     display: flex; /* Usar flexbox para o header */
     justify-content: center; /* Centraliza o conteúdo */
     align-items: center; /* Alinhamento vertical centralizado */
-    height: 60px; /* Altura fixa */
+    height: 40px; /* Altura fixa */
     background: #693B6D; /* Cor de fundo do header */
 }
 
 .header-container {
     display: grid; /* Usar grid para organizar o conteúdo */
     grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-    max-width: 1800px; /* Largura máxima */
-    margin: 0 auto; /* Centraliza horizontalmente */
     align-items: center; /* Alinha itens verticalmente */
     text-align: center; /* Centraliza texto */
-    /* gap: 480px; Espaço entre colunas (ajuste conforme necessário) */
+    width: 100%;
 }
 
 .header-text {
@@ -36,13 +33,12 @@ header {
 
 .header-contact {
     display: flex; /* Flexbox para alinhamento */
-    justify-content: flex-end; /* Alinha à direita */
+    justify-content: flex-start; /* Alinha à direita */
     align-items: center; /* Alinha verticalmente */
 }
 
 .header-contact-right {
     display: flex; /* Flexbox para alinhamento */
-    gap: 15px; /* Espaço entre itens */
     justify-content: flex-end; /* Alinha à direita */
     align-items: center; /* Alinha verticalmente */
 }
