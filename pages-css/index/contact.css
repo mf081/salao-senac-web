@@ -1,0 +1,135 @@
+.contact-container {
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 30rem;
+    gap: 5rem;
+    height: auto;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    width: 100%;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    width: 628px;
+
+}
+
+.contact-text > h2 {
+    color: #313131;
+    font-family: Syne;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 136.364% */
+}
+
+.contact-text > h1 {
+    color: #593FA9;
+    font-family: Syne;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39.545px; /* 112.987% */
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.contact-text > P {
+    color: #313131;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Direção das colunas */
+    padding: 16px; /* Padding ao redor da div */
+    border: 1px solid #D9B79A; /* Borda da cor especificada */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 570px;
+}
+
+.contact-form > h2 {
+    color: #593FA9;
+    font-family: Syne;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 62.941px; /* 251.765% */
+    width: 570px;
+}
+
+.form-control {
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas nos inputs */
+    margin-bottom: 16px; /* Margem inferior entre os inputs */
+    width: 100%; /* Largura total para o input "Nome" e "Mensagem" */
+}
+
+.input-group {
+    display: flex; /* Usar flexbox para o grupo de inputs */
+    justify-content: space-between; /* Espaçar os inputs igualmente */
+}
+
+.input-group .form-control {
+    flex: 1; /* Faz com que cada input ocupe a mesma quantidade de espaço */
+    margin-right: 8px; /* Margem entre os inputs */
+}
+
+.input-group .form-control:last-child {
+    margin-right: 0; /* Remove a margem do último input */
+}
+
+.mensagem {
+    height: 113px; /* Altura específica para a mensagem */
+}
+
+.form-control::placeholder { /* Seletor corrigido */
+    color: #D9B79A; /* Cor do texto do placeholder */
+    font-family: "Open Sans"; /* Fonte do placeholder */
+    font-size: 16px; /* Tamanho da fonte do placeholder */
+    font-style: normal; /* Estilo da fonte */
+    font-weight: 400; /* Peso da fonte */
+    line-height: normal; /* Altura da linha */
+}
+
+.typography-button {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+}
+
+.contact-number, .contact-whatsapp, .contact-email{
+    height: 46px;
+    border-radius: 36px;
+    background: #593FA9;
+    margin-bottom: 1rem;
+
+}
+
+.contact-number{
+    margin-top: 1rem;
+}
+
+.contact-form > button {
+    color: #FFF;
+    text-align: center;
+    font-family: Syne;
+    font-size: 18.118px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #6A0C93; /* Fundo roxo */
+    height: 70px;
+}  
