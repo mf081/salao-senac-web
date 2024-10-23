@@ -165,47 +165,81 @@
                 </div>
             </div>
         </section>
-        <section class="contact-container" id="contato">
-            <h2>Entre em Contato</h2>
-            <h1>Estamos Aqui Para Ajudar</h1>
-            <div class="contact-form">
-                <input type="text" id="nome" placeholder="Nome" required>
-                <div class="half-inputs">
-                    <input type="tel" id="celular" placeholder="Celular/WhatsApp" required>
-                    <input type="email" id="email" placeholder="Email" required>
-                </div>
-                <textarea id="mensagem" placeholder="Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
+        <section class="contact-container">
+            <div class="contact-text">
+                <h2>
+                    Ficou com alguma dúvida?
+                </h2>
+                <h1>
+                    FALE CONOSCO
+                </h1>
+                <p>
+                    Não perca mais tempo e entre agora em contato com nossa equipe de especialistas. Teremos o maior prazer em ajudar você.
+                </p>
+                <button class="contact-number typography-button">(00) 0000-0000</button>
+                <button class="contact-whatsapp typography-button">(00) 00000-0000</button>
+                <button class="contact-email typography-button">contato@buenobeauty.com.br</button>
             </div>
-        </section>
+            <div class="contact-form">
+                <h2>Formulário de Contato</h2>
+                <input type="text" id="nome" class="form-control" placeholder="Nome Completo" required>
+                <div class="input-group">
+                    <input type="text" id="telefone" class="form-control" placeholder="Celular/Whatsapp" required>
+                    <input type="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+                <input type="text" id="mensagem" class="form-control mensagem" placeholder="Mensagem" required>
+                <button>Enviar Mensagem »</button>
+            </div>
+        </section> 
     </main>
 
     <footer>
         <div class="footer-container">
-            <div class="footer-left">
-                <img src="/img/salaologopnggg.png" alt="Logo">
-                <p>Salão Senac é uma empresa pedagógica que se dedica a oferecer serviços de qualidade e formação profissional no ramo da beleza.</p>
+            <div class="footer-logo">
+                <img src="/img/salaologopnggg.png" alt="Logo SENAC">
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
-            <div class="footer-right">
-                <h3>Serviços</h3>
-                <ul>
-                    <li><a href="#">Lavada Especial</a></li>
-                    <li><a href="#">Progressiva</a></li>
-                    <li><a href="#">Escova</a></li>
-                    <li><a href="#">Luzes</a></li>
-                    <li><a href="#">Depilação</a></li>
-                    <li><a href="#">Coloração</a></li>
-                    <li><a href="#">Sobrancelha</a></li>
-                    <li><a href="#">Selagem</a></li>
-                </ul>
-                <h3>Contatos</h3>
-                <ul>
-                    <li>salão.senac@gmail.com</li>
-                    <li>(81)99999-9999</li>
-                    <li>(81)99999-9999</li>
-                </ul>
+            <div class="footer-services-contacts">
+                <div class="footer-services">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li>Lavada Especial</li>
+                        <li>Corte Feminino</li>
+                        <li>Escova</li>
+                        <li>Luzes</li>
+                        <li>Mais Serviços</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>Fale Conosco</li>
+                        <li>Agendar Horário</li>
+                        <li>
+                            <i class="fas fa-phone"></i> (00) 4002-8922
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i> (00) 00000-0000
+                        </li>
+                    </ul>
+                </div>        
             </div>
         </div>
+        <div class="footer-bar">
+            <div class="footer-bar-left">
+                <p>Salão SENAC © Todos Direitos Reservados</p>
+            </div>
+            <div class="footer-bar-center">
+                <p>
+                    Conheça nossos 
+                    <a href="#">Termos de Uso</a> © 
+                    <a href="#">Política de Privacidade</a>.
+                </p>
+            </div>
+            <div class="footer-bar-right">
+                <p>Desenvolvido por TechStorm</p>
+            </div>
+        </div>        
     </footer>
 
     <script type="module" src="/app.js"></script>
