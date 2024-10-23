@@ -132,4 +132,10 @@
     line-height: normal;
     background-color: #6A0C93; /* Fundo roxo */
     height: 70px;
-}  
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.contact-form > button:hover {
+    background-color: #5A0B7C; /* Cor do fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
