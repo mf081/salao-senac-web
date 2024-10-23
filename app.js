@@ -1,9 +1,12 @@
-// vite.config.js
-import { defineConfig } from 'vite'
+const buttons = document.querySelectorAll('button[id^="agendar"]');
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        window.location.href = '/pages/agendamentos.html';
+    });
+});
 
-export default defineConfig({
-  root: './pages',  // Caminho para o diretório que contém o arquivo HTML
-  build: {
-    outDir: './dist',  // Diretório de saída
-  },
-})
+const agendarButton = document.getElementById('agendar-button');
+
+agendarButton.addEventListener('click', function() {
+    alert('Agendamento concluído!');
+});
