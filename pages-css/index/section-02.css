@@ -115,3 +115,22 @@
   font-weight: 400;
   line-height: 30px; /* 93.75% */
 }
+.card > button {
+  border-radius: 3px;
+  background: #693B6D; /* Cor de fundo padrão */
+  width: 193px;
+  height: 47px;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%; /* 21px */
+  align-self: center; /* Centraliza o botão horizontalmente */
+  transition: background 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+.card > button:hover {
+  background: #6A0C93; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}

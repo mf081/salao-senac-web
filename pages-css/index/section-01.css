@@ -66,3 +66,7 @@
     width: 20px;
     height: auto;
   }
+  .section-01-text button:hover {
+    background: #6A0C93; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}

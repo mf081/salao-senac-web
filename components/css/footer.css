@@ -47,3 +47,12 @@
 .footer-contact ul li i.fa-whatsapp {
     content: "\f232"; /* FontAwesome icon */
 }
+.footer-contact a {
+    text-decoration: none; /* Remove a linha azul dos links */
+    color: inherit; /* Mantém a cor do texto pai (pode ser alterado conforme necessário) */
+    transition: color 0.3s; /* Suaviza a mudança de cor no hover */
+}
+
+.footer-contact a:hover {
+    color: #693B6D; /* Altera a cor do link ao passar o mouse (opcional) */
+}
