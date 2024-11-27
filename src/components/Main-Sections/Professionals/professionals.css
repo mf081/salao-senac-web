@@ -1,0 +1,129 @@
+/* PROFISSIONAIS */
+/* Container principal que engloba o layout */
+.professionals-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f3ef;
+    height: auto;
+}
+
+/* Seção à esquerda */
+.professionals-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('/img/profissionals-img-left.png');
+    background-size: cover;
+    /* background-position: center; */
+    color: white;
+    width: 637px;
+    height: 560px;
+    padding: 2rem;
+}
+
+.professionals-left h2{
+    color: #FFF;
+    text-align: right;
+    font-family: Syne;
+    font-size: 23.07px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.461px;
+}
+.professionals-left > h1{
+    color: #C8A180;
+    text-align: right;
+    font-family: Syne;
+    font-size: 35.029px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.701px;
+
+}
+
+.professionals-left > p{
+    color: #FFF;
+    text-align: right;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.32px;
+
+}
+
+/* Seção à direita */
+.professionals-right {
+    width: calc(100% - 637px); /* Deixa a largura proporcional à sobra da esquerda */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.professional-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 202px;
+    height: 369px;
+    /* border: 5px solid #000;  */
+    gap: 2px;
+
+}
+
+.professional-card > img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.professional-card h3 {
+    color: #313131;
+    font-family: Syne;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    margin: 20px 5px;
+}
+
+.professional-card p {
+    color: #CDA582;
+    font-family: Syne;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.34px;
+    margin: 10px 5px;
+
+
+}
+.professional-card hr {
+    /* width: 202px; */
+    height: 0; /* Não precisamos definir altura quando usar border */
+    border: 1px solid #CDA582; /* Define a cor e espessura da borda */
+    margin: 10px 5px;
+
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center; 
+    padding: 0 10px;    /* Alinha verticalmente */
+}
+
+.social-icons > a {
+    cursor: pointer;
+}

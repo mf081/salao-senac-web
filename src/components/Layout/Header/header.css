@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+header {
+    width: 100%; /* Largura total do header */
+    padding: 10px; /* Espaço interno */
+    display: flex; /* Usar flexbox para o header */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinhamento vertical centralizado */
+    height: 40px; /* Altura fixa */
+    background: #004587; /* Cor de fundo do header */
+}
+
+.header-container {
+    display: grid; /* Usar grid para organizar o conteúdo */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    align-items: center; /* Alinha itens verticalmente */
+    text-align: center; /* Centraliza texto */
+    width: 100%;
+}
+
+.header-text {
+    color: #FFF; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-family: "Inter", sans-serif;
+    font-size: 10px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    line-height: normal; /* Altura da linha */
+    letter-spacing: 0.3px; /* Espaçamento entre letras */
+    margin-right: 25px; /* Margem à direita */
+}
+
+.header-icons {
+    margin-right: 10px; /* Espaço entre ícones */
+}
+
+.header-contact {
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: flex-start; /* Alinha à direita */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.header-contact-right {
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: flex-end; /* Alinha à direita */
+    align-items: center; /* Alinha verticalmente */
+}
