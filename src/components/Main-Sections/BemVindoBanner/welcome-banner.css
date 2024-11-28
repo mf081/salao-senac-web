@@ -1,72 +1,71 @@
 .section-01-container {
-    /* border: 5px solid rgb(255, 36, 218);  */
-    height: auto; /* Altura fixa */
-    display: grid; /* Usar grid para organizar o conteúdo */
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-    padding: 1rem 2rem; /* Padding para evitar que os elementos toquem as bordas */
-    overflow: hidden; /* Impede que os elementos saiam do container */
-    box-sizing: border-box; /* Garante que o padding seja incluído no tamanho total */
-    background-image: url(/img/background-container-01.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-
+  /* border: 5px solid rgb(255, 36, 218);  */
+  height: auto; /* Altura fixa */
+  display: grid; /* Usar grid para organizar o conteúdo */
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+  padding: 1rem 2rem; /* Padding para evitar que os elementos toquem as bordas */
+  overflow: hidden; /* Impede que os elementos saiam do container */
+  box-sizing: border-box; /* Garante que o padding seja incluído no tamanho total */
+  background-image: url(/img/background-container-01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-01-img {
-    display: flex;  /* Utiliza flexbox */
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center; /* Centraliza a imagem verticalmente */
+  display: flex; /* Utiliza flexbox */
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  align-items: center; /* Centraliza a imagem verticalmente */
 }
 
 .section-01-img > img {
-    max-width: 100%; /* Para manter a responsividade da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+  max-width: 100%; /* Para manter a responsividade da imagem */
+  height: auto; /* Mantém a proporção da imagem */
 }
 
-.section-01-text{
-    display: flex;
-    flex-direction: column;
+.section-01-text {
+  display: flex;
+  flex-direction: column;
 }
 .section-01-text h1 {
-    color: #FFF;
-    font-family: "Croissant One";
-    font-size: 46px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  .section-01-text p {
-    color: #FBF5F0;
-    font-family: Montserrat;
-    font-size: 18px;
-    line-height: 1.4;
-    margin-top: 10px;
-  }  
-  
-  .section-01-text button {
-    width: 208px;
-    height: 53px;
-    border-radius: 3px;
-    background: #693B6D;
-    color: #FFF;
-    font-family: 'Syne', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-    margin-top: 20px;
-    gap: 10px;
-  }
-  
-  .section-01-text img.icon {
-    margin-left: 8px;
-    width: 20px;
-    height: auto;
-  }
-  .section-01-text button:hover {
-    background: #6A0C93; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+  color: #fff;
+  font-family: "Croissant One";
+  font-size: 46px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.section-01-text p {
+  color: #fbf5f0;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.section-01-text button {
+  width: 208px;
+  height: 53px;
+  border-radius: 3px;
+  background: #693b6d;
+  color: #fff;
+  font-family: "Syne", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.section-01-text img.icon {
+  margin-left: 8px;
+  width: 20px;
+  height: auto;
+}
+.section-01-text button:hover {
+  background: #6a0c93; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
 }

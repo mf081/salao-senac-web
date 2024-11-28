@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 .section-02-container {
   width: 100%;
   height: auto;
   /* border: 5px solid rgb(112, 248, 85);  */
-  background: #FFF;
+  background: #fff;
 }
 
 .section-02-container > h2 {
@@ -21,7 +21,7 @@
   text-transform: uppercase;
 }
 .section-02-container > h1 {
-  color: #693B6D;
+  color: #693b6d;
   text-align: center;
   font-family: "Croissant One", serif;
   font-size: 35.029px;
@@ -31,7 +31,7 @@
   letter-spacing: 0.701px;
   text-transform: uppercase;
 }
-.section-card-container{
+.section-card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -48,14 +48,13 @@
   border-radius: 10px;
   background-blend-mode: multiply;
   border-radius: 10px;
-  border: 1.5px solid rgb(0, 0, 0); 
+  border: 1.5px solid rgb(0, 0, 0);
   display: flex;
   flex-direction: column; /* Alinhar os elementos verticalmente */
   justify-content: space-between; /* Garante que o botão fique na parte inferior */
-
 }
-.card > h3{
-  color: #693B6D;
+.card > h3 {
+  color: #693b6d;
   text-align: center;
   font-family: "Croissant One", serif;
   font-size: 22px;
@@ -72,9 +71,8 @@
   font-weight: 400;
   line-height: 140%; /* 21px */
   letter-spacing: 0.3px;
-
 }
-.price{
+.price {
   color: #020202;
   text-align: center;
   font-family: Inter;
@@ -84,12 +82,12 @@
   line-height: 140%; /* 25.2px */
   letter-spacing: 0.36px;
 }
-.card > button{
+.card > button {
   border-radius: 3px;
-  background: #693B6D;
+  background: #693b6d;
   width: 193px;
   height: 47px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Montserrat", serif;
   font-size: 14px;
@@ -97,9 +95,8 @@
   font-weight: 600;
   line-height: 140%; /* 21px */
   align-self: center; /* Centraliza o botão horizontalmente */
-
 }
-.section-02-location{
+.section-02-location {
   display: flex;
   flex-direction: row;
   align-items: center; /* Alinha o ícone e o texto verticalmente */
@@ -107,10 +104,8 @@
   /* margin-top: 2rem;
   margin-bottom: 2rem; */
   margin: 2rem 0;
-
-
 }
-.section-02-location > h1{
+.section-02-location > h1 {
   color: #000;
   font-family: "Montserrat", serif;
   font-size: 32px;
@@ -120,10 +115,10 @@
 }
 .card > button {
   border-radius: 3px;
-  background: #693B6D; /* Cor de fundo padrão */
+  background: #693b6d; /* Cor de fundo padrão */
   width: 193px;
   height: 47px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Montserrat", serif;
   font-size: 14px;
@@ -134,6 +129,6 @@
 }
 
 .card > button:hover {
-  background: #6A0C93; /* Cor de fundo ao passar o mouse */
+  background: #6a0c93; /* Cor de fundo ao passar o mouse */
   transform: scale(1.05); /* Aumenta ligeiramente o botão */
 }
