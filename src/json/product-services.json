@@ -1,0 +1,159 @@
+{
+    "categorias": [
+      {
+        "nome": "Transformação de Formas e Texturas dos Cabelos Femininos",
+        "servicos": [
+          {
+            "nome": "Alisamento Capilar com Hidróxidos (Sódio ou Guanidina) + Tratamento com Finalização",
+            "precos": {
+              "curto": 280,
+              "medio": 320,
+              "longo": 360,
+              "extralongo": 400
+            }
+          },
+          {
+            "nome": "Alisamento Ético (Tiol de AMP) + Tratamento com Finalização",
+            "precos": {
+              "curto": 280,
+              "medio": 320,
+              "longo": 360,
+              "extralongo": 400
+            }
+          },
+          {
+            "nome": "Realinhamento Térmico (Tiol de Amônio) + Tratamento com Finalização",
+            "precos": {
+              "curto": 300,
+              "medio": 380,
+              "longo": 400,
+              "extralongo": 420
+            }
+          },
+          {
+            "nome": "Texturização/Soltura de Cachos sem Perder Volume de Raiz + Tratamento com Finalização",
+            "precos": {
+              "curto": 270,
+              "medio": 320,
+              "longo": 370,
+              "extralongo": 400
+            }
+          },
+          {
+            "nome": "Relaxamento + Tratamento",
+            "precos": {
+              "curto": 250,
+              "medio": 300,
+              "longo": 350,
+              "extralongo": 380
+            }
+          },
+          {
+            "nome": "Permanente Afro (Relaxamento + Definição dos Cachos em Cabelos Crespos) com Finalização",
+            "precos": {
+              "curto": 350,
+              "medio": 450,
+              "longo": 500,
+              "extralongo": 550
+            }
+          },
+          {
+            "nome": "Permanente Convencional (Formação de Cachos ou Ondas) com Finalização",
+            "precos": {
+              "curto": 300,
+              "medio": 400,
+              "longo": 450,
+              "extralongo": 500
+            }
+          },
+          {
+            "nome": "Desintoxicação Retorno dos Cachos (Tiol de AMP) + Tratamento com Finalização",
+            "precos": {
+              "curto": 350,
+              "medio": 450,
+              "longo": 500,
+              "extralongo": 550
+            }
+          }
+        ]
+      },
+      {
+        "nome": "Epilação com Luz Pulsada",
+        "servicos": [
+          {
+            "nome": "Pct – Fotoepilação – 1/2 Perna (Ambas as Pernas)",
+            "preco": 900
+          },
+          {
+            "nome": "Pct – Fotoepilação – Abdômen (Unissex)",
+            "preco": 600
+          },
+          {
+            "nome": "Pct – Fotoepilação – Axilas",
+            "preco": 534
+          },
+          {
+            "nome": "Pct – Fotoepilação – Barba",
+            "preco": 550
+          },
+          {
+            "nome": "Pct – Fotoepilação – Braços Completos",
+            "preco": 700
+          },
+          {
+            "nome": "Pct – Fotoepilação – Buço ou Bigode",
+            "preco": 400
+          },
+          {
+            "nome": "Pct – Fotoepilação – Coxas Completas",
+            "preco": 900
+          },
+          {
+            "nome": "Pct – Fotoepilação – Glúteos",
+            "preco": 700
+          },
+          {
+            "nome": "Pct – Fotoepilação – Lateral Anal",
+            "preco": 474
+          },
+          {
+            "nome": "Pct – Fotoepilação – Nuca",
+            "preco": 450
+          },
+          {
+            "nome": "Pct – Fotoepilação – Orelhas",
+            "preco": 400
+          },
+          {
+            "nome": "Pct – Fotoepilação – Pernas Completas",
+            "preco": 1300
+          },
+          {
+            "nome": "Pct – Fotoepilação – Pescoço",
+            "preco": 534
+          },
+          {
+            "nome": "Pct – Fotoepilação – Região Lombar",
+            "preco": 534
+          },
+          {
+            "nome": "Pct – Fotoepilação – Região Pubiana / Virilha",
+            "preco": 550
+          },
+          {
+            "nome": "Pct – Fotoepilação – Rosto",
+            "preco": 534
+          },
+          {
+            "nome": "Pct – Fotoepilação – Queixo",
+            "preco": 500
+          },
+          {
+            "nome": "Pct – Fotoepilação – Tórax",
+            "preco": 550
+          }
+        ]
+      }
+    ]
+  }
+  
