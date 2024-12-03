@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import "./contact.css";
+import "./Contact.css";
 
 export function ContactContainer() {
   // Renomeando para PascalCase
@@ -18,7 +18,7 @@ export function ContactContainer() {
           className="contact-number typography-button"
           onClick={() => (window.location.href = "tel:+550000000000")}
         >
-          (00) 0000-0000
+          (81)3413.6688
         </button>
         <button
           className="contact-whatsapp typography-button"
@@ -29,10 +29,10 @@ export function ContactContainer() {
         <button
           className="contact-email typography-button"
           onClick={() =>
-            (window.location.href = "mailto:contato@buenobeauty.com.br")
+            (window.location.href = "mailto:senac@pe.senac.br")
           }
         >
-          contato@buenobeauty.com.br
+          mailto:senac@pe.senac.br
         </button>
       </div>
       <div className="contact-form">

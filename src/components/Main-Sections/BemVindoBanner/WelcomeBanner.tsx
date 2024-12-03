@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./welcome-banner.css";
+import "./WelcomeBanner.css";
 
 export function WelcomeBanner() {
   // Renomeando para PascalCase

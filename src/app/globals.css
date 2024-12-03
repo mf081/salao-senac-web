@@ -1,6 +1,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --blue-senac-color:  #004587;
+  --orange-senac-color: #f7931d;
+  --orange-figma-color: #D9B79A;
+
 }
 
 @media (prefers-color-scheme: dark) {

@@ -28,7 +28,7 @@
 
 
 .footer-bar-center a {
-    color: #C377CA;
+    color:var(--blue-senac-color);
     font-family: "Montserrat", serif;
     font-size: 14px;
     font-style: normal;

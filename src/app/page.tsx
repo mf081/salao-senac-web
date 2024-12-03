@@ -1,10 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { WelcomeBanner } from "@/components/Main-Sections/BemVindoBanner/welcome-banner";
-import { ServicesSection } from "@/components/Main-Sections/Catalogo/catalog";
-import { ProfessionalsSection } from "@/components/Main-Sections/Profissionais/professionals";
-import { TestimonialsContainer } from "@/components/Main-Sections/Depoimentos/testimonials";
-import { ContactContainer } from "@/components/Main-Sections/Contato/contact";
+import { WelcomeBanner } from "@/components/Main-Sections/BemVindoBanner/WelcomeBanner";
+import { ServicesSection } from "@/components/Main-Sections/Catalogo/Catalog";
+import { ProfessionalsSection } from "@/components/Main-Sections/Profissionais/Professionals";
+import { TestimonialsContainer } from "@/components/Main-Sections/Depoimentos/Testimonials";
+import { ContactContainer } from "@/components/Main-Sections/Contato/Contact";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         {/* Conteúdo vazio */}
         <WelcomeBanner></WelcomeBanner>
         <ServicesSection></ServicesSection>
-        <ProfessionalsSection></ProfessionalsSection>
+        {/* <ProfessionalsSection></ProfessionalsSection> */}
         <TestimonialsContainer></TestimonialsContainer>
         <ContactContainer></ContactContainer>
         
