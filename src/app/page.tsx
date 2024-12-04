@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <div>
       <main>
-        {/* Conteúdo vazio */}
         <WelcomeBanner></WelcomeBanner>
         <ServicesSection></ServicesSection>
         {/* <ProfessionalsSection></ProfessionalsSection> */}
