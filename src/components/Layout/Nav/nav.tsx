@@ -7,13 +7,14 @@ export function Nav () {
         <div className="nav-container">
             <div className="nav-img">
                 <a href="/index.html">
-                    <img src="/img/salaologopnggg.png" alt="Logo"/>
+                    <img src="/img/logo-salao-senac-preta.png" alt="Logo"/>
                 </a>
             </div>
             <div className="nav-right">
-                <a href="#home" className="nav-text">HOME</a>
-                <a href="#sobre-nos" className="nav-text">SOBRE NÓS</a>
-                <a href="#contato" className="nav-text">CONTATO</a>
+                <a href="#home" ><button className="nav-button">HOME</button></a>
+                <a href="#contato" ><button className="nav-button">AGENDAR HORÁRIO</button></a>
+                <a href="#sobre-nos" ><button className="nav-button">SOBRE NÓS</button></a>
+                <a href="#contato" ><button className="nav-button">CONTATO</button></a>
             </div>
         </div>
     </nav>  

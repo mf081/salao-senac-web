@@ -2,7 +2,7 @@
 
 
 nav {
-    background: #2D2C2C; /* Cor de fundo do nav */
+    background: #ffffff; /* Cor de fundo do nav */
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05); /* Sombra */
     width: 100%; /* Largura total */
     /* border: 5px solid rgb(23, 255, 232); Borda verde */
@@ -35,8 +35,8 @@ nav {
     align-items: center; /* Alinha verticalmente */
 }
 
-.nav-text {
-    color: #FFF; /* Cor do texto */
+.nav-button {
+    color: #000000; /* Cor do texto */
     text-align: center; /* Centraliza texto */
     font-family: Montserrat; /* Fonte do texto */
     font-size: 15px; /* Tamanho da fonte */
@@ -45,5 +45,18 @@ nav {
     line-height: normal; /* Altura da linha */
     letter-spacing: 0.3px; /* Espaçamento entre letras */
     text-transform: uppercase; /* Transforma texto em maiúsculas */
-    margin-left: 90px; /* Margem à esquerda */
+    margin-left: 50px; /* Margem à esquerda */
+    background-color: transparent; /* Remove o fundo */
+    border: 2px solid #F7931D; /* Borda com a cor #F7931D */
+    padding: 10px 20px; /* Adiciona um pouco de espaço dentro do botão */
+    cursor: pointer; /* Altera o cursor quando passa sobre o botão */
+    border-radius: 10px;
+    display: flex; /* Alinha os itens dentro do botão em linha */
+    align-items: center; /* Alinha o texto verticalmente no centro */
+    justify-content: center; /* Alinha o texto horizontalmente no centro */
+}
+
+button:hover {
+    background-color: #F7931D; /* Adiciona cor de fundo quando o botão é passado */
+    color: #ffffff; /* Altera a cor do texto para branco no hover */
 }
