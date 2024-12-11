@@ -62,12 +62,7 @@ export function ServicesSection() {
           <p className="price">R$ 123.00</p>
         </div>
       </div>
-      <div className="section-02-location">
-        <img src="/img/icons/place-icon.png" alt="Localização" />
-        <h1>
-          Pernambuco - Av. Visconde de Suassuna, 500 - Santo Amaro - Recife
-        </h1>
-      </div>
+    
     </section>
   );
 }

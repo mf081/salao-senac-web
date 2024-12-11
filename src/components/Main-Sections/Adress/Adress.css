@@ -1,0 +1,105 @@
+
+.adress-section{
+    width: 100%;
+    height: 90vh;
+    background: rgb(255, 255, 255);
+    border-top: 1px solid var(--orange-senac-color);
+    border-bottom: 1px solid var(--orange-senac-color);
+    margin-top:80px
+}
+.container-adress{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding:20px;
+}
+.container-adress > h2{
+    color:var(--orange-senac-color);
+    font-family: "Croissant One";
+    font-size: 48px;
+}
+.icone-adress{
+    width: 50px;
+}
+.container-endereco{
+    color:black;
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: 400 !important;
+    
+}
+.titulo-adress{
+    color: #004587;
+    font-family: "Croissant One";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39.545px; /* 112.987% */
+    letter-spacing: 0.7px;
+}
+.text-adress{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;/* 125% */
+}
+.paragrafo-adress{
+    color: #313131;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 600px;
+}
+.adress-principal{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.funcionamento-adress{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 20px
+}
+.fale-conosco-adress{
+    margin-top: 20px;
+}
+.container-button-adress{
+    display:flex;
+    flex-direction:column;
+    gap:5px
+}
+.container-img-adress{
+    margin-top:50px
+}
+.container-img-adress >img {
+    border-radius: 5px;
+}
+.container-img-adress > img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+} 
+.contact-number,
+.contact-whatsapp,
+.contact-email {
+  height: 46px;
+  border-radius: 36px;
+  background: var(--blue-senac-color);
+  margin-bottom: 1rem;
+  width: 300px;
+}
+
+.typography-button {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
