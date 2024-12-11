@@ -13,8 +13,8 @@ export function Nav () {
             <div className="nav-right">
                 <a href="#home" ><button className="nav-button">HOME</button></a>
                 <a href="#contato" ><button className="nav-button">AGENDAR HORÁRIO</button></a>
-                <a href="#sobre-nos" ><button className="nav-button">SOBRE NÓS</button></a>
                 <a href="#contato" ><button className="nav-button">CONTATO</button></a>
+                <a href="#sobre-nos" ><button className="nav-button">SOBRE NÓS</button></a>
             </div>
         </div>
     </nav>  
