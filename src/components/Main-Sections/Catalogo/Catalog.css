@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .section-02-container {
   width: 100%;
   height: auto;
   background: #fff;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 .section-02-container > h2 {
@@ -34,8 +35,8 @@
 
 .section-card-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+  gap: 15px; /* Reduziu o espaçamento entre os cards */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -43,10 +44,10 @@
 .card {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 15px; /* Reduziu o padding */
   text-align: center;
   transition: transform 0.3s ease;
-  height: 350px;
+  height: 300px; /* Reduziu a altura do card */
   border-radius: 10px;
   background-blend-mode: multiply;
   border: 1.5px solid rgb(0, 0, 0);
@@ -59,14 +60,12 @@
   color: var(--blue-senac-color);
   text-align: center;
   font-family: "Croissant One", serif;
-  font-size: 22px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 30.8px */
   letter-spacing: 0.44px;
 }
-
-
 
 .price {
   color: #020202;
@@ -97,20 +96,36 @@
 }
 
 .card:hover {
-  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+  transform: scale(1.05); /* Aumenta ligeiramente o card */
   cursor: pointer;
 }  
 
-.text-card-categories-container{
+.text-card-categories-container {
   display: flex;
   justify-content: center;
-  
+  position: relative; /* Tornando este container relativo para que as setas possam ser posicionadas em relação a ele */
+  width: 100%; /* Assegura que o container ocupe toda a largura disponível */
+}
+
+.arrow-img {
+  position: absolute; /* Posiciona as setas de forma absoluta em relação ao seu contêiner */
+  top: 50%; /* Posiciona as setas verticalmente no meio */
+  transform: translateY(-50%); /* Centraliza as setas verticalmente */
+  cursor: pointer;
 }
 
 .arrow-img:hover {
-  transform: scale(1.05); /* Aumenta ligeiramente o botão */
-  cursor: pointer;
-}  
+  transform: scale(1.05) translateY(-50%); /* Aumenta ligeiramente a seta ao passar o mouse */
+}
+
+/* Definindo a posição das setas */
+.arrow-img:first-child {
+  left: 350px; /* Define a seta esquerda com um pequeno espaço da borda esquerda */
+}
+
+.arrow-img:last-child {
+  right: 350px; /* Define a seta direita com um pequeno espaço da borda direita */
+}
 
 .text-card-categories {
   color: #000;
@@ -127,4 +142,15 @@
   margin-right: 100px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.description {
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 21px */
+  letter-spacing: 0.3px;
 }
