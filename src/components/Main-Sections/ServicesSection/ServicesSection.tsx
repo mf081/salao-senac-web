@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useCallback } from "react";
-import "./Catalog.css";
+import "./ServicesSection.css";
 import servicesData from '/workspaces/salao-senac-web/src/json/product-services.json';
 
 type Precos = {

@@ -1,11 +1,7 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import { WelcomeBanner } from "@/components/Main-Sections/BemVindoBanner/WelcomeBanner";
-import { ServicesSection } from "@/components/Main-Sections/Catalogo/Catalog";
-import { ProfessionalsSection } from "@/components/Main-Sections/Profissionais/Professionals";
-import { TestimonialsContainer } from "@/components/Main-Sections/Depoimentos/Testimonials";
-import { ContactContainer } from "@/components/Main-Sections/Contato/Contact";
-import { AdressSection } from "@/components/Main-Sections/Adress/Adress";
+import { WelcomeBanner } from "@/components/Main-Sections/WelcomeBanner/WelcomeBanner";
+import { ServicesSection } from "@/components/Main-Sections/ServicesSection/ServicesSection";
+import { AdressSection } from "@/components/Main-Sections/AdressSection/AdressSection";
+import { AboutUsSection } from "@/components/Main-Sections/AboutUsSection/AboutUsSection";
 
 export default function Home() {
   return (
@@ -13,9 +9,8 @@ export default function Home() {
       <main>
         <WelcomeBanner></WelcomeBanner>
         <ServicesSection></ServicesSection>
-        {/* <ProfessionalsSection></ProfessionalsSection> */}
         <AdressSection></AdressSection>
-        <ContactContainer></ContactContainer>
+        <AboutUsSection></AboutUsSection>
         
       </main>
     </div>

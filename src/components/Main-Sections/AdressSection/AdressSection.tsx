@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./Adress.css";
+import "./AdressSection.css";
 
 export function AdressSection(){
     return(

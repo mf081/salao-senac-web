@@ -6,6 +6,7 @@
   --orange-figma-color: #D9B79A;
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne&display=swap');
 
 @media (prefers-color-scheme: dark) {
   :root {
