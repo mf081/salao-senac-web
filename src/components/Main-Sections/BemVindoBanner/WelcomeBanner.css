@@ -15,11 +15,13 @@
   display: flex; /* Utiliza flexbox */
   justify-content: center; /* Centraliza a imagem horizontalmente */
   align-items: center; /* Centraliza a imagem verticalmente */
+  
 }
 
 .section-01-img > img {
   max-width: 100%; /* Para manter a responsividade da imagem */
   height: auto; /* Mantém a proporção da imagem */
+
 }
 
 .section-01-text {
@@ -45,7 +47,7 @@
   width: 208px;
   height: 53px;
   border-radius: 3px;
-  background: var(--blue-senac-color);
+  background: var(--orange-senac-color);
   color: #fff;
   font-family: "Syne", sans-serif;
   font-size: 16px;

@@ -101,23 +101,9 @@
   line-height: normal; /* Altura da linha */
 }
 
-.typography-button {
-  color: #fff;
-  font-family: Lato;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px; /* 166.667% */
-}
 
-.contact-number,
-.contact-whatsapp,
-.contact-email {
-  height: 46px;
-  border-radius: 36px;
-  background: #593fa9;
-  margin-bottom: 1rem;
-}
+
+
 
 .contact-number {
   margin-top: 1rem;

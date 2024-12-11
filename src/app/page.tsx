@@ -5,6 +5,7 @@ import { ServicesSection } from "@/components/Main-Sections/Catalogo/Catalog";
 import { ProfessionalsSection } from "@/components/Main-Sections/Profissionais/Professionals";
 import { TestimonialsContainer } from "@/components/Main-Sections/Depoimentos/Testimonials";
 import { ContactContainer } from "@/components/Main-Sections/Contato/Contact";
+import { AdressSection } from "@/components/Main-Sections/Adress/Adress";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <WelcomeBanner></WelcomeBanner>
         <ServicesSection></ServicesSection>
         {/* <ProfessionalsSection></ProfessionalsSection> */}
-        <TestimonialsContainer></TestimonialsContainer>
+        <AdressSection></AdressSection>
         <ContactContainer></ContactContainer>
         
       </main>
