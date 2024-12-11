@@ -54,6 +54,9 @@ nav {
     display: flex; /* Alinha os itens dentro do botão em linha */
     align-items: center; /* Alinha o texto verticalmente no centro */
     justify-content: center; /* Alinha o texto horizontalmente no centro */
+    white-space: nowrap; /* Deixa o texto em uma unica linha, sem quebrar */
+
+    
 }
 
 button:hover {
