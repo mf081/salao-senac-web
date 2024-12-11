@@ -6,6 +6,11 @@ export function ServicesSection() {
     <section className="section-02-container">
       <h2>Serviços</h2>
       <h1>Ofertados</h1>
+      <div className="text-card-categories-container">
+      <img className="arrow-img"  src="/img/icons/icon-seta-esquerda.png" width="100px" height="100px" />
+      <h3 className="text-card-categories">Transformação de Formas e Texturas dos Cabelos Femininos</h3>
+      <img className="arrow-img" src="/img/icons/icon-seta-direita.png" width="100px" height="100px" />
+      </div>
       <div className="section-card-container">
         <div className="card">
           <h3>Lavada Especial</h3>

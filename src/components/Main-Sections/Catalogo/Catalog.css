@@ -107,3 +107,31 @@
   transform: scale(1.05); /* Aumenta ligeiramente o botão */
   cursor: pointer;
 }  
+
+.text-card-categories-container{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.arrow-img:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+  cursor: pointer;
+}  
+
+.text-card-categories {
+  color: #000;
+  text-align: center;
+  font-family: "Croissant One";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  max-width: 305px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
