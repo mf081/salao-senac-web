@@ -9,8 +9,8 @@
 .card-avaliacao{
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 32%;
+    width: 27%;
+    height: 27%;
     border: 1px solid rgba(128, 128, 128, 0.308);
     justify-content: center;
     align-items: flex-start;
@@ -20,12 +20,33 @@
     border-radius: 10px;
     gap: 8px;
 }
+.card-avaliacao:hover{
+    border: 1px solid rgba(128, 128, 128, 0.801);
+    transition: ease-in-out 300ms;
+
+
+}
+.card-avaliacao > h4{
+    font-family: "Croissant One", serif;
+    font-size: 24px;
+}
+.card-avaliacao > p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
 .img-avaliacao{
     border-radius: 100%;
     display: flex;
     padding-top: 5px;
 }
-
+.img-avaliacao > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    font-family: "Croissant One", serif;
+    font-size: 16px;
+}
 .img-avaliacao > img{
     border-radius: 100%;
 }
@@ -37,7 +58,7 @@
 
 }
 .container-about-us > h3{
-    font-family: 'Croissant';
+    font-family: "Croissant One", serif;
     font-size: 48px;
     color: var(--orange-senac-color);
 
@@ -47,4 +68,18 @@
     font-size: 16px;
     font-weight: 400;
     
+}
+
+.star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    margin-right: 2px;
+}
+
+/* Estrela ativa (amarela) */
+.star.active {
+    background-color: var(--blue-senac-color);
 }

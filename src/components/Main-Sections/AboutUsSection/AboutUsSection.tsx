@@ -3,14 +3,23 @@
 import * as React from "react";
 import "./AboutUsSection.css";
 
+
 export function AboutUsSection() {
+  // Renomeando para PascalCase
   return (
     <section className="section-about-us">
       <div className="card-avaliacao">
+        <div className="star-rating">
+          <div className="star active"></div>
+          <div className="star active"></div>
+          <div className="star active"></div>
+          <div className="star active"></div>
+          <div className="star active"></div>
+        </div>
         <h4>Incrivel!</h4>
         <p>O atendimento no Salão Senac foi impecável! Agendei pelo site e tudo foi muito rápido. O serviço é de qualidade, com profissionais atenciosos. Super recomendo!</p>
         <div className="img-avaliacao">
-          <img src="/img/moca-avaliacao.png" alt="" /><strong>Rafaella Lima</strong>
+          <img src="/img/moca-avaliacao.png" alt="" /><p><strong>Rafaella Lima</strong></p>
         </div>
       </div>
       <div className="container-about-us">
