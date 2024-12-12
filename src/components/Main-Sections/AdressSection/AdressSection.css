@@ -55,6 +55,7 @@
     font-weight: 400;
     line-height: normal;
     width: 600px;
+    margin-bottom: 10px;
 }
 .adress-principal{
     display:flex;
@@ -85,21 +86,24 @@
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 } 
-.contact-number,
-.contact-whatsapp,
-.contact-email {
-  height: 46px;
-  border-radius: 36px;
-  background: var(--blue-senac-color);
-  margin-bottom: 1rem;
-  width: 300px;
-}
-
-.typography-button {
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 166.667% */
-}
+.contactt-adress {
+    height: 46px;
+    border-radius: 36px;
+    background: var(--blue-senac-color);
+    margin-bottom: 1rem;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .contactt-adress {
+      color: white;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 166.667% */
+  }
+  

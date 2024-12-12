@@ -22,9 +22,9 @@ export function AdressSection(){
                         <h3 className="titulo-adress">Fale conosco</h3>
                         <p className="paragrafo-adress">Não perca mais tempo e entre agora em contato com nossa equipe de especialistas. Teremos o maior prazer em ajudar você.</p>
                         <div className="container-button-adress">
-                            <button className="contact-number typography-button">(81)3413.6688</button>
-                            <button className="contact-whatsapp typography-button">(00) 00000-0000</button>
-                            <button className="contact-email typography-button">contato@buenobeauty.com.br</button>
+                            <span className="contactt-adress">(81)3413.6688</span>
+                            <span className="contactt-adress">(00) 00000-0000</span>
+                            <span className="contactt-adress">contato@buenobeauty.com.br</span>
                         </div>
                     </div>
                 </div>
