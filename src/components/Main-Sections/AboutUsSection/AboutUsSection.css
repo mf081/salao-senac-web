@@ -4,6 +4,9 @@
     background: white;
     color: black;
     display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--orange-senac-color);
+    padding-top: 80px;  
 
 }
 .card-avaliacao{
@@ -16,14 +19,16 @@
     align-items: flex-start;
     margin-left: 100px;
     padding-left: 20px;
+    margin-top: 120px;
     padding: 30px;
     border-radius: 10px;
     gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card-avaliacao:hover{
-    border: 1px solid rgba(128, 128, 128, 0.801);
-    transition: ease-in-out 300ms;
-
+    transform: scale(1.1);  /* Aumenta o tamanho do card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Sombra mais intensa */
 
 }
 .card-avaliacao > h4{
@@ -61,12 +66,17 @@
     font-family: "Croissant One", serif;
     font-size: 48px;
     color: var(--orange-senac-color);
+    margin-bottom: 30px;
 
 }
 .container-about-us > p{
+    color: #0D0D0D;
     font-family: Montserrat;
     font-size: 16px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 30px; /* 187.5% */
+
     
 }
 
