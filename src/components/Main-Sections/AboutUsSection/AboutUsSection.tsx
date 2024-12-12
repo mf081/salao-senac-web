@@ -2,20 +2,11 @@
 
 import * as React from "react";
 import "./AboutUsSection.css";
-import StarRatings from 'react-star-ratings';
 
 export function AboutUsSection() {
-  // Renomeando para PascalCase
   return (
     <section className="section-about-us">
       <div className="card-avaliacao">
-        <StarRatings
-          rating= {5}
-          starDimension="18px"
-          starSpacing="2px"
-          numberOfStars={5}
-          name='rating'
-        />
         <h4>Incrivel!</h4>
         <p>O atendimento no Salão Senac foi impecável! Agendei pelo site e tudo foi muito rápido. O serviço é de qualidade, com profissionais atenciosos. Super recomendo!</p>
         <div className="img-avaliacao">

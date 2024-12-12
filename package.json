@@ -12,14 +12,12 @@
     "next": "^15.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-star-ratings": "^2.3.0",
     "typeorm": "^0.3.20"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@types/react-star-ratings": "^2.3.3",
     "eslint": "^8",
     "eslint-config-next": "15.0.3",
     "typescript": "^5"
