@@ -62,4 +62,5 @@ nav {
 button:hover {
     background-color: #F7931D; /* Adiciona cor de fundo quando o botão é passado */
     color: #ffffff; /* Altera a cor do texto para branco no hover */
+    transition: 500ms;
 }
