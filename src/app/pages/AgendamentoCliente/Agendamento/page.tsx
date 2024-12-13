@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default function Agendamento(){
+export default function Login (){
     return(
         <div></div>
     );

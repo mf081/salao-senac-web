@@ -15,7 +15,7 @@ export function Nav() {
                     <Link href="/">
                         <button className="nav-button">HOME</button>
                     </Link>
-                    <Link href="pages/agendamento">
+                    <Link href="pages/LoginCliente/Login">
                         <button className="nav-button">AGENDAR HORÁRIO</button>
                     </Link>
                     <a href="#AdressSection">
