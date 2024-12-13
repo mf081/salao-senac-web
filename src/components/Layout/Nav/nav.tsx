@@ -1,8 +1,17 @@
+'use client';
+
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import './nav.css';
 import Link from 'next/link';
 
 export function Nav() {
+    const router = useRouter();
+
+    const handleAgendarClick = () => {
+        router.push('/pages/LoginCliente/Login');
+    };
+
     return (
         <nav>
             <div className="nav-container">
@@ -15,9 +24,9 @@ export function Nav() {
                     <Link href="/">
                         <button className="nav-button">HOME</button>
                     </Link>
-                    <Link href="pages/LoginCliente/Login">
-                        <button className="nav-button">AGENDAR HORÁRIO</button>
-                    </Link>
+                    <button className="nav-button" onClick={handleAgendarClick}>
+                        AGENDAR HORÁRIO
+                    </button>
                     <a href="#AdressSection">
                         <button className="nav-button">CONTATO</button>
                     </a>

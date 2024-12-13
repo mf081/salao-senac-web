@@ -1,8 +1,11 @@
+import CustomInput from '@/components/UI/CustomInput/CustomInput';
 import React from 'react';
 
 
 export default function Login (){
     return(
-        <main></main>
+        <main>
+            <CustomInput></CustomInput>
+        </main>
     );
 }
