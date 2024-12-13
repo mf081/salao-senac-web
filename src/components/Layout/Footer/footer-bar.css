@@ -2,76 +2,22 @@
 
 
 .footer-bar {
-    background-color: #555; /* Cor de fundo do footer bar */
-    color: #fff;
-    padding: 10px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Três colunas de tamanho igual */
-    align-items: center;
-    text-align: center; /* Alinha os textos no centro de cada coluna */
-    font-size: 14px;
+  width: 100%;
+  background-color: var(--blue-senac-color);
+  height: 5vh;
+  color: white;
+  font-family: 'Montserrat';
+  font-size:12px;
+  font-weight: 400;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+
 }
-
-.footer-bar-left, .footer-bar-center, .footer-bar-right {
-    padding: 5px;
-}
-
-.footer-bar-center > p {
-    color: #FFF;
-    font-family: "Montserrat", serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 214.286% */
-}
-
-
-
-.footer-bar-center a {
-    color:var(--blue-senac-color);
-    font-family: "Montserrat", serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;    
-}
-
-
-
-.footer-bar-center a:hover {
-    text-decoration: underline;
-}
-
-.footer-bar-right {
-    text-align: right; /* Alinha o texto à direita */
-}
-
-.footer-bar-right p {
-    color: #FFF;
-    text-align: right;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; 
-}
-
-.footer-bar-left {
-    text-align: left; /* Alinha o texto à esquerda */
-}
-.footer-bar-left > p{
-    color: #FFF;
-    font-family: "Montserrat", serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 214.286% */
-}
-.footer-container a {
-    text-decoration: none; /* Remove a linha azul dos links */
-    color: inherit; /* Mantém a cor do texto pai (pode ser alterado conforme necessário) */
-    transition: color 0.3s; /* Suaviza a mudança de cor no hover */
-}
-
-.footer-container a:hover {
-    color: #693B6D; /* Altera a cor do link ao passar o mouse (opcional) */
+.text-footer-bar {
+    display: flex;
+    flex-direction: row;
+    
 }

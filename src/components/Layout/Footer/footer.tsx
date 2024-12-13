@@ -36,20 +36,11 @@ export function Footer () {
             </div>
         </div>
         <div className="footer-bar">
-            <div className="footer-bar-left">
-                <p>Salão SENAC © Todos Direitos Reservados</p>
+            <div className='text-footer-bar'>
+                <p> © 2024 Salão SENAC - Todos Direitos Reservados </p>
             </div>
-            <div className="footer-bar-center">
-                <p>
-                    Conheça nossos 
-                    <a href="#">Termos de Uso</a> © 
-                    <a href="#">Política de Privacidade</a>.
-                </p>
-            </div>
-            <div className="footer-bar-right">
-                <p>Desenvolvido por TechStorm</p>
-            </div>
-        </div>        
+          
+        </div>
     </footer>
     );
 }
