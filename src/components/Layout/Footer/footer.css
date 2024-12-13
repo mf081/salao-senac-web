@@ -81,3 +81,13 @@
     font-weight: 500;
     line-height: 30px; /* 250% */
 }
+
+.footer-container-last-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #004587;
+    padding: 2rem 15rem;
+}
