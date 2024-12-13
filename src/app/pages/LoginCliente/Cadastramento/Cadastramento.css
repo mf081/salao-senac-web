@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .main-content {
+    display: flex;
+    margin: 20px;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .left-section .image {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .right-section {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  h1 {
+    color: #012f62;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-cadastrar {
+    background-color: #ffa500;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-google {
+    text-align: center;
+  }
+  
+  .login-google p {
+    margin: 10px 0;
+  }
+  
+  .btn-google {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }  
