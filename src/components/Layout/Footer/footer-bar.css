@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   padding-left: 50px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.233); /* Garantir que a borda seja visível */
 
 }
 .text-footer-bar {

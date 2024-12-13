@@ -7,7 +7,7 @@ import "./AboutUsSection.css";
 export function AboutUsSection() {
   // Renomeando para PascalCase
   return (
-    <section className="section-about-us">
+    <section id="AboutUsSection" className="section-about-us">
       <div className="card-avaliacao">
         <div className="star-rating">
           <div className="star active"></div>

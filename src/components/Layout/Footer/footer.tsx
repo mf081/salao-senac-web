@@ -6,31 +6,27 @@ export function Footer () {
         <footer>
         <div className="footer-container">
             <div className="footer-logo">
-                <img src="/img/salaologopnggg.png" alt="Logo SENAC"/>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <img src="/img/logo-salao-senac-branca.png" alt="Logo SENAC"/>
+                <p className='text-image-p'>“Beleza e aprendizado em harmonia: transforme seu futuro no Salão Empresa Pedagógica do Senac Recife”.</p>
             </div>
             <div className="footer-services-contacts">
                 <div className="footer-services">
-                    <h3>Serviços</h3>
+                    <h3 className='footer-title'>Navegação</h3>
                     <ul>
-                        <li>Lavada Especial</li>
-                        <li>Corte Feminino</li>
-                        <li>Escova</li>
-                        <li>Luzes</li>
-                        <li>Mais Serviços</li>
+                        <li className='services-footer-li'>Home</li>
+                        <li className='services-footer-li'>Sobre Nos</li>
+                        <li className='services-footer-li'>Contato</li>
+                        <li className='services-footer-li'>Agendar Hórario</li>
+                        <li className='services-footer-li'></li>
                     </ul>
                 </div>
                 <div className="footer-contact">
-                    <h3>Contato</h3>
+                    <h3 className='footer-title'>Serviços</h3>
                     <ul>
-                        <li>Fale Conosco</li>
-                        <li>Agendar Horário</li>
-                        <li>
-                            <i className="fas fa-phone"></i> (00) 4002-8922
-                        </li>
-                        <li>
-                            <i className="fa-brands fa-whatsapp"></i> (00) 00000-0000
-                        </li>
+                        <li className='services-footer-li'>Corte Feminino</li>
+                        <li className='services-footer-li'>Escova</li>
+                        <li className='services-footer-li'>Luzes </li>
+                        <li className='services-footer-li'><a>Mais serviços</a></li>
                     </ul>
                 </div>        
             </div>

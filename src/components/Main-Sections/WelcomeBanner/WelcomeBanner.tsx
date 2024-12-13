@@ -4,7 +4,7 @@ import "./WelcomeBanner.css";
 export function WelcomeBanner() {
   // Renomeando para PascalCase
   return (
-    <section className="section-01-container">
+    <section id="WelcomeBanner" className="section-01-container">
       <div className="section-01-img">
         <img
           src="/img/muiecomquadrado.png"

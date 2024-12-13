@@ -43,7 +43,7 @@ export function ServicesSection() {
 
   // Componente de navegação de categorias
   const CategoryNavigation = () => (
-    <div className="text-card-categories-container">
+    <div id="ServicesSection" className="text-card-categories-container">
       <img
         className="arrow-img"
         src="/img/icons/icon-seta-esquerda.png"
