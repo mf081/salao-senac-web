@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-export default function (){
+export default function ResumoAgendado (){
     return(
-        <div></div>
+        <main></main>
     );
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-export default function (){
+export default function Login (){
     return(
-        <div></div>
+        <main></main>
     );
 }
