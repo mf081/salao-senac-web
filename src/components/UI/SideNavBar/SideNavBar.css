@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sen:wght@400..800&display=swap');
+
+.sidebar {
+    background-color: #004587; /* Azul */
+    width: 339px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .user-profile {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .user-profile img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border-color: 5px solid var(--orange-senac-color);
+  }
+  
+  .button-side-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-side-bar {
+    background-color: #004587; 
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    height: 43.659px;
+    width: 202.817px;
+  
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 125% */
+  }
+  
+  span {
+    color: #FFF;
+    text-align: center;
+    font-family: "Croissant One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 125% */
+  }
+  
+  button:hover{
+    background: rgba(217, 217, 217, 0.61);
+  }
+  
+  .buttons-side-bar-icons {
+    width: 33px;
+    height: 33px;
+  
+  }

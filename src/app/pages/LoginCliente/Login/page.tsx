@@ -35,7 +35,7 @@ export default function Login (){
                                     Esqueceu email ou senha? <a href="/esqueci-senha" className='esquecer-senha'>Clique aqui</a>
                                 </p>
                                 <p>
-                                    Sua primeira vez aqui? <a href="/cadastro" className='cadastre-login'>Cadastre-se</a>
+                                    Sua primeira vez aqui? <a href="/pages/LoginCliente/Cadastramento" className='cadastre-login'>Cadastre-se</a>
                                 </p>
                             </div>
                         </div>
