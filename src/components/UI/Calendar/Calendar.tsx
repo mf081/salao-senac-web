@@ -70,6 +70,24 @@ export function Calendar() {
           </div>
         ))}
       </div>
+      <div className="information-calendar-container">
+        <div className="information-line">
+          <div className="information-line-ball-cinza"></div>
+          <span>fechado</span>
+        </div>
+
+        <div className="information-line">
+        <div className="information-line-ball-branca"></div>
+        <span>disponivel</span>
+        </div>
+
+        <div className="information-line">
+        <div className="information-line-ball-laranja"></div>
+        <span>esgotado</span>
+        </div>
+      </div>
+      <button type="submit" className="button-confirmar-agendamento">CONFIRMAR</button>
+
     </section>
   );
 }
