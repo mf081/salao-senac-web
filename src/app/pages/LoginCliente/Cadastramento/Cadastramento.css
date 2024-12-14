@@ -1,92 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne&display=swap');
 
-.container-login{
+/* Container principal */
+.container-login {
     width: 100%;
     display: flex;
     flex-direction: row;
-
 }
+
 .img-login {
     background: url('/public/img/img-login.png');
     width: 50%;
     height: auto;
     background-repeat: no-repeat;
-    
 }
-.form-login{
+
+.form-login {
     width: 50%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
+    margin-right: 200px;
+    margin-top: 50px;
 }
-.form-login > h2{
+
+.form-login > h2 {
     font-family: "Croissant One";
     font-size: 48px;
     font-weight: 400;
     color: #004587;
 }
-.form-login > p{
+
+.form-login > p {
     font-family: 'Montserrat';
     font-size: 32px;
     color: black;
-
 }
-.forms{
+
+/* Forms e inputs */
+.forms {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     gap: 10px;
     justify-content: center;
     align-items: center;
-   
 }
-.forms > input, .input-forma{
+
+.forms-colunas {
+    display: flex;
+    justify-content: space-between; /* Colunas lado a lado */
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px; /* Espaço entre as linhas */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Ocupa quase metade da largura */
+}
+
+.input-group label {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: black;
+    
+}
+
+.input-group input {
     background-color: white;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
     color: rgba(54, 54, 54, 0.575);
-    width: 300px;
-    height: 50px;
-}
-.forms > label, .label-form-forma{
+    height: 40px;
+    padding: 5px 10px;
     font-family: 'Montserrat';
-    font-size: 20px;
-    font-weight: 400;
-    color: black;
-    margin-right: 230px;
 }
-.forms > button{
-    background-color: var(--orange-senac-color); 
+
+.forms > button {
+    background-color: var(--orange-senac-color);
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #FFFFFF; 
-    border: none; 
-    border-radius: 25px; 
-    padding: 10px 30px; 
-    font-size: 18px; 
-    font-weight: bold; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
     font-family: 'Montserrat';
-    text-align: center; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     width: 360px;
     height: 50px;
 }
-::placeholder{
+
+.forms > button:hover {
+    background-color: #e08700; /* Cor mais escura ao passar o mouse */
+}
+
+::placeholder {
     padding-left: 15px;
     color: rgba(13, 12, 12, 0.56);
-    text-align:start;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.48px;
-
 }
-.paragrafo-login{
+
+/* Links e parágrafos */
+.paragrafo-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,17 +121,12 @@
     font-family: 'Montserrat';
     gap: 10px;
 }
-.paragrafo-login > p{
+
+.paragrafo-login > p {
     font-size: 18px;
 }
 
-
-.esquecer-senha{
-    font-weight: 700;
-    color: var(--orange-senac-color);
-    text-decoration: underline var(--orange-senac-color);
-}
-.cadastre-login{
+.cadastre-login {
     font-weight: 700;
     color: var(--blue-senac-color);
     text-decoration: underline var(--blue-senac-color);
@@ -116,23 +137,25 @@
     align-items: center;
     justify-content: center;
     margin: 20px 0;
-  }
-  
-  .divider::before,
-  .divider::after {
+}
+
+.divider::before,
+.divider::after {
     content: "";
     flex: 1;
     height: 1px;
-    background-color: #000; /* Cor da linha */
-    margin: 0 10px; /* Espaçamento entre a linha e o texto */
-  }
-  
-  .divider span {
+    background-color: #000;
+    margin: 0 10px;
+}
+
+.divider span {
     font-size: 14px;
     font-weight: bold;
-    color: #555; /* Cor do texto */
-  }
-  .google-login-button {
+    color: #555;
+}
+
+/* Botão Google */
+.google-login-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,21 +170,36 @@
     font-family: 'Montserrat';
     cursor: pointer;
     transition: box-shadow 0.3s ease-in-out;
-    width: 150px;
+    width: 300px;
     height: 40px;
-  }
-  
-  .google-login-button img {
+    margin-bottom: 20px;
+}
+
+.google-login-button img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
-  }
-  
-  .google-login-button:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+}
 
-.forms-colunas {
-  display: flex;
-  flex-direction: row;
+.google-login-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .forms-colunas {
+        flex-direction: column;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+
+    .form-login > h2 {
+        font-size: 36px;
+    }
+
+    .form-login > p {
+        font-size: 24px;
+    }
 }
