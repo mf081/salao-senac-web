@@ -1,42 +1,82 @@
 import React from 'react';
 import "./Cadastramento.css";
 
-export default function Cadrastamento (){
-    return(
+export default function Cadastramento() {
+    return (
         <main>
-            return (
-                <main>
-                    <div className="left-section">
-                        <img src="/img/img-login.png" alt="Imagem de login" />
-                    </div>
-                    <div className="right-section">
-                        <h1>Cadastre-se</h1>
-                        <form className="form">
-                            <label htmlFor="nome">Nome completo *</label>
-                            <input type="text" id="nome" placeholder="Digite seu nome" />
-        
-                            <label htmlFor="nome-social">Nome Social (Opcional)</label>
-                            <input type="text" id="nome-social" placeholder="Digite seu nome" />
-        
-                            <label htmlFor="cpf">CPF *</label>
-                            <input type="text" id="cpf" placeholder="XXX.XXX.XXX-XX" />
-        
-                            <label htmlFor="email">E-mail *</label>
-                            <input type="email" id="email" placeholder="Digite seu e-mail" />
-        
+            <section className="container-login">
+                <div className='img-login'>
+                    <img src="/img/img-login.png" width="612px" height="743" alt="Imagem Login" />
+                </div>
+                <div className='form-login'>
+                    <h2>Cadastre-se</h2>
+                    <form action="/login" method="POST">
+                        <div className="forms">
+                            <label htmlFor="nome">Nome Completo ou Social</label>
+                            <input 
+                                type="text" 
+                                id="nome" 
+                                name="nome" 
+                                placeholder="Informe seu nome completo ou social" 
+                                required 
+                            />
+
+                            <label htmlFor="email">Email</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Informe seu email" 
+                                required 
+                            />
+
+                            <label htmlFor="password">Senha</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Escreva sua senha" 
+                                required 
+                            />
+
+                            <label htmlFor="cpf">CPF</label>
+                            <input 
+                                type="text" 
+                                id="cpf" 
+                                name="cpf" 
+                                placeholder="Informe seu CPF" 
+                                required 
+                            />
+
                             <label htmlFor="telefone">Telefone</label>
-                            <input type="text" id="telefone" placeholder="(XX) XXXXX-XXXX" />
-        
-                            <button type="submit" className="btn-cadastrar">Cadastrar</button>
-                            <p>Já tem cadastro? <a href="#">Clique aqui</a></p>
-                            <div className="login-google">
-                                <p>OU</p>
-                                <button className="btn-google">Logar com o Google</button>
+                            <input 
+                                type="tel" 
+                                id="telefone" 
+                                name="telefone" 
+                                placeholder="Informe seu telefone" 
+                                required 
+                            />
+
+                            <button type="submit" className="button-entrar-login">Entrar</button>
+                            <div className='paragrafo-login'>
+                                <p>
+                                    Já tem Cadastro? <a href="/pages/LoginCliente/Cadastramento" className='cadastre-login'>Clique Aqui</a>
+                                </p>
                             </div>
-                        </form>
+                        </div>
+                    </form>
+
+                    <div className="divider">
+                       <span>OU</span>
                     </div>
-                </main>
-            );
+                    <div className='button-google'>
+                        <button className="google-login-button">
+                            <img src="/img/icons/Google-logo-colorido.png" alt="Google Logo" />
+                            Logar com o Google
+                        </button>
+                    </div>
+                </div> 
+            </section>
         </main>
     );
 }

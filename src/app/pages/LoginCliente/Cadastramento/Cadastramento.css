@@ -1,73 +1,167 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-  
-  .main-content {
-    display: flex;
-    margin: 20px;
-  }
-  
-  .left-section {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  .left-section .image {
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne&display=swap');
+
+.container-login{
     width: 100%;
-    border-radius: 5px;
-  }
-  
-  .right-section {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  h1 {
-    color: #012f62;
-    margin-bottom: 20px;
-  }
-  
-  .form {
+    display: flex;
+    flex-direction: row;
+
+}
+.img-login {
+    background: url('/public/img/img-login.png');
+    width: 50%;
+    height: auto;
+    background-repeat: no-repeat;
+    
+}
+.form-login{
+    width: 50%;
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.form-login > h2{
+    font-family: "Croissant One";
+    font-size: 48px;
+    font-weight: 400;
+    color: #004587;
+}
+.form-login > p{
+    font-family: 'Montserrat';
+    font-size: 32px;
+    color: black;
+
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.forms > input, .input-forma{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: rgba(54, 54, 54, 0.575);
+    width: 300px;
+    height: 50px;
+}
+.forms > label, .label-form-forma{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-right: 230px;
+}
+.forms > button{
+    background-color: var(--orange-senac-color); 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #FFFFFF; 
+    border: none; 
+    border-radius: 25px; 
+    padding: 10px 30px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    font-family: 'Montserrat';
+    text-align: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    width: 360px;
+    height: 50px;
+}
+::placeholder{
+    padding-left: 15px;
+    color: rgba(13, 12, 12, 0.56);
+    text-align:start;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+
+}
+.paragrafo-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Montserrat';
+    gap: 10px;
+}
+.paragrafo-login > p{
+    font-size: 18px;
+}
+
+
+.esquecer-senha{
+    font-weight: 700;
+    color: var(--orange-senac-color);
+    text-decoration: underline var(--orange-senac-color);
+}
+.cadastre-login{
+    font-weight: 700;
+    color: var(--blue-senac-color);
+    text-decoration: underline var(--blue-senac-color);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
   }
   
-  .form input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #000; /* Cor da linha */
+    margin: 0 10px; /* Espaçamento entre a linha e o texto */
   }
   
-  .btn-cadastrar {
-    background-color: #ffa500;
-    color: white;
-    padding: 10px;
-    border: none;
+  .divider span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555; /* Cor do texto */
+  }
+  .google-login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    font-family: 'Montserrat';
     cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    width: 150px;
+    height: 40px;
   }
   
-  .login-google {
-    text-align: center;
+  .google-login-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
   }
   
-  .login-google p {
-    margin: 10px 0;
+  .google-login-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-  
-  .btn-google {
-    background-color: #4285f4;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }  
+
+.forms-colunas {
+  display: flex;
+  flex-direction: row;
+}
