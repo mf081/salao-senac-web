@@ -77,13 +77,13 @@ export function Calendar() {
         </div>
 
         <div className="information-line">
-        <div className="information-line-ball-branca"></div>
-        <span>disponivel</span>
+          <div className="information-line-ball-branca"></div>
+          <span>disponivel</span>
         </div>
 
         <div className="information-line">
-        <div className="information-line-ball-laranja"></div>
-        <span>esgotado</span>
+          <div className="information-line-ball-laranja"></div>
+          <span>esgotado</span>
         </div>
       </div>
       <button type="submit" className="button-confirmar-agendamento">CONFIRMAR</button>

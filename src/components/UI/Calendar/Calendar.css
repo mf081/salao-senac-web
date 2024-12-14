@@ -1,164 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sen:wght@400..800&display=swap');
 
-
 .section-02-container {
-    width: 500px;
-    height: 100vh;
-    background: #fff;
-    padding-bottom: 2rem; /* Menor espaçamento inferior */
-    box-shadow: 181px 362px 113px 0px rgba(0, 0, 0, 0.01), 116px 232px 104px 0px rgba(0, 0, 0, 0.10), 65px 130px 87px 0px rgba(0, 0, 0, 0.00), 29px 58px 65px 0px rgba(0, 0, 0, 0.14), 7px 14px 36px 0px rgba(0, 0, 0, 0.44), 0px 0px 0px 0px rgba(0, 0, 0, 0.88);
-    padding: 2rem 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .section-02-container > h2 {
-    margin-top: 1rem;
-    color: #313131;
-    text-align: center;
-    font-family: "Croissant One", serif;
-    font-size: 16px; /* Reduzido para parecer menos chamativo */
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
-  }
-  
-  .section-02-container > h1 {
-    color: var(--blue-senac-color);
-    text-align: center;
-    font-family: "Croissant One", serif;
-    font-size: 24px; /* Reduzido para equilibrar o design */
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-  }
-  
-  .section-card-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 7 colunas para representar uma semana */
-    gap: 4px; /* Espaçamento reduzido entre os cards */
-    max-width: 400px; /* Largura máxima definida */
-    max-height: 341px; /* Altura máxima definida */
-    /* margin: 0 auto; */
-    background-color: #54545438;
-    padding: 1rem 1rem;
-    border-radius: 50px;
-    overflow: auto; /* Adiciona rolagem se o conteúdo ultrapassar o tamanho */
-  }
-  
-  .card {
-    box-shadow: none; /* Sem sombra */
-    padding: 2px; /* Espaço interno mínimo */
-    text-align: center;
-    transition: none; /* Sem animações */
-    width: 40px;
-    height: 40px; /* Altura reduzida */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centraliza o conteúdo */
-    font-size: 10px; /* Tamanho do texto reduzido para caber melhor */
-  }
-  
-  .card > h3 {
-    color: rgba(0, 0, 0, 0.39);
-    font-family: Montserrat;
-    font-size: 23.811px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  
-  .price {
-    color: #000;
-    font-family: Inter;
-    font-size: 8px; /* Texto ainda menor */
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.1px;
-  }
-  
-  .text-card-categories-container {
-    display: flex;
-    width: 365px;
-    height: 58px;
-    /* background: #004587; */
-    justify-content: center;
-    position: relative;
-    align-items: center;
-  }
-  
-  .arrow-img {
-    cursor: pointer;
-    width: 50px; /* Setas menores */
-    height: 50px;
-    gap: 20px;
-  }
-  
-  .arrow-img:hover {
-    transform: scale(1.05);
-  }
-  
-  
-  .text-card-categories {
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    max-width: 200px;
-    border-radius: 10px;
-    background: #004587;
-    width: 365px;
-    height: 58px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 500px;
+  height: 100vh;
+  background: #fff;
+  padding-bottom: 2rem; /* Menor espaçamento inferior */
+  box-shadow: 181px 362px 113px 0px rgba(0, 0, 0, 0.01), 116px 232px 104px 0px rgba(0, 0, 0, 0.10), 65px 130px 87px 0px rgba(0, 0, 0, 0.00), 29px 58px 65px 0px rgba(0, 0, 0, 0.14), 7px 14px 36px 0px rgba(0, 0, 0, 0.44), 0px 0px 0px 0px rgba(0, 0, 0, 0.88);
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
+.section-card-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 colunas para representar uma semana */
+  max-width: 400px; /* Largura máxima definida */
+  max-height: 341px; /* Altura máxima definida */
+  background-color: #54545438;
+  padding: 1rem 1rem;
+  border-radius: 50px;
+  overflow: auto; /* Adiciona rolagem se o conteúdo ultrapassar o tamanho */
+}
 
-  }
-  
-  .weekdays {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 7 colunas para os dias da semana */
-    text-align: center;
-    color: #545454;
-    -webkit-text-stroke-width: 0.5;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.30);
-    font-family: Montserrat;
-    font-size: 23.811px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 20px;
-    height: 27px;
-    color: #313131;
-    margin: 1rem 1rem 0rem 1rem;
-    gap: 34px;
-  }
-  
-  .weekday {
-    padding: 5px;
-    border-radius: 8px;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-  
+.card {
+  box-shadow: none; /* Remover sombra */
+  padding: 0; /* Remover espaçamento interno */
+  width: 50px; /* Largura ajustada para botões quadrados */
+  height: 50px; /* Altura ajustada para botões quadrados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #B7AEAE; /* Borda do botão */
+  border-radius: 8px; /* Bordas arredondadas */
+  background-color: #fff; /* Fundo branco */
+  font-size: 16px; /* Tamanho do texto ajustado */
+  font-weight: bold;
+  cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
+  transition: background-color 0.3s, transform 0.2s; /* Efeitos de transição */
+}
+
+.card:hover {
+  background-color: #f1f1f1; /* Fundo leve ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse */
+}
+
+.card > h3 {
+  margin: 0; /* Remover margens do título */
+  color: #313131; /* Cor do texto */
+  font-family: Montserrat;
+  font-size: 16px; /* Ajustar tamanho do texto */
+  font-weight: 500;
+}
+
+.text-card-categories-container {
+  display: flex;
+  width: 365px;
+  height: 58px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.arrow-img {
+  cursor: pointer;
+  width: 50px; /* Setas menores */
+  height: 50px;
+  gap: 20px;
+}
+
+.arrow-img:hover {
+  transform: scale(1.05);
+}
+
+.text-card-categories {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  max-width: 200px;
+  border-radius: 10px;
+  background: #004587;
+  width: 365px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 colunas para os dias da semana */
+  text-align: center;
+  color: #545454;
+  -webkit-text-stroke-width: 0.5;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.30);
+  font-family: Montserrat;
+  font-size: 23.811px;
+  font-weight: 700;
+  line-height: normal;
+  width: 20px;
+  height: 27px;
+  color: #313131;
+  margin: 1rem 1rem 0rem 1rem;
+  gap: 34px;
+}
+
+.weekday {
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .information-calendar-container, .information-line {
   display: flex;
   flex-direction: row;
 }
-  
-.information-line > span{
+
+.information-line > span {
   color: #545454;
   font-family: Montserrat;
   font-size: 23.136px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-decoration-line: underline;
@@ -189,24 +154,27 @@
   height: 21.429px;
   border-radius: 50%;
   background: #F7931D;
-
 }
 
-.button-confirmar-agendamento{
-  background-color: #004587;; 
+.button-confirmar-agendamento {
+  background-color: #004587;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #FFFFFF; 
-  border: none; 
-  border-radius: 10px; 
-  padding: 10px 30px; 
-  font-size: 18px; 
-  font-weight: bold; 
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: bold;
   font-family: 'Montserrat';
-  text-align: center; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease; 
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   width: 300px;
   height: 50px;
-  
+}
+
+.arrows-img-keys {
+  display: flex;
+  flex-direction: row;
 }
