@@ -6,7 +6,7 @@ export default function Login (){
         <main>
             <section className="container-login">
                 <div className='img-login'>
-                    <img src="/img/img-login.png" alt="" />
+                    <img src="/img/img-login.png" width="612px" height="743" alt="" />
                 </div>
                 <div className='form-login'>
                     <h2>Agendamento</h2>
