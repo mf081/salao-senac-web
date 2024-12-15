@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sen:wght@400..800&display=swap');
+
+
 main {
     display: flex;
     flex-direction: row;
@@ -20,11 +25,13 @@ main {
 .summary-box h2 {
     font-size: 22px;
     margin-bottom: 10px;
+    font-family: "Croissant One";
 }
 
 .summary-box p {
     font-size: 16px;
     margin-bottom: 20px;
+    font-family: "Montserrat";
 }
 
 .info-cards {
@@ -32,10 +39,14 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px 0;
+    margin-top: 62px;
+    
+    
 }
 
 .card {
-    width: 45%;
+    width: 40%;
+    height: 25%;
     background-color: #004587;
     border: 1px solid #ffa726;
     border-radius: 8px;
@@ -43,22 +54,29 @@ main {
     margin: 10px 0;
     text-align: center;
     color: white;
+   
 }
 
 .card .label {
-    font-size: 14px;
+    font-size: 16px;
     color: #ffa726;
     margin-bottom: 5px;
+    font-weight: 700;
+    font-family: "Montserrat";
 }
 
 .card .value {
     font-size: 16px;
     font-weight: bold;
+    font-family: "Montserrat";
 }
 
 .download {
-    margin-top: 20px;
+    margin-top: 60px;
     font-size: 16px;
+    font-family: "Croissant One";
+
+
 }
 
 .download .icon {
@@ -71,4 +89,5 @@ main {
     display: flex;
     width: 100%;
     height: 100vh;
+    margin-right: 50px;
 }
