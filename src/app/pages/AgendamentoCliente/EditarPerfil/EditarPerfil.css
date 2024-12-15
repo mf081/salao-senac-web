@@ -85,12 +85,12 @@
     margin-top: 40px;
   }
   
-  .back-button {
+.back-button {
     display: flex;
     flex-direction: column;
     width: 100%;
 
-  }
+}
 .back-button > a > img{
   width: 50px;
   margin-left: 43px;

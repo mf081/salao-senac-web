@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sen:wght@400..800&display=swap');
+
+
+/* Layout principal */
+.container-top {
+  display: flex; /* Flexbox principal */
+  flex-direction: row; /* Alinha elementos na horizontal */
+  height: 100vh;
+}
+
+/* Sidebar */
+.SideNavBar {
+  width: 250px; /* Largura fixa da sidebar */
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+}
+
+/* Conteúdo da direita */
+.container-right {
+  flex: 1; /* Ocupa o restante do espaço */
+  display: flex;
+  flex-direction: column; /* Coloca elementos um abaixo do outro */
+  gap: 20px; /* Espaço entre barra de busca e comprovantes */
+  padding: 20px;
+}
+
+/* Barra de busca */
+.container-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  height: 45px;
+  background-color: white;
+  border-radius: 5px;
+  width: 65%;
+  border: 1px solid grey;
+  padding-left: 10px;
+  color: black;
+  margin-right: 40px;
+}
+::placeholder{
+    font-size: 16px;
+    font-family: 'Montserrat';
+}
+/* Comprovantes */
+.container-comprovantes-historico {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaço entre os itens */
+  width: 900px; /* Diminui a largura dos comprovantes */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  
+}
+.search-bar{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+.itens-comprovantes-historico {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-header-comprovante {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  padding: 5px 15px; /* Reduz o espaçamento interno */
+  font-family: "Croissant One";
+  
+}
+
+.item-footer-comprovante {
+  background-color: #d1d8e0;
+  text-align: center;
+  color: #333;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 0; /* Reduz o espaçamento interno no rodapé */
+  font-size: 12px; /* Opcional: diminui o tamanho da fonte */
+  font-family: 'Montserrat';
+}
+
+.item-footer:hover {
+  background-color: #b0bec5;
+}
+.item-header-comprovante > span{
+    font-size: 18px !important;
+}
+.item-description-comprovante{
+    margin-right: 70px;
+    font-family: "Croissant One";
+}
