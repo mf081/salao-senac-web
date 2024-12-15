@@ -75,13 +75,13 @@
   font-family: Montserrat;
   font-size: 22px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 300;
   line-height: normal;
   max-width: 200px;
   border-radius: 10px;
   background: #004587;
   width: 365px;
-  height: 58px;
+  height: 43px;
   display: flex;
   justify-content: center;
   align-items: center;

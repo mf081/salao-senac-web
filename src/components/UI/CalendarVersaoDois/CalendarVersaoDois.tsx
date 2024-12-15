@@ -3,6 +3,7 @@
 import React, { useState, useCallback } from "react";
 import calendarData from '/workspaces/salao-senac-web/src/json/calendar.json';
 import './CalendarVersaoDois.css';
+import { useRouter } from 'next/navigation';
 
 // Definindo os tipos dos dados
 type Dia = {
@@ -16,6 +17,13 @@ type Mes = {
 };
 
 export function CalendarVersaoDois() {
+
+  const router = useRouter();
+  const handleResumoAgendadoClick = () => {
+    router.push('/pages/AgendamentoCliente/ResumoAgendado');
+  };
+
+  
   const [currentMonthIndex, setCurrentMonthIndex] = useState(0);
 
   const goToMonth = useCallback((direction: number) => {
@@ -35,7 +43,7 @@ export function CalendarVersaoDois() {
       <div className="arrows-img-keys">
         <img
           className="arrow-img"
-          src="/img/icons/icon-seta-esquerda.png"
+          src="/img/icons/seta-esquerda-calendario.png"
           width="100px"
           height="100px"
           onClick={() => goToMonth(-1)}
@@ -43,7 +51,7 @@ export function CalendarVersaoDois() {
         />
         <img
           className="arrow-img"
-          src="/img/icons/icon-seta-direita.png"
+          src="/img/icons/seta-direita-calendario.png"
           width="100px"
           height="100px"
           onClick={() => goToMonth(1)}
@@ -90,7 +98,7 @@ export function CalendarVersaoDois() {
         </div>
       </div>
        <div className="button-confirmar-agendamento-container">
-       <button type="submit" className="button-confirmar-agendamento">CONFIRMAR</button>
+       <button type="submit" onClick={handleResumoAgendadoClick} className="button-confirmar-agendamento">CONFIRMAR</button>
        </div>
     </div>
   );

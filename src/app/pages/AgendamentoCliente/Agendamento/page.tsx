@@ -3,6 +3,7 @@ import './Agendamento.css';
 import SideNavBar from '@/components/Layout/SideNavBar/SideNavBar';
 import { CalendarVersaoDois } from '@/components/UI/CalendarVersaoDois/CalendarVersaoDois';
 import { AgendamentoHeader } from '@/components/Layout/AgendamentoHeader/AgendamentoHeader';
+import { AvailableTimesSection } from '@/components/Main-Sections/AvailableTimes/AvailableTimes';
 
 export default function Agendamento() {
     return (
@@ -15,6 +16,7 @@ export default function Agendamento() {
                         <CalendarVersaoDois />
                     </div>
                     <div className='agendamento-container-right'>
+                        <AvailableTimesSection></AvailableTimesSection>
                     </div>
                 </div>
             </div>

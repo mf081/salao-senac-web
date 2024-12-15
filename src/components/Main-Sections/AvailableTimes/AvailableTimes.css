@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.available-times-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.available-times-title {
+    color: #FFF;
+    font-family: "Righteous", serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.available-times-professional {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.professional-name {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+
+.professional-image {
+    width: 50px;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.button-time-number {
+    width: 80px;
+    height: 36px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 7px;
+    border: 1px solid #F7931D;
+    background-color: white;
+    cursor: pointer;
+}
+
+.available-times-number {
+    gap: 10px;
+    display: flex;
+    margin: 10px;
+}
+
+.avaliable-times-card-container {
+    margin: 1rem;
+}
+
+.available-times-card {
+    border-radius: 20px;
+    background: #FFF;
+    padding: 20px;
+    height: 138.614px;
+    margin: 10px;
+
+
+}
