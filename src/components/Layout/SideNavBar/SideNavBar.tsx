@@ -10,8 +10,9 @@ export default function SideNavBar() {
   const handleEditarPerfilClick = () => {
     router.push('/pages/AgendamentoCliente/EditarPerfil');
   };
+
   const handleHistoricoClick = () => {
-    router.push('/pages/LoginCliente/Login');
+    router.push('/pages/AgendamentoCliente/HistoricoAgendamento');
   };
   
 
@@ -25,7 +26,7 @@ export default function SideNavBar() {
 
         <div className="buttons">
           <button onClick={handleEditarPerfilClick} className="button-side-bar"><img src="/img/icons/icon-Account.png" className='buttons-side-bar-icons img-edit-profile'></img>Editar Perfil</button>
-          <button className="button-side-bar"><img src="/img/icons/icon-Clock.png" className='buttons-side-bar-icons img-edit-historico'></img>Historico</button>
+          <button onClick={handleHistoricoClick} className="button-side-bar"><img src="/img/icons/icon-Clock.png" className='buttons-side-bar-icons img-edit-historico'></img>Historico</button>
           <button className="button-side-bar"><img src="/img/icons/icon-Logout-Rounded.png" className='buttons-side-bar-icons img-edit-off'></img>Sair</button>
         </div>
       </nav>
