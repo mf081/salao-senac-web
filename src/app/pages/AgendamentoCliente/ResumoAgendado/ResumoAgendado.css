@@ -5,6 +5,7 @@
 main{
     display: flex;
     flex-direction: row;
+    
 }
 
 .container {
@@ -12,25 +13,30 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 400px;
+    margin-left: 300px;
+    margin-top: 50px;
     
 }
 
 .titulo {
     font-size: 3rem;
     color: #e4801b;
-    margin-bottom: 1rem;
-    font-family: 'Georgia', serif;
+    margin-bottom: 0.7rem;
+    font-family: "Croissant One";
 }
 
 .resumo-container {
-    background-color: #003366;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    padding: 2rem;
-    width: 600px;
-    height: 600px;
-    text-align: center;
+    background-color: #004c8c; /* Cor azul do fundo */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 
+        0px 5px 15px rgba(0, 0, 0, 0.3), /* Sombra superior */
+        0px 15px 30px rgba(0, 0, 0, 0.5), /* Sombra mais intensa */
+        0px 30px 50px rgba(0, 0, 0, 0.7); /* Sombra inferior */
+    position: relative;
+    padding: 2rem; /* Espaçamento interno */
+    width: 850px; /* Largura fixa */
+    height: 650px; /* Altura fixa */
+    margin: 2rem auto; /* Centralizar horizontalmente */
 }
 
 .resumo-conteudo {
@@ -38,20 +44,24 @@ main{
     color: #fff;
     border-radius: 8px;
     padding: 1.5rem;
-    height: 500px;
+    height: 583px;
+    width: 700px;
+    margin-left: 50px;
 }
 
 .resumo-conteudo h2 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    font-family: "Croissant One";
+    display: flex;
+    justify-content: center;
 }
 
 .info p {
     display: flex;
     justify-content: space-between;
     margin: 0.5rem 0;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
 }
 
 .valor {
@@ -84,13 +94,18 @@ hr {
     cursor: pointer;
     width: 100%;
     border-radius: 5px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Montserrat';
+    font-weight: 600;
 }
 
 .botao:hover {
     background-color: #d46c15;
 }
-.resumo-conteudo > span{
-    font-size: 16px !important;
+
+.info{
+    font-family: 'Montserrat';
+    gap: 20pc;
+    padding: 20px;
 }
