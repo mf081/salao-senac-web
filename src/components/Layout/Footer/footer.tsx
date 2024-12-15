@@ -1,8 +1,44 @@
+'use client';
 import React from 'react';
 import './footer.css';
 import './footer-bar.css';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+
+
+
+
+
+
+
+
 
 export function Footer() {
+  const router = useRouter();
+  
+    const handleSobreNosClick = () => {
+    router.push('/#AboutUsSection'); // Navegação com hash
+  };
+
+  const handleFooterHome = () => {
+    router.push('/'); // Navegação com hash
+  };
+
+  const handleContatoClick = () => {
+    router.push('/#AdressSection'); // Navegação com hash
+};
+const handleAgendarClick = () => {
+  router.push('/pages/LoginCliente/Login');
+};
+
+
+
+
+
+
+
+
+
   return (
     <footer>
       <div className="footer-container">
@@ -21,10 +57,10 @@ export function Footer() {
           <div className="footer-services">
             <h3 className="footer-title">Navegação</h3>
             <ul>
-              <li className="services-footer-li">Home</li>
-              <li className="services-footer-li">Sobre Nós</li>
-              <li className="services-footer-li">Contato</li>
-              <li className="services-footer-li">Agendar Horário</li>
+              <li className="services-footer-li" onClick={handleFooterHome}>Home</li>
+              <li className="services-footer-li" onClick={handleSobreNosClick}>Sobre Nós</li>
+              <li className="services-footer-li" onClick={handleContatoClick}>Contato</li>
+              <li className="services-footer-li" onClick={handleAgendarClick}>Agendar Horário</li>
               <li className="services-footer-li"></li>
             </ul>
           </div>

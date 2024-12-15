@@ -80,6 +80,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: 30px; /* 250% */
+    cursor: pointer;
+}
+.services-footer-li:hover{
+    text-decoration: underline white;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+
 }
 
 .footer-container-last-line{
