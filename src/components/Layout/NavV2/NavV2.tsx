@@ -11,9 +11,25 @@ export function NavV2() {
     const handleAgendarClick = () => {
         router.push('/pages/LoginCliente/Login');
     };
-    
+
+    const handleCadrastarClick = () => {
+        router.push('/pages/LoginCliente/Cadastramento');
+    };
+
     const handleCalendarioClick = () => {
         router.push('/pages/AgendamentoCliente/Agendamento');
+    };
+
+    const handleContatoClick = () => {
+        router.push('/#AdressSection'); // Navegação com hash
+    };
+
+    const handleSobreNosClick = () => {
+        router.push('/#AboutUsSection'); // Navegação com hash
+    };
+
+    const handleHomeClick = () => {
+        router.push('/'); // Voltar para a página inicial
     };
 
     return (
@@ -25,26 +41,26 @@ export function NavV2() {
                     </Link>
                 </div>
                 <div className="v2-nav-mid">
-                    <button className="v2-nav-button-center" onClick={handleCalendarioClick}>
+                    <button className="v2-nav-button-center" onClick={handleHomeClick}>
                         Home
                     </button>
-                    <button className="v2-nav-button-center" onClick={handleAgendarClick}>
+                    <button className="v2-nav-button-center" onClick={handleCalendarioClick}>
                         AGENDAR HORÁRIO
                     </button>
-                    <a href="#AdressSection">
-                        <button className="v2-nav-button-center">CONTATO</button>
-                    </a>
-                    <a href="#AboutUsSection">
-                        <button className="v2-nav-button-center">SOBRE NÓS</button>
-                    </a>
+                    <button className="v2-nav-button-center" onClick={handleContatoClick}>
+                        CONTATO
+                    </button>
+                    <button className="v2-nav-button-center" onClick={handleSobreNosClick}>
+                        SOBRE NÓS
+                    </button>
                 </div>
                 <div className="v2-nav-right">
-                    <a href="#AboutUsSection">
-                        <button className="v2-nav-button">Cadraste-se</button>
-                    </a>
-                    <a href="#AboutUsSection">
-                        <button className="v2-nav-button">Entrar</button>
-                    </a>
+                    <button onClick={handleCadrastarClick} className="v2-nav-button">
+                        Cadastre-se
+                    </button>
+                    <button onClick={handleAgendarClick} className="v2-nav-button">
+                        Entrar
+                    </button>
                 </div>
             </div>
         </nav>

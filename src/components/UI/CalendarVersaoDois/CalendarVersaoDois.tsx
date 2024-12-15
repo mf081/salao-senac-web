@@ -38,11 +38,11 @@ export function CalendarVersaoDois() {
   const weekdays = ["S", "D", "S", "T", "Q", "Q", "S"]; // Siglas dos dias da semana
 
   const MonthNavigation = () => (
-    <div id="CalendarSection" className="text-card-categories-container">
-      <h3 className="text-card-categories">{`${currentMonth.nome}`}</h3>
-      <div className="arrows-img-keys">
+    <div id="CalendarSection" className="text-card-categories-container-home">
+      <h3 className="text-card-categories-home">{`${currentMonth.nome}`}</h3>
+      <div className="arrows-img-keys-home">
         <img
-          className="arrow-img"
+          className="arrow-img-home"
           src="/img/icons/seta-esquerda-calendario.png"
           width="100px"
           height="100px"
@@ -50,7 +50,7 @@ export function CalendarVersaoDois() {
           alt="Seta para a esquerda"
         />
         <img
-          className="arrow-img"
+          className="arrow-img-home"
           src="/img/icons/seta-direita-calendario.png"
           width="100px"
           height="100px"
@@ -62,43 +62,43 @@ export function CalendarVersaoDois() {
   );
 
   return (
-    <div className="calendar-container">
+    <div className="calendar-container-home">
       <MonthNavigation />
 
       {/* Siglas dos dias da semana */}
-      <div className="weekdays">
+      <div className="weekdays-home">
         {weekdays.map((day, index) => (
-          <div className="weekday" key={index}>{day}</div>
+          <div className="weekday-home" key={index}>{day}</div>
         ))}
       </div>
 
       {/* Exibindo os dias do mês */}
-      <div className="section-card-container">
+      <div className="section-card-container-home">
         {currentMonth.dias.map((dia, index) => (
-          <div className="card-calendar" key={`${currentMonthIndex}-${index}`}>
+          <div className="card-calendar-home" key={`${currentMonthIndex}-${index}`}>
             <h3>{new Date(dia.data).getDate()}</h3> {/* Apenas o número do dia */}
           </div>
         ))}
       </div>
 
-      <div className="information-calendar-container">
-        <div className="information-line">
-          <div className="information-line-ball-cinza"></div>
+      <div className="information-calendar-container-home">
+        <div className="information-line-home">
+          <div className="information-line-ball-cinza-home"></div>
           <span>fechado</span>
         </div>
 
-        <div className="information-line">
-          <div className="information-line-ball-branca"></div>
+        <div className="information-line-home">
+          <div className="information-line-ball-branca-home"></div>
           <span>disponivel</span>
         </div>
 
-        <div className="information-line">
-          <div className="information-line-ball-laranja"></div>
+        <div className="information-line-home">
+          <div className="information-line-ball-laranja-home"></div>
           <span>esgotado</span>
         </div>
       </div>
-       <div className="button-confirmar-agendamento-container">
-       <button type="submit" onClick={handleResumoAgendadoClick} className="button-confirmar-agendamento">CONFIRMAR</button>
+       <div className="button-confirmar-agendamento-container-home">
+       <button type="submit" onClick={handleResumoAgendadoClick} className="button-confirmar-agendamento-home">CONFIRMAR</button>
        </div>
     </div>
   );

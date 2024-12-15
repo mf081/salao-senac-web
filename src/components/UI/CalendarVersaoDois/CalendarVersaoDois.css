@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sen:wght@400..800&display=swap');
 
 
-.calendar-container {
+.calendar-container-home {
   margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.section-card-container {
+.section-card-container-home {
   display: grid;
   grid-template-columns: repeat(7, 1fr); /* 7 colunas para representar uma semana */
   max-width: 400px; /* Largura máxima definida */
@@ -20,7 +20,7 @@
   margin: 0px 10px 10px 10px;
 }
 
-.card-calendar {
+.card-calendar-home {
   box-shadow: none; /* Remover sombra */
   padding: 0; /* Remover espaçamento interno */
   width: 50px; /* Largura ajustada para botões quadrados */
@@ -37,12 +37,12 @@
   transition: background-color 0.3s, transform 0.2s; /* Efeitos de transição */
 }
 
-.card-calendar:hover {
+.card-calendar-home:hover {
   background-color: #f1f1f1; /* Fundo leve ao passar o mouse */
   transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse */
 }
 
-.card-calendar > h3 {
+.card-calendar-home > h3 {
   margin: 0; /* Remover margens do título */
   color: #313131; /* Cor do texto */
   font-family: Montserrat;
@@ -50,7 +50,7 @@
   font-weight: 500;
 }
 
-.text-card-categories-container {
+.text-card-categories-container-home {
   display: flex;
   width: 365px;
   height: 58px;
@@ -59,18 +59,18 @@
   align-items: center;
 }
 
-.arrow-img {
+.arrow-img-home {
   cursor: pointer;
   width: 50px; /* Setas menores */
   height: 50px;
   gap: 20px;
 }
 
-.arrow-img:hover {
+.arrow-img-home:hover {
   transform: scale(1.05);
 }
 
-.text-card-categories {
+.text-card-categories-home {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 22px;
@@ -87,7 +87,7 @@
   align-items: center;
 }
 
-.weekdays {
+.weekdays-home {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -105,24 +105,24 @@
   gap: 34px;
 }
 
-.weekday {
+.weekday-home {
   padding: 5px;
   border-radius: 8px;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.information-calendar-container, .information-line {
+.information-calendar-container-home, .information-line-home {
   display: flex;
   flex-direction: row;
 }
 
-.information-calendar-container {
+.information-calendar-container-home {
   gap:10px;
   margin: 20px;
 }
 
-.information-line > span {
+.information-line-home > span {
   color: #545454;
   font-family: Montserrat;
   font-size: 23.136px;
@@ -136,14 +136,14 @@
   text-underline-position: from-font;
 }
 
-.information-line-ball-cinza {
+.information-line-ball-cinza-home {
   width: 24.448px;
   height: 21.429px;
   border-radius: 50%;
   background: #B7AEAE;
 }
 
-.information-line-ball-branca {
+.information-line-ball-branca-home {
   width: 24.448px;
   height: 21.429px;
   border-radius: 50%;
@@ -151,14 +151,14 @@
   border: solid 1px #545454;
 }
 
-.information-line-ball-laranja {
+.information-line-ball-laranja-home {
   width: 24.448px;
   height: 21.429px;
   border-radius: 50%;
   background: #F7931D;
 }
 
-.button-confirmar-agendamento {
+.button-confirmar-agendamento-home {
   background-color: #004587;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -179,12 +179,12 @@
   justify-content: center;
 }
 
-.arrows-img-keys {
+.arrows-img-keys-home {
   display: flex;
   flex-direction: row;
 }
 
-.button-confirmar-agendamento-container {
+.button-confirmar-agendamento-container-home {
   width: 100%;
   display: flex;
   justify-content: center;
