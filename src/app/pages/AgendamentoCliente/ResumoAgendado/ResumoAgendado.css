@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne&display=swap');
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+    
+}
+
+.titulo {
+    font-size: 3rem;
+    color: #e4801b;
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif;
+}
+
+.resumo-container {
+    background-color: #003366;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+}
+
+.resumo-conteudo {
+    background-color: #2f5e94;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: 500px;
+}
+
+.resumo-conteudo h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif;
+}
+
+.info p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.valor {
+    color: #e4801b;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 1rem 0;
+}
+
+.total {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.valor-total {
+    color: #e4801b;
+}
+
+.botao {
+    background-color: #e4801b;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.botao:hover {
+    background-color: #d46c15;
+}
+.resumo-conteudo > span{
+    font-size: 16px !important;
+}
