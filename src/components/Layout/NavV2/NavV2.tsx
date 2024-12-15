@@ -36,9 +36,7 @@ export function NavV2() {
         <nav>
             <div className="v2-nav-container">
                 <div className="v2-nav-img">
-                    <Link href="/pages/AgendamentoCliente/Agendamento">
-                        <img src="/img/logo-salao-senac-preta.png" alt="Logo" width="199px" height="158px" />
-                    </Link>
+                    <img onClick={handleHomeClick} src="/img/logo-salao-senac-preta.png" alt="Logo" width="199px" height="158px" />
                 </div>
                 <div className="v2-nav-mid">
                     <button className="v2-nav-button-center" onClick={handleHomeClick}>

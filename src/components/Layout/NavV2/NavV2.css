@@ -26,6 +26,7 @@ nav {
     align-items: center;
     justify-content: left;
     margin-left: -90px;
+    cursor: pointer;
 }
 
 .v2-nav-mid {
