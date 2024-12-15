@@ -1,7 +1,16 @@
+'use client';
 import React from 'react';
 import "./login.css";
+import { useRouter } from 'next/navigation';
+
 
 export default function Login (){
+    const router = useRouter();
+    const handleEscolherServicosClick = () => {
+        router.push('/pages/AgendamentoCliente/EscolherServicos');
+    };
+
+    
     return(
         <main>
             <section className="container-login">
@@ -29,7 +38,7 @@ export default function Login (){
                                 placeholder="Escreva sua senha" 
                                 required 
                             />
-                            <button type="submit" className="button-entrar-login">Entrar</button>
+                            <button type="submit" onClick={handleEscolherServicosClick} className="button-entrar-login">Entrar</button>
                             <div className='paragrafo-login'>
                                 <p>
                                     Esqueceu email ou senha? <a href="/esqueci-senha" className='esquecer-senha'>Clique aqui</a>
