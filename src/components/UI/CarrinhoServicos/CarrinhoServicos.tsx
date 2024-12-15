@@ -1,23 +1,27 @@
 import React from "react";
-import './CarrinhoServicos.css'
+import './CarrinhoServicos.css';
 
-export function CarrinhoServicos () {
-    return(
+export function CarrinhoServicos({ selectedServices }) {
+    const total = selectedServices.reduce((sum, service) => {
+        if ('preco' in service) {
+            return sum + service.preco;
+        } else if ('precos' in service) {
+            return sum + Math.min(...Object.values(service.precos));
+        }
+        return sum;
+    }, 0);
+
+    return (
         <div className="resumo-conteudo">
-        <h2>Resumo da compra</h2>
-         <div className="info">
-            <p><strong>Serviço:</strong> Progressiva + Escova R$ 246,00</p>
-            <br />
-            <p><strong>Data:</strong> 18/11/2024</p>
-            <br />
-            <p><strong>Horário:</strong> 10:30 - 11:15 <br></br> 11:15 - 12:00</p>
-            <br />
-            <p><strong>Forma de Pag:</strong> Pix</p>
-            <br />
-            <hr></hr>
-            <p className="total"><strong>Total</strong> R$ 90,00</p>
+            <h2>Resumo da compra</h2>
+            <div className="info">
+                {selectedServices.map((service, index) => (
+                    <p key={index}><strong>Serviço:</strong> {service.nome}</p>
+                ))}
+                <hr />
+                <p className="total"><strong>Total:</strong> R$ {total.toFixed(2)}</p>
+            </div>
+            <button className="botao">AGENDAR</button>
         </div>
-        <button className="botao">AGENDAR</button>
-    </div>
     );
 }
