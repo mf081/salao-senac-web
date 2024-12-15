@@ -1,15 +1,23 @@
 import React from 'react';
-import './Agendamento.css'
-import SideNavBar from '@/components/UI/SideNavBar/SideNavBar';
-import { Calendar } from '@/components/UI/Calendar/Calendar';
-
+import './Agendamento.css';
+import SideNavBar from '@/components/Layout/SideNavBar/SideNavBar';
+import { CalendarVersaoDois } from '@/components/UI/CalendarVersaoDois/CalendarVersaoDois';
+import { AgendamentoHeader } from '@/components/Layout/AgendamentoHeader/AgendamentoHeader';
 
 export default function Agendamento() {
     return (
-      <main className='agendamento-main'>
-        <SideNavBar></SideNavBar>
-        <Calendar></Calendar>
-      </main>
+        <main className='agendamento-main'>
+            <SideNavBar />
+            <div className='main-agendamento-container'>
+                <AgendamentoHeader title="Agendamento" />
+                <div className='agendamento-container-column'>
+                    <div className='agendamento-container-left'>
+                        <CalendarVersaoDois />
+                    </div>
+                    <div className='agendamento-container-right'>
+                    </div>
+                </div>
+            </div>
+        </main>
     );
-  }
-  
+}

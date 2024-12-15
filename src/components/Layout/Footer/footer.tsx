@@ -8,7 +8,7 @@ export function Footer() {
       <div className="footer-container">
         {/* Logo e texto de descrição */}
         <div className="footer-logo">
-          <img src="/img/logo-salao-senac-branca.png" alt="Logo SENAC" />
+          {/* <img src="/img/logo-salao-senac-branca.png" alt="Logo SENAC" /> */}
           <p className="text-image-p">
             “Beleza e aprendizado em harmonia: transforme seu futuro no Salão
             Empresa Pedagógica do Senac Recife”.

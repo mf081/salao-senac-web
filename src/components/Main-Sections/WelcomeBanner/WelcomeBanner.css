@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sen:wght@400..800&display=swap');
+
 .section-01-container {
   /* border: 5px solid rgb(255, 36, 218);  */
   height: auto; /* Altura fixa */
@@ -30,7 +32,7 @@
 }
 .section-01-text h1 {
   color: #fff;
-  font-family: "Croissant One";
+  font-family: "Croissant One", serif;
   font-size: 46px;
   text-transform: uppercase;
   letter-spacing: 1px;

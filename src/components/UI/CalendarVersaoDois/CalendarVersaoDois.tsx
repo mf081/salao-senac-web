@@ -1,8 +1,10 @@
 'use client';
-import React, { useState, useCallback } from "react";
-import "./Calendar.css";
-import calendarData from '/workspaces/salao-senac-web/src/json/calendar.json';
 
+import React, { useState, useCallback } from "react";
+import calendarData from '/workspaces/salao-senac-web/src/json/calendar.json';
+import './CalendarVersaoDois.css';
+
+// Definindo os tipos dos dados
 type Dia = {
   data: string;
 };
@@ -13,7 +15,7 @@ type Mes = {
   dias: Dia[];
 };
 
-export function Calendar() {
+export function CalendarVersaoDois() {
   const [currentMonthIndex, setCurrentMonthIndex] = useState(0);
 
   const goToMonth = useCallback((direction: number) => {
@@ -52,7 +54,7 @@ export function Calendar() {
   );
 
   return (
-    <section className="section-02-container">
+    <div className="calendar-container">
       <MonthNavigation />
 
       {/* Siglas dos dias da semana */}
@@ -65,11 +67,12 @@ export function Calendar() {
       {/* Exibindo os dias do mês */}
       <div className="section-card-container">
         {currentMonth.dias.map((dia, index) => (
-          <div className="card" key={`${currentMonthIndex}-${index}`}>
+          <div className="card-calendar" key={`${currentMonthIndex}-${index}`}>
             <h3>{new Date(dia.data).getDate()}</h3> {/* Apenas o número do dia */}
           </div>
         ))}
       </div>
+
       <div className="information-calendar-container">
         <div className="information-line">
           <div className="information-line-ball-cinza"></div>
@@ -86,8 +89,9 @@ export function Calendar() {
           <span>esgotado</span>
         </div>
       </div>
-      <button type="submit" className="button-confirmar-agendamento">CONFIRMAR</button>
-
-    </section>
+       <div className="button-confirmar-agendamento-container">
+       <button type="submit" className="button-confirmar-agendamento">CONFIRMAR</button>
+       </div>
+    </div>
   );
 }
