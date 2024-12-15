@@ -1,0 +1,156 @@
+@import url("https://fonts.escolher-googleapis.escolher-com/css2?family=Croissant+One&family=Inter:ital,opsz,wght@0,14.escolher-.escolher-32,100.escolher-.escolher-900;1,14.escolher-.escolher-32,100.escolher-.escolher-900&family=Montserrat:ital,wght@0,100.escolher-.escolher-900;1,100.escolher-.escolher-900&display=swap");
+@import url('https://fonts.escolher-googleapis.escolher-com/css2?family=Montserrat:ital,wght@0,100.escolher-.escolher-900;1,100.escolher-.escolher-900&display=swap');
+
+.escolher-section-02-container {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-bottom: 5rem;
+}
+
+.escolher-section-02-container > h2 {
+  margin-top: 2rem;
+  color: #313131;
+  text-align: center;
+  font-family: "Croissant One", serif;
+  font-size: 23.;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.461px;
+  text-transform: uppercase;
+}
+
+.escolher-section-02-container > h1 {
+  color: var(--blue-senac-color);
+  text-align: center;
+  font-family: "Croissant One", serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.701px;
+  text-transform: uppercase;
+}
+
+.escolher-section-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+  gap: 15px; /* Reduziu o espaçamento entre os cards */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.escolher-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px; /* Reduziu o padding */
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 300px; /* Reduziu a altura do card */
+  border-radius: 10px;
+  background-blend-mode: multiply;
+  border: 1.5px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column; /* Alinhar os elementos verticalmente */
+  justify-content: space-between; /* Garante que o conteúdo fique bem distribuído */
+}
+
+.escolher-card > h3 {
+  color: var(--blue-senac-color);
+  text-align: center;
+  font-family: "Croissant One", serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 30.escolher-8px */
+  letter-spacing: 0.44px;
+}
+
+.escolher-price {
+  color: #020202;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: bold;
+  font-weight: 600;
+  line-height: 140%; /* 25.escolher-2px */
+  letter-spacing: 0.36px;
+}
+
+.escolher-section-02-location {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alinha o ícone e o texto verticalmente */
+  justify-content: center; /* Alinhamento horizontal */
+  margin: 2rem 0;
+}
+
+.escolher-section-02-location > h1 {
+  color: #000;
+  font-family: "Montserrat", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 93.escolher-75% */
+}
+
+.escolher-card:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o card */
+  cursor: pointer;
+}  
+
+.escolher-text-card-categories-container {
+  display: flex;
+  justify-content: center;
+  position: relative; /* Tornando este container relativo para que as setas possam ser posicionadas em relação a ele */
+  width: 100%; /* Assegura que o container ocupe toda a largura disponível */
+}
+
+.escolher-arrow-img {
+  position: absolute; /* Posiciona as setas de forma absoluta em relação ao seu contêiner */
+  top: 50%; /* Posiciona as setas verticalmente no meio */
+  transform: translateY(-50%); /* Centraliza as setas verticalmente */
+  cursor: pointer;
+}
+
+.escolher-arrow-img:hover {
+  transform: scale(1.05) translateY(-50%); /* Aumenta ligeiramente a seta ao passar o mouse */
+}
+
+/* Definindo a posição das setas */
+.escolher-arrow-img:first-child {
+  left: 350px; /* Define a seta esquerda com um pequeno espaço da borda esquerda */
+}
+
+.escolher-arrow-img:last-child {
+  right: 350px; /* Define a seta direita com um pequeno espaço da borda direita */
+}
+
+.escolher-text-card-categories {
+  color: #000;
+  text-align: center;
+  font-family: "Croissant One";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  max-width: 350px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.escolher-description {
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 21px */
+  letter-spacing: 0.escolher-3px;
+}

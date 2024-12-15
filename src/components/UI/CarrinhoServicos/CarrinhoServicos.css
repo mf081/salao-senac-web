@@ -3,21 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sen:wght@400..800&display=swap');
 
 
-main{
-    display: flex;
-    flex-direction: row;
-    
-}
 
-.container-para-row-resumo-agendado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin: 3rem;
-    margin-right: 3rem; 
-}
 
 .titulo {
     font-size: 3rem;
