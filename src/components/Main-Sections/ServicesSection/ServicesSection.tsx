@@ -1,7 +1,6 @@
 'use client';
-import React, { useState, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./ServicesSection.css";
-import servicesData from '/workspaces/salao-senac-web/src/json/product-services.json';
 
 type Precos = {
   curto: number;
@@ -13,13 +12,13 @@ type Precos = {
 type ServicoComPrecos = {
   nome: string;
   precos: Precos;
-  descricao?: string; // Adicionando descrição opcional
+  descricao?: string; // descrição opcional
 };
 
 type ServicoComPreco = {
   nome: string;
   preco: number;
-  descricao?: string; // Adicionando descrição opcional
+  descricao?: string; // descrição opcional
 };
 
 type Servico = ServicoComPrecos | ServicoComPreco;
@@ -30,16 +29,45 @@ type Categoria = {
 };
 
 export function ServicesSection() {
+  const [servicesData, setServicesData] = useState<{ categorias: Categoria[] }>({ categorias: [] });
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
+  const [loading, setLoading] = useState(true); // Estado para controle de carregamento
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/api/services/product-service'); // Chama a API local
+        const data = await response.json();
+        setServicesData(data);
+      } catch (error) {
+        console.error("Erro ao buscar os dados: ", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  
+  const [formattedDate, setFormattedDate] = useState('');
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Garantir que a data seja formatada apenas no cliente, após a renderização
+      const date = new Date();
+      setFormattedDate(date.toLocaleString());  // Formata a data de acordo com a localidade do cliente
+    }
+  }, []);
 
   const goToCategory = useCallback((direction: number) => {
     setCurrentCategoryIndex((prevIndex) => {
       const nextIndex = (prevIndex + direction + servicesData.categorias.length) % servicesData.categorias.length;
       return nextIndex;
     });
-  }, []);
+  }, [servicesData.categorias.length]);
 
-  const currentCategory: Categoria = servicesData.categorias[currentCategoryIndex];
+  // Garantir que currentCategory não seja indefinido
+  const currentCategory: Categoria = servicesData.categorias[currentCategoryIndex] || { nome: "", servicos: [] };
 
   // Componente de navegação de categorias
   const CategoryNavigation = () => (
@@ -76,6 +104,10 @@ export function ServicesSection() {
     }
   };
 
+  if (loading) {
+    return <p>Carregando...</p>;
+  }
+
   return (
     <section className="section-02-container">
       <h2>Serviços</h2>
@@ -86,13 +118,17 @@ export function ServicesSection() {
 
       {/* Exibindo os cards de serviços */}
       <div className="section-card-container">
-        {currentCategory.servicos.map((servico, index) => (
-          <div className="card" key={`${currentCategoryIndex}-${index}`}>
-            <h3>{servico.nome}</h3>
-            {servico.descricao && <p className="description">{servico.descricao}</p>} {/* Exibe a descrição */}
-            <PriceDisplay servico={servico} />
-          </div>
-        ))}
+        {currentCategory.servicos.length > 0 ? (
+          currentCategory.servicos.map((servico, index) => (
+            <div className="card" key={`${currentCategoryIndex}-${index}`}>
+              <h3>{servico.nome}</h3>
+              {servico.descricao && <p className="description">{servico.descricao}</p>} {/* Exibe a descrição */}
+              <PriceDisplay servico={servico} />
+            </div>
+          ))
+        ) : (
+          <p>Não há serviços disponíveis para esta categoria.</p>
+        )}
       </div>
     </section>
   );
