@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne&display=swap');
 
-/* Container principal */
 .container-login {
     width: 100%;
     display: flex;
@@ -37,28 +36,28 @@
     color: black;
 }
 
-/* Forms e inputs */
 .forms {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
 }
 
 .forms-colunas {
     display: flex;
-    justify-content: space-between; /* Colunas lado a lado */
-    gap: 20px;
+    justify-content: space-between;
+    gap: 35px;
     width: 100%;
-    margin-bottom: 20px; /* Espaço entre as linhas */
+    margin-bottom: 20px;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    width: 48%; /* Ocupa quase metade da largura */
+    width: 250px;
+    height: 100%;
 }
 
 .input-group label {
@@ -99,7 +98,7 @@
 }
 
 .forms > button:hover {
-    background-color: #e08700; /* Cor mais escura ao passar o mouse */
+    background-color: #e08700;
 }
 
 ::placeholder {
@@ -111,7 +110,6 @@
     letter-spacing: 0.48px;
 }
 
-/* Links e parágrafos */
 .paragrafo-login {
     display: flex;
     flex-direction: column;
@@ -185,7 +183,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .forms-colunas {
         flex-direction: column;
