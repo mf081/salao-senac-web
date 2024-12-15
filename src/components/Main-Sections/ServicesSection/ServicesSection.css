@@ -6,6 +6,7 @@
   height: auto;
   background: #fff;
   padding-bottom: 5rem;
+  margin-top: 28px;
 }
 
 .section-02-container > h2 {
@@ -13,19 +14,20 @@
   color: #313131;
   text-align: center;
   font-family: "Croissant One", serif;
-  font-size: 23.07px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.461px;
   text-transform: uppercase;
+ 
 }
 
 .section-02-container > h1 {
   color: var(--blue-senac-color);
   text-align: center;
   font-family: "Croissant One", serif;
-  font-size: 35.029px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -46,32 +48,33 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 15px; /* Reduziu o padding */
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
   height: 300px; /* Reduziu a altura do card */
   border-radius: 10px;
   background-blend-mode: multiply;
-  border: 1.5px solid rgb(0, 0, 0);
+  border: 1.5px solid rgba(34, 34, 34, 0.445);
   display: flex;
   flex-direction: column; /* Alinhar os elementos verticalmente */
   justify-content: space-between; /* Garante que o conteúdo fique bem distribuído */
+  
 }
 
 .card > h3 {
   color: var(--blue-senac-color);
   text-align: center;
-  font-family: "Croissant One", serif;
-  font-size: 13px;
+  font-family: 'Montserrat';
+  font-size: 19px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 140%; /* 30.8px */
-  letter-spacing: 0.44px;
+  
 }
 
 .price {
   color: #020202;
   text-align: center;
-  font-family: Inter;
-  font-size: 18px;
+  font-family: 'Montserrat';
+  font-size: 15px;
   font-style: bold;
   font-weight: 600;
   line-height: 140%; /* 25.2px */
@@ -98,6 +101,8 @@
 .card:hover {
   transform: scale(1.05); /* Aumenta ligeiramente o card */
   cursor: pointer;
+  border: 1.5px solid rgba(0, 0, 0, 0.651);
+  transition: 0.3s ease-in-out;
 }  
 
 .text-card-categories-container {
@@ -116,6 +121,7 @@
 
 .arrow-img:hover {
   transform: scale(1.05) translateY(-50%); /* Aumenta ligeiramente a seta ao passar o mouse */
+  transition: 0.3s ease-in-out;
 }
 
 /* Definindo a posição das setas */
@@ -131,7 +137,7 @@
   color: #000;
   text-align: center;
   font-family: "Croissant One";
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -142,6 +148,11 @@
   margin-right: 100px;
   margin-top: 30px;
   margin-bottom: 30px;
+  border: 1px solid rgba(92, 91, 91, 0.514);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), /* Sombra principal */
+  0px 1px 3px rgba(0, 0, 0, 0.06); /* Sombra secundária */
 }
 
 .description {
@@ -150,7 +161,7 @@
   font-family: "Montserrat", serif;
   font-size: 15px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 140%; /* 21px */
   letter-spacing: 0.3px;
 }

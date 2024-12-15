@@ -47,8 +47,8 @@ export function ServicesSection() {
       <img
         className="arrow-img"
         src="/img/icons/icon-seta-esquerda.png"
-        width="100px"
-        height="100px"
+        width="65px"
+        height="65px"
         onClick={() => goToCategory(-1)} // Navegar para a categoria anterior
         alt="Seta para a esquerda"
       />
@@ -56,8 +56,8 @@ export function ServicesSection() {
       <img
         className="arrow-img"
         src="/img/icons/icon-seta-direita.png"
-        width="100px"
-        height="100px"
+        width="65px"
+        height="65px"
         onClick={() => goToCategory(1)} // Navegar para a próxima categoria
         alt="Seta para a direita"
       />
