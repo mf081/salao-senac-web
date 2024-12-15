@@ -25,17 +25,17 @@ export function NavV2() {
                     </Link>
                 </div>
                 <div className="v2-nav-mid">
-                    <button className="v2-nav-button" onClick={handleCalendarioClick}>
-                        CALENDÁRIO
+                    <button className="v2-nav-button-center" onClick={handleCalendarioClick}>
+                        Home
                     </button>
-                    <button className="v2-nav-button" onClick={handleAgendarClick}>
+                    <button className="v2-nav-button-center" onClick={handleAgendarClick}>
                         AGENDAR HORÁRIO
                     </button>
                     <a href="#AdressSection">
-                        <button className="v2-nav-button">CONTATO</button>
+                        <button className="v2-nav-button-center">CONTATO</button>
                     </a>
                     <a href="#AboutUsSection">
-                        <button className="v2-nav-button">SOBRE NÓS</button>
+                        <button className="v2-nav-button-center">SOBRE NÓS</button>
                     </a>
                 </div>
                 <div className="v2-nav-right">

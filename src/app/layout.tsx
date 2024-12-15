@@ -5,6 +5,7 @@ import "./globals.css";
 import { Header } from "@/components/Layout/Header/header";
 import { Footer } from "@/components/Layout/Footer/footer";
 import { Nav } from "@/components/Layout/Nav/nav";
+import { NavV2 } from "@/components/Layout/NavV2/NavV2";
 
 // Fontes locais
 // const geistSans = localFont({
@@ -70,7 +71,8 @@ export default function RootLayout({
         // className={`${geistSans.variable} ${geistMono.variable}`}
       >
         <Header />
-        <Nav />
+        {/* <Nav /> */}
+        <NavV2></NavV2>
         {children}
         <Footer />
       </body>
