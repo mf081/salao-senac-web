@@ -11,9 +11,9 @@ export default function SideNavBar() {
         <span className="sidebar-username">Amanda Tavares</span>
 
         <div className="buttons">
-          <button className="button-side-bar"><img src="/img/icons/icon-Account.png" className='buttons-side-bar-icons'></img>Editar Perfil</button>
-          <button className="button-side-bar"><img src="/img/icons/icon-Clock.png" className='buttons-side-bar-icons'></img>Historico</button>
-          <button className="button-side-bar"><img src="/img/icons/icon-Logout-Rounded.png" className='buttons-side-bar-icons'></img>Sair</button>
+          <button className="button-side-bar"><img src="/img/icons/icon-Account.png" className='buttons-side-bar-icons img-edit-profile'></img>Editar Perfil</button>
+          <button className="button-side-bar"><img src="/img/icons/icon-Clock.png" className='buttons-side-bar-icons img-edit-historico'></img>Historico</button>
+          <button className="button-side-bar"><img src="/img/icons/icon-Logout-Rounded.png" className='buttons-side-bar-icons img-edit-off'></img>Sair</button>
         </div>
       </nav>
     </main>
