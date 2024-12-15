@@ -13,13 +13,13 @@ type Precos = {
 type ServicoComPrecos = {
   nome: string;
   precos: Precos;
-  descricao?: string; // Adicionando descrição opcional
+  descricao?: string;
 };
 
 type ServicoComPreco = {
   nome: string;
   preco: number;
-  descricao?: string; // Adicionando descrição opcional
+  descricao?: string;
 };
 
 type Servico = ServicoComPrecos | ServicoComPreco;
@@ -31,6 +31,7 @@ type Categoria = {
 
 export function EscolherServico() {
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
+  const [selectedServices, setSelectedServices] = useState<{ [key: string]: boolean }>({}); // Estado de seleção
 
   const goToCategory = useCallback((direction: number) => {
     setCurrentCategoryIndex((prevIndex) => {
@@ -39,9 +40,15 @@ export function EscolherServico() {
     });
   }, []);
 
+  const toggleServiceSelection = (serviceName: string) => {
+    setSelectedServices((prevSelected) => ({
+      ...prevSelected,
+      [serviceName]: !prevSelected[serviceName],
+    }));
+  };
+
   const currentCategory: Categoria = servicesData.categorias[currentCategoryIndex];
 
-  // Componente de navegação de categorias
   const CategoryNavigation = () => (
     <div id="ServicesSection" className="escolher-text-card-categories-container">
       <img
@@ -49,7 +56,7 @@ export function EscolherServico() {
         src="/img/icons/icon-seta-esquerda.png"
         width="100px"
         height="100px"
-        onClick={() => goToCategory(-1)} // Navegar para a categoria anterior
+        onClick={() => goToCategory(-1)}
         alt="Seta para a esquerda"
       />
       <h3 className="escolher-text-card-categories">{currentCategory.nome}</h3>
@@ -58,20 +65,17 @@ export function EscolherServico() {
         src="/img/icons/icon-seta-direita.png"
         width="100px"
         height="100px"
-        onClick={() => goToCategory(1)} // Navegar para a próxima categoria
+        onClick={() => goToCategory(1)}
         alt="Seta para a direita"
       />
     </div>
   );
 
-  // Componente de exibição de preço
   const PriceDisplay = ({ servico }: { servico: Servico }) => {
     if ('precos' in servico) {
-      // Para a primeira categoria, exibe os preços de forma concatenada
       const precos = Object.values(servico.precos).join('/');
       return <p className="escolher-price">R$ {precos}</p>;
     } else {
-      // Para serviços com um único preço
       return <p className="escolher-price">R$ {servico.preco}</p>;
     }
   };
@@ -80,19 +84,28 @@ export function EscolherServico() {
     <section className="escolher-section-02-container">
       <h2>Serviços</h2>
       <h1>Ofertados</h1>
-
-      {/* Navegação entre as categorias */}
       <CategoryNavigation />
-
-      {/* Exibindo os cards de serviços */}
       <div className="escolher-section-card-container">
-        {currentCategory.servicos.map((servico, index) => (
-          <div className="escolher-card" key={`${currentCategoryIndex}-${index}`}>
-            <h3>{servico.nome}</h3>
-            {servico.descricao && <p className="escolher-description">{servico.descricao}</p>} {/* Exibe a descrição */}
-            <PriceDisplay servico={servico} />
-          </div>
-        ))}
+        {currentCategory.servicos.map((servico, index) => {
+          const isSelected = selectedServices[servico.nome];
+          return (
+            <div
+              className={`escolher-card ${isSelected ? "escolher-card-selected" : ""}`}
+              key={`${currentCategoryIndex}-${index}`}
+              onClick={() => toggleServiceSelection(servico.nome)}
+            >
+              <h3>{servico.nome}</h3>
+              {servico.descricao && <p className="escolher-description">{servico.descricao}</p>}
+              <PriceDisplay servico={servico} />
+              <input
+                type="checkbox"
+                className="escolher-checkbox"
+                checked={isSelected || false}
+                onChange={() => toggleServiceSelection(servico.nome)}
+              />
+            </div>
+          );
+        })}
       </div>
     </section>
   );

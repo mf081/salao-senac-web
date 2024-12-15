@@ -1,5 +1,4 @@
-@import url("https://fonts.escolher-googleapis.escolher-com/css2?family=Croissant+One&family=Inter:ital,opsz,wght@0,14.escolher-.escolher-32,100.escolher-.escolher-900;1,14.escolher-.escolher-32,100.escolher-.escolher-900&family=Montserrat:ital,wght@0,100.escolher-.escolher-900;1,100.escolher-.escolher-900&display=swap");
-@import url('https://fonts.escolher-googleapis.escolher-com/css2?family=Montserrat:ital,wght@0,100.escolher-.escolher-900;1,100.escolher-.escolher-900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 .escolher-section-02-container {
   width: 100%;
@@ -13,7 +12,7 @@
   color: #313131;
   text-align: center;
   font-family: "Croissant One", serif;
-  font-size: 23.;
+  font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -35,8 +34,8 @@
 
 .escolher-section-card-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
-  gap: 15px; /* Reduziu o espaçamento entre os cards */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -44,16 +43,15 @@
 .escolher-card {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px; /* Reduziu o padding */
+  padding: 15px;
   text-align: center;
   transition: transform 0.3s ease;
-  height: 300px; /* Reduziu a altura do card */
-  border-radius: 10px;
-  background-blend-mode: multiply;
+  height: 300px;
   border: 1.5px solid rgb(0, 0, 0);
   display: flex;
-  flex-direction: column; /* Alinhar os elementos verticalmente */
-  justify-content: space-between; /* Garante que o conteúdo fique bem distribuído */
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
 }
 
 .escolher-card > h3 {
@@ -63,7 +61,7 @@
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 30.escolher-8px */
+  line-height: 140%;
   letter-spacing: 0.44px;
 }
 
@@ -74,15 +72,15 @@
   font-size: 18px;
   font-style: bold;
   font-weight: 600;
-  line-height: 140%; /* 25.escolher-2px */
+  line-height: 140%;
   letter-spacing: 0.36px;
 }
 
 .escolher-section-02-location {
   display: flex;
   flex-direction: row;
-  align-items: center; /* Alinha o ícone e o texto verticalmente */
-  justify-content: center; /* Alinhamento horizontal */
+  align-items: center;
+  justify-content: center;
   margin: 2rem 0;
 }
 
@@ -92,39 +90,38 @@
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 93.escolher-75% */
+  line-height: 30px;
 }
 
 .escolher-card:hover {
-  transform: scale(1.05); /* Aumenta ligeiramente o card */
+  transform: scale(1.05);
   cursor: pointer;
-}  
+}
 
 .escolher-text-card-categories-container {
   display: flex;
   justify-content: center;
-  position: relative; /* Tornando este container relativo para que as setas possam ser posicionadas em relação a ele */
-  width: 100%; /* Assegura que o container ocupe toda a largura disponível */
+  position: relative;
+  width: 100%;
 }
 
 .escolher-arrow-img {
-  position: absolute; /* Posiciona as setas de forma absoluta em relação ao seu contêiner */
-  top: 50%; /* Posiciona as setas verticalmente no meio */
-  transform: translateY(-50%); /* Centraliza as setas verticalmente */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
 
 .escolher-arrow-img:hover {
-  transform: scale(1.05) translateY(-50%); /* Aumenta ligeiramente a seta ao passar o mouse */
+  transform: scale(1.05) translateY(-50%);
 }
 
-/* Definindo a posição das setas */
 .escolher-arrow-img:first-child {
-  left: 350px; /* Define a seta esquerda com um pequeno espaço da borda esquerda */
+  left: 350px;
 }
 
 .escolher-arrow-img:last-child {
-  right: 350px; /* Define a seta direita com um pequeno espaço da borda direita */
+  right: 350px;
 }
 
 .escolher-text-card-categories {
@@ -151,6 +148,16 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 21px */
-  letter-spacing: 0.escolher-3px;
+  line-height: 140%;
+  letter-spacing: 0.3px;
+}
+
+.escolher-card-selected {
+  background-color: #d9b79a;
+  border-color: #8a6d3b;
+}
+
+.escolher-card input[type="checkbox"] {
+  margin-top: 10px;
+  transform: scale(1.2);
 }
