@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sen:wght@400..800&display=swap');
 
 
 main{
@@ -13,8 +14,10 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 300px;
-    margin-top: 50px;
+    width: 90%;
+    margin: 3rem;
+    margin-right: 3rem;
+
     
 }
 
@@ -27,26 +30,25 @@ main{
 
 .resumo-container {
     background-color: #004c8c; /* Cor azul do fundo */
-    border-radius: 20px; /* Bordas arredondadas */
-    box-shadow: 
-        0px 5px 15px rgba(0, 0, 0, 0.3), /* Sombra superior */
-        0px 15px 30px rgba(0, 0, 0, 0.5), /* Sombra mais intensa */
-        0px 30px 50px rgba(0, 0, 0, 0.7); /* Sombra inferior */
-    position: relative;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 181px 362px 113px 0px rgba(0, 0, 0, 0.01), 116px 232px 104px 0px rgba(0, 0, 0, 0.10), 65px 130px 87px 0px rgba(0, 0, 0, 0.00), 29px 58px 65px 0px rgba(0, 0, 0, 0.14), 7px 14px 36px 0px rgba(0, 0, 0, 0.44), 0px 0px 0px 0px rgba(0, 0, 0, 0.88);
     padding: 2rem; /* Espaçamento interno */
-    width: 850px; /* Largura fixa */
+    width: 100%; /* Largura fixa */
     height: 650px; /* Altura fixa */
-    margin: 2rem auto; /* Centralizar horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .resumo-conteudo {
     background-color: #2f5e94;
     color: #fff;
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 1.5rem;
     height: 583px;
     width: 700px;
-    margin-left: 50px;
+    margin: 1rem;
+
 }
 
 .resumo-conteudo h2 {
@@ -108,4 +110,12 @@ hr {
     font-family: 'Montserrat';
     gap: 20pc;
     padding: 20px;
+}
+
+.resumo-agendado-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

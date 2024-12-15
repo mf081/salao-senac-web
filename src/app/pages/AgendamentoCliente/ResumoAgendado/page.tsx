@@ -1,14 +1,18 @@
 import React from 'react';
 import './ResumoAgendado.css';
-import SideNavBar from '@/components/UI/SideNavBar/SideNavBar';
+import SideNavBar from '@/components/Layout/SideNavBar/SideNavBar';
+import { AgendamentoHeader } from '@/components/Layout/AgendamentoHeader/AgendamentoHeader';
 
 export default function ResumoAgendado (){
     return(
         <main>
             <SideNavBar></SideNavBar>
-            
+            <div className='resumo-agendado-container'>
+                <AgendamentoHeader title="Agendamento" />
+                
+
             <div className="container">
-                <h1 className="titulo">Resumo</h1>
+                
                 <div className="resumo-container">
                     <div className="resumo-conteudo">
                         <h2>Resumo da compra</h2>
@@ -28,6 +32,9 @@ export default function ResumoAgendado (){
                     </div>
                 </div>
             </div>
+            </div>
+            
+
 
         </main>
     );
