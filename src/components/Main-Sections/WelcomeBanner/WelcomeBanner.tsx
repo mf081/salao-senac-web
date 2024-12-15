@@ -20,7 +20,7 @@ export function WelcomeBanner() {
           horário e conte com o cuidado personalizado que você merece. Seu
           momento de brilhar chegou.
         </p>
-        <button>
+        <button className="button-welcome-banner">
           Agendar Horário
           <img
             src="/img/icons/Clock-icon.png"

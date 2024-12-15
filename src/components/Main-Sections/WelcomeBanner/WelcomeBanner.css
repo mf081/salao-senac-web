@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sen:wght@400..800&display=swap');
 
 .section-01-container {
   /* border: 5px solid rgb(255, 36, 218);  */
-  height: auto; /* Altura fixa */
+  height: 48vh; /* Altura fixa */
   display: grid; /* Usar grid para organizar o conteúdo */
   grid-template-columns: repeat(2, 1fr); /* Duas colunas */
   padding: 1rem 2rem; /* Padding para evitar que os elementos toquem as bordas */
@@ -29,6 +30,7 @@
 .section-01-text {
   display: flex;
   flex-direction: column;
+  margin-top: 35px;
 }
 .section-01-text h1 {
   color: #fff;
@@ -39,19 +41,20 @@
 }
 .section-01-text p {
   color: #fbf5f0;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 18px;
   line-height: 1.4;
   margin-top: 10px;
+  font-weight: 500;
 }
 
 .section-01-text button {
   width: 208px;
   height: 53px;
-  border-radius: 3px;
+  border-radius: 5px;
   background: var(--orange-senac-color);
   color: #fff;
-  font-family: "Syne", sans-serif;
+  font-family: 'Montserrat';
   font-size: 16px;
   font-weight: 600;
   display: flex;
@@ -59,17 +62,19 @@
   align-items: center;
   border: none;
   cursor: pointer;
-  transition: background 0.3s;
   margin-top: 20px;
   gap: 10px;
+  transition: 500ms;
+
 }
 
 .section-01-text img.icon {
   margin-left: 8px;
-  width: 20px;
+  width: 25px;
   height: auto;
 }
 .section-01-text button:hover {
-  background: #6a0c93; /* Cor de fundo ao passar o mouse */
+  background: #d67200; /* Cor de fundo ao passar o mouse */
   transform: scale(1.05); /* Aumenta ligeiramente o botão */
+  
 }
