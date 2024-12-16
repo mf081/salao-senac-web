@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import './Agendamento.css';
 import SideNavBar from '@/components/Layout/SideNavBar/SideNavBar';
