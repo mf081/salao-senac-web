@@ -1,6 +1,7 @@
 import React from 'react';
 import './EditarPerfil.css';
 import SideNavBar from '@/components/Layout/SideNavBar/SideNavBar';
+import AvatarProfile from '@/components/UI/AvatarProfile/AvatarProfile';
 export default function EditarPerfil() {
   return (
     <main className='editar-perfil-main'>
@@ -10,11 +11,12 @@ export default function EditarPerfil() {
       <div className='teste'>
         <div className="profile-card-editar-perfil">
           {/* Imagem do perfil */}
-          <img
+          {/* <img
             src="/img/mulher-branca.png"
             alt="Foto do Perfil"
             className="profile-img-editar-perfil"
-          />
+          /> */}
+          <AvatarProfile></AvatarProfile>
           <a href="#" className="change-image">
             Mudar imagem
           </a>

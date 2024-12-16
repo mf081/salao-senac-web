@@ -7,7 +7,7 @@ export default function AvatarProfile(){
         <div>
             <div className="moldura-container">
                 <div className="img-moldura">
-                    <img src="/img/professionals-1.png" alt="" />
+                    <img src="" alt="" />
                 </div>
             </div>
         </div>

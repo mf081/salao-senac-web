@@ -1,12 +1,16 @@
 'use client';
-
 import React from 'react';
 import './SideNavBar.css';
 import { useRouter } from 'next/navigation';
+import AvatarProfile from '@/components/UI/AvatarProfile/AvatarProfile';
 
 export default function SideNavBar() {
-
   const router = useRouter();
+
+  // Obtém o nome do usuário do localStorage
+  const storedUser = JSON.parse(localStorage.getItem('user') || '{}');
+  const nomeUsuario = storedUser.nome || 'Usuário';
+
   const handleEditarPerfilClick = () => {
     router.push('/pages/AgendamentoCliente/EditarPerfil');
   };
@@ -14,23 +18,22 @@ export default function SideNavBar() {
   const handleHistoricoClick = () => {
     router.push('/pages/AgendamentoCliente/HistoricoAgendamento');
   };
-  
 
   return (
     <main>
       <nav className="sidebar">
-        <div className="user-profile">
-          <img src="/img/mulher-branca.png" alt="Foto de perfil de Amanda Tavares" />
-        </div>
-        <span className="sidebar-username">Amanda Tavares</span>
+        {/* <div className="user-profile">
+          <img src="/img/mulher-branca.png" alt="Foto de perfil" />
+        </div> */}
+        <AvatarProfile></AvatarProfile>
+        <span className="sidebar-username">{nomeUsuario}</span>
 
         <div className="buttons">
-          <button onClick={handleEditarPerfilClick} className="button-side-bar"><img src="/img/icons/icon-Account.png" className='buttons-side-bar-icons img-edit-profile'></img>Editar Perfil</button>
-          <button onClick={handleHistoricoClick} className="button-side-bar"><img src="/img/icons/icon-Clock.png" className='buttons-side-bar-icons img-edit-historico'></img>Historico</button>
-          <button className="button-side-bar"><img src="/img/icons/icon-Logout-Rounded.png" className='buttons-side-bar-icons img-edit-off'></img>Sair</button>
+          <button onClick={handleEditarPerfilClick} className="button-side-bar">Editar Perfil</button>
+          <button onClick={handleHistoricoClick} className="button-side-bar">Histórico</button>
+          <button className="button-side-bar">Sair</button>
         </div>
       </nav>
     </main>
   );
 }
-
