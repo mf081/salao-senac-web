@@ -32,8 +32,6 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <Head>
-
-        <link rel="icon" href="/img/favicon.ico" sizes="32x32"></link>
         {/* Font Awesome */}
         <link
           rel="stylesheet"
