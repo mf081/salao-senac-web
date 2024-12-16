@@ -7,20 +7,34 @@ import AvatarProfile from '@/components/UI/AvatarProfile/AvatarProfile';
 
 export default function EditarPerfil() {
   const [nome, setNome] = useState(''); // Estado para armazenar o nome do usuário
+  const [isClient, setIsClient] = useState(false);
+
+  // UseEffect para garantir que o código só rode no cliente
+  useEffect(() => {
+    setIsClient(true); // Marca que o código está no lado do cliente
+  }, []);
 
   // Carregar o nome do localStorage quando o componente for montado
   useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem('user') || '{}');
-    setNome(storedUser.nome || 'Usuário'); // Define o nome padrão como 'Usuário'
-  }, []);
+    if (isClient) {
+      const storedUser = JSON.parse(localStorage.getItem('user') || '{}');
+      setNome(storedUser.nome || 'Usuário'); // Define o nome padrão como 'Usuário'
+    }
+  }, [isClient]);
 
   // Função para salvar o nome no localStorage
   const handleSalvar = () => {
-    const storedUser = JSON.parse(localStorage.getItem('user') || '{}');
-    storedUser.nome = nome; // Atualiza o nome no objeto
-    localStorage.setItem('user', JSON.stringify(storedUser)); // Salva no localStorage
-    alert('Nome atualizado com sucesso!');
+    if (isClient) {
+      const storedUser = JSON.parse(localStorage.getItem('user') || '{}');
+      storedUser.nome = nome; // Atualiza o nome no objeto
+      localStorage.setItem('user', JSON.stringify(storedUser)); // Salva no localStorage
+      alert('Nome atualizado com sucesso!');
+    }
   };
+
+  if (!isClient) {
+    return <div>Loading...</div>; // Exibe algo enquanto o código está esperando no cliente
+  }
 
   return (
     <main className="editar-perfil-main">
