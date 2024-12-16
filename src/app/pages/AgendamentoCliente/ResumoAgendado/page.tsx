@@ -6,10 +6,11 @@ import { AgendamentoHeader } from '@/components/Layout/AgendamentoHeader/Agendam
 import { CarrinhoServicos } from '@/components/UI/CarrinhoServicos/CarrinhoServicos';
 import { EscolherServico } from '@/components/UI/EscolherServico/EscolherServico';
 
-// Define o tipo para os serviços
+// Define o tipo para os serviços, incluindo a propriedade 'descricao'
 interface Service {
     nome: string;
-    [key: string]: any; // Outras propriedades opcionais
+    descricao: string;  // Propriedade 'descricao' adicionada
+    detalhes?: Record<string, unknown>; // Outras propriedades opcionais
 }
 
 export default function ResumoAgendado() {

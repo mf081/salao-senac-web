@@ -19,8 +19,6 @@ export default function AvatarProfile() {
             // Definir imagem com base no nome
             if (
                 nome.toLowerCase() === 'danilo farias' ||
-                nome.toLowerCase() === 'danilo faria' ||
-                nome.toLowerCase() === 'danilo farias' ||
                 nome.toLowerCase() === 'danilo faria'
             ) {
                 setImageSrc('/img/prof-danilo.jpg');
@@ -38,6 +36,7 @@ export default function AvatarProfile() {
                 <div className="img-moldura">
                     {imageSrc && <Image src={imageSrc} alt="Avatar do usuário" />}
                 </div>
+                <p>{nomeUsuario}</p> {/* Exibindo o nome do usuário */}
             </div>
         </div>
     );
