@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <Head>
 
-        <link rel="icon" href="/img/iconfav.ico" sizes="32x32"></link>
+        <link rel="icon" href="/img/favicon.ico" sizes="32x32"></link>
         {/* Font Awesome */}
         <link
           rel="stylesheet"
