@@ -2,7 +2,7 @@
 import React, { useState, useCallback } from "react";
 import Image from 'next/image';  // Importação do componente Image do Next.js
 import "./ServicesSection.css";
-import servicesData from '/workspaces/salao-senac-web/public/json/product-services.json';
+import servicesData from 'public/json/product-services.json';
 
 type Precos = {
   curto: number;

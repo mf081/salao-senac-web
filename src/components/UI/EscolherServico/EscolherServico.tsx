@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useCallback } from "react";
 import "./EscolherServico.css";
-import servicesData from '/workspaces/salao-senac-web/public/json/product-services.json';
+import servicesData from 'public/json/product-services.json';
 import Image from 'next/image'; // Importação do Image
 
 // Definir os tipos para Preco e Servico

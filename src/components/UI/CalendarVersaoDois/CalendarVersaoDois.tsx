@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useCallback } from "react";
-import calendarData from '/workspaces/salao-senac-web/public/json/calendar.json';
+import calendarData from 'public/json/calendar.json';
 import './CalendarVersaoDois.css';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image'; // Importação do Image
