@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image'; // Importando o componente Image
@@ -16,10 +14,6 @@ export function NavV2() {
         router.push('/pages/LoginCliente/Cadastramento');
     };
 
-    const handleCalendarioClick = () => {
-        router.push('/pages/AgendamentoCliente/Agendamento');
-    };
-
     const handleContatoClick = () => {
         router.push('/#AdressSection'); // Navegação com hash
     };
@@ -30,10 +24,6 @@ export function NavV2() {
 
     const handleHomeClick = () => {
         router.push('/'); // Voltar para a página inicial
-    };
-
-    const handleResumoAgendadoClick = () => {
-        router.push('/pages/AgendamentoCliente/ResumoAgendado'); // Voltar para a página inicial
     };
 
     return (
