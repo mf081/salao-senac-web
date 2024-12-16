@@ -2,21 +2,28 @@ import React from "react";
 import './CarrinhoServicos.css';
 import { useRouter } from 'next/navigation';
 
+// Definindo o tipo para os serviços
+interface Service {
+    nome: string;
+    preco?: number;
+    precos?: Record<string, number>; // Um objeto com vários preços (opcional)
+}
 
-export function CarrinhoServicos({ selectedServices }) {
+interface CarrinhoServicosProps {
+    selectedServices: Service[];
+}
+
+export function CarrinhoServicos({ selectedServices }: CarrinhoServicosProps) {
     const router = useRouter();
+
     const handleCalendarioClick = () => {
         router.push('/pages/AgendamentoCliente/Agendamento');
     };
-    
 
-
-
-
-    const total = selectedServices.reduce((sum, service) => {
-        if ('preco' in service) {
+    const total = selectedServices.reduce((sum: number, service: Service) => {
+        if ('preco' in service && service.preco) {
             return sum + service.preco;
-        } else if ('precos' in service) {
+        } else if ('precos' in service && service.precos) {
             return sum + Math.min(...Object.values(service.precos));
         }
         return sum;
