@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import Head from "next/head"; // Importando o componente Head
 import "./globals.css";
 import { Header } from "@/components/Layout/Header/header";
 import { Footer } from "@/components/Layout/Footer/footer";
-import { Nav } from "@/components/Layout/Nav/nav";
 import { NavV2 } from "@/components/Layout/NavV2/NavV2";
 
 // Fontes locais

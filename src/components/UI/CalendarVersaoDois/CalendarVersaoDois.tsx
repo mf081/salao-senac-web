@@ -4,6 +4,7 @@ import React, { useState, useCallback } from "react";
 import calendarData from '/workspaces/salao-senac-web/public/json/calendar.json';
 import './CalendarVersaoDois.css';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image'; // Importação do Image
 
 // Definindo os tipos dos dados
 type Dia = {
@@ -23,7 +24,6 @@ export function CalendarVersaoDois() {
     router.push('/pages/AgendamentoCliente/AgendamentoConcluido');
   };
 
-  
   const [currentMonthIndex, setCurrentMonthIndex] = useState(0);
 
   const goToMonth = useCallback((direction: number) => {
@@ -41,19 +41,19 @@ export function CalendarVersaoDois() {
     <div id="CalendarSection" className="text-card-categories-container-home">
       <h3 className="text-card-categories-home">{`${currentMonth.nome}`}</h3>
       <div className="arrows-img-keys-home">
-        <img
+        <Image
           className="arrow-img-home"
           src="/img/icons/seta-esquerda-calendario.png"
-          width="100px"
-          height="100px"
+          width={100}
+          height={100}
           onClick={() => goToMonth(-1)}
           alt="Seta para a esquerda"
         />
-        <img
+        <Image
           className="arrow-img-home"
           src="/img/icons/seta-direita-calendario.png"
-          width="100px"
-          height="100px"
+          width={100}
+          height={100}
           onClick={() => goToMonth(1)}
           alt="Seta para a direita"
         />

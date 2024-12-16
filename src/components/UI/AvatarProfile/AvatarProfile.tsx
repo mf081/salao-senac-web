@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import './AvatarProfile.css';
 
 export default function AvatarProfile() {
@@ -35,7 +36,7 @@ export default function AvatarProfile() {
         <div>
             <div className="moldura-container">
                 <div className="img-moldura">
-                    {imageSrc && <img src={imageSrc} alt="Avatar do usuário" />}
+                    {imageSrc && <Image src={imageSrc} alt="Avatar do usuário" />}
                 </div>
             </div>
         </div>

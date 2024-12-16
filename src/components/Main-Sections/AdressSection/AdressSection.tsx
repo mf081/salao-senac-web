@@ -1,22 +1,29 @@
 import * as React from "react";
+import Image from 'next/image';  // Importação do componente Image do Next.js
 import "./AdressSection.css";
 
-export function AdressSection(){
+export function AdressSection() {
     return(
-        <section id="AdressSection"className="adress-section">
+        <section id="AdressSection" className="adress-section">
             <div className="container-adress">
                 <h2>Endereço</h2>
             </div>
             <div className="section-02-location container-endereco">
-                <img className="icone-adress" src="/img/icons/place-icon.png" alt="Localização" />
+                <Image 
+                    className="icone-adress" 
+                    src="/img/icons/place-icon.png" 
+                    alt="Localização" 
+                    width={50} 
+                    height={50} 
+                />
                 <h3>
-                Pernambuco - Av. Visconde de Suassuna, 500 - Santo Amaro - Recife
+                    Pernambuco - Av. Visconde de Suassuna, 500 - Santo Amaro - Recife
                 </h3>
             </div>
             <div className="adress-principal">
                 <div className="funcionamento-adress">
                     <h3 className="titulo-adress">Funcionamento</h3>
-                    <p className="text-adress">Segunda à sexta-feira das 8h às 18h <br></br> Sábados das 9h às 15h <br></br> Atendimento com horário marcado.</p>
+                    <p className="text-adress">Segunda à sexta-feira das 8h às 18h <br /> Sábados das 9h às 15h <br /> Atendimento com horário marcado.</p>
                     <div className="fale-conosco-adress">
                         <p className="text-adress">Ficou com alguma dúvida?</p>
                         <h3 className="titulo-adress">Fale conosco</h3>
@@ -29,15 +36,14 @@ export function AdressSection(){
                     </div>
                 </div>
                 <div className="container-img-adress">
-                    <img src="/img/frente-salao.png" alt="" />
+                    <Image 
+                        src="/img/frente-salao.png" 
+                        alt="Frente do salão" 
+                        width={600} 
+                        height={400} 
+                    />
                 </div>
             </div>
-
-
-
         </section>
-
-    
-    
     );
 }

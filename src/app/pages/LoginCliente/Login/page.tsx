@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import './login.css';
+import Image from 'next/image'; // Importação do Image
 
 export default function Login() {
     const router = useRouter();
@@ -57,7 +58,12 @@ export default function Login() {
         <main>
             <section className="container-login">
                 <div className="img-login">
-                    <img src="/img/img-login.png" width="612px" height="743" alt="" />
+                    <Image 
+                        src="/img/img-login.png" 
+                        width={612} 
+                        height={743} 
+                        alt="Imagem de login"
+                    />
                 </div>
                 <div className="form-login">
                     <h2>Agendamento</h2>

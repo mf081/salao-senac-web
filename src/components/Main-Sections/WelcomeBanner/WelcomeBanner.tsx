@@ -2,6 +2,7 @@
 import * as React from "react";
 import "./WelcomeBanner.css";
 import { useRouter } from 'next/navigation';
+import Image from 'next/image'; // Importando o componente Image do Next.js
 
 export function WelcomeBanner() {
 
@@ -14,10 +15,11 @@ export function WelcomeBanner() {
   return (
     <section id="WelcomeBanner" className="section-01-container">
       <div className="section-01-img">
-        <img
+        <Image
           src="/img/muiecomquadrado.png"
           id="muie-capa"
-          width="290px"
+          width={290} // Ajustado para não usar 'px'
+          height={290} // Ajustado para manter o aspecto correto
           alt="Imagem de capa"
         />
       </div>
@@ -28,14 +30,15 @@ export function WelcomeBanner() {
           horário e conte com o cuidado personalizado que você merece. Seu
           momento de brilhar chegou.
         </p>
-        <button onClick={handleAgendarClick}className="button-welcome-banner">
+        <button onClick={handleAgendarClick} className="button-welcome-banner">
           Agendar Horário
-          <img
+          <Image
             src="/img/icons/Clock-icon.png"
             alt="Ícone de relógio"
             className="section-01-button-icon"
-          />{" "}
-          {/* Apliquei uma nova classe para o ícone */}
+            width={24} // Ajuste do tamanho do ícone
+            height={24} // Ajuste do tamanho do ícone
+          />
         </button>
       </div>
     </section>

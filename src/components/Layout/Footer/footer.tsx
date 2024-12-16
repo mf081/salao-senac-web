@@ -3,20 +3,12 @@ import React from 'react';
 import './footer.css';
 import './footer-bar.css';
 import { useRouter } from 'next/navigation';
-import Link from 'next/link';
-
-
-
-
-
-
-
-
+import Image from 'next/image'; // Importando o componente Image
 
 export function Footer() {
   const router = useRouter();
   
-    const handleSobreNosClick = () => {
+  const handleSobreNosClick = () => {
     router.push('/#AboutUsSection'); // Navegação com hash
   };
 
@@ -26,25 +18,17 @@ export function Footer() {
 
   const handleContatoClick = () => {
     router.push('/#AdressSection'); // Navegação com hash
-};
-const handleAgendarClick = () => {
-  router.push('/pages/LoginCliente/Login');
-};
+  };
 
-
-
-
-
-
-
-
+  const handleAgendarClick = () => {
+    router.push('/pages/LoginCliente/Login');
+  };
 
   return (
     <footer>
       <div className="footer-container">
         {/* Logo e texto de descrição */}
         <div className="footer-logo">
-          {/* <img src="/img/logo-salao-senac-branca.png" alt="Logo SENAC" /> */}
           <p className="text-image-p">
             “Beleza e aprendizado em harmonia: transforme seu futuro no Salão
             Empresa Pedagógica do Senac Recife”.
@@ -99,10 +83,10 @@ const handleAgendarClick = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src="/img/icons/instagram-icon.png"
-              width="18"
-              height="19"
+              width={18}
+              height={19}
               alt="Instagram"
               className="header-icons"
             />
@@ -112,10 +96,10 @@ const handleAgendarClick = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src="/img/icons/facebook-icon.png"
-              width="20"
-              height="21"
+              width={20}
+              height={21}
               alt="Facebook"
               className="header-icons"
             />
@@ -125,10 +109,10 @@ const handleAgendarClick = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src="/img/icons/linkedin-icon.png"
-              width="20"
-              height="21"
+              width={20}
+              height={21}
               alt="LinkedIn"
               className="header-icons"
             />
@@ -138,10 +122,10 @@ const handleAgendarClick = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src="/img/icons/youtube-icon.png"
-              width="20"
-              height="21"
+              width={20}
+              height={21}
               alt="YouTube"
               className="header-icons"
             />

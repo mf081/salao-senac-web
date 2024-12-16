@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useCallback } from "react";
+import Image from 'next/image';  // Importação do componente Image do Next.js
 import "./ServicesSection.css";
 import servicesData from '/workspaces/salao-senac-web/public/json/product-services.json';
 
@@ -44,20 +45,20 @@ export function ServicesSection() {
   // Componente de navegação de categorias
   const CategoryNavigation = () => (
     <div id="ServicesSection" className="text-card-categories-container">
-      <img
+      <Image
         className="arrow-img"
         src="/img/icons/icon-seta-esquerda.png"
-        width="65px"
-        height="65px"
+        width={65}
+        height={65}
         onClick={() => goToCategory(-1)} // Navegar para a categoria anterior
         alt="Seta para a esquerda"
       />
       <h3 className="text-card-categories">{currentCategory.nome}</h3>
-      <img
+      <Image
         className="arrow-img"
         src="/img/icons/icon-seta-direita.png"
-        width="65px"
-        height="65px"
+        width={65}
+        height={65}
         onClick={() => goToCategory(1)} // Navegar para a próxima categoria
         alt="Seta para a direita"
       />

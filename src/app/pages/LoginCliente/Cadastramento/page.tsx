@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';  // Importando useRouter do Next.js
-import "./Cadastramento.css";
+import './Cadastramento.css';
+import Image from 'next/image'; // Importação do Image
 
 export default function Cadastramento() {
     const [nome, setNome] = useState('');
@@ -30,10 +31,15 @@ export default function Cadastramento() {
     return (
         <main>
             <section className="container-login">
-                <div className='img-login'>
-                    <img src="/img/img-login.png" width="612px" height="743" alt="Imagem Login" />
+                <div className="img-login">
+                    <Image 
+                        src="/img/img-login.png" 
+                        width={612} 
+                        height={743} 
+                        alt="Imagem Login"
+                    />
                 </div>
-                <div className='form-login'>
+                <div className="form-login">
                     <h2>Cadastre-se</h2>
                     <form onSubmit={handleCadastro}>
                         <div className="forms">

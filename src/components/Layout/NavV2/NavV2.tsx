@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image'; // Importando o componente Image
 import './NavV2.css';
 
 export function NavV2() {
@@ -30,6 +31,7 @@ export function NavV2() {
     const handleHomeClick = () => {
         router.push('/'); // Voltar para a página inicial
     };
+
     const handleResumoAgendadoClick = () => {
         router.push('/pages/AgendamentoCliente/ResumoAgendado'); // Voltar para a página inicial
     };
@@ -38,7 +40,13 @@ export function NavV2() {
         <nav>
             <div className="v2-nav-container">
                 <div className="v2-nav-img">
-                    <img onClick={handleHomeClick} src="/img/logo-salao-senac-preta.png" alt="Logo" width="199px" height="158px" />
+                    <Image 
+                        onClick={handleHomeClick} 
+                        src="/img/logo-salao-senac-preta.png" 
+                        alt="Logo" 
+                        width={199} 
+                        height={158} 
+                    />
                 </div>
                 <div className="v2-nav-mid">
                     <button className="v2-nav-button-center" onClick={handleHomeClick}>

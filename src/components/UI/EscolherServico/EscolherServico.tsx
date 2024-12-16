@@ -2,6 +2,7 @@
 import React, { useState, useCallback } from "react";
 import "./EscolherServico.css";
 import servicesData from '/workspaces/salao-senac-web/public/json/product-services.json';
+import Image from 'next/image'; // Importação do Image
 
 // Definir os tipos para Preco e Servico
 interface Preco {
@@ -53,20 +54,20 @@ export function EscolherServico({ onServiceSelect, selectedServices }: EscolherS
             <h2>Serviços</h2>
             <h1>Ofertados</h1>
             <div id="ServicesSection" className="escolher-text-card-categories-container">
-                <img
+                <Image
                     className="escolher-arrow-img"
                     src="/img/icons/icon-seta-esquerda.png"
-                    width="100px"
-                    height="100px"
+                    width={100}
+                    height={100}
                     onClick={() => goToCategory(-1)}
                     alt="Seta para a esquerda"
                 />
                 <h3 className="escolher-text-card-categories">{currentCategory.nome}</h3>
-                <img
+                <Image
                     className="escolher-arrow-img"
                     src="/img/icons/icon-seta-direita.png"
-                    width="100px"
-                    height="100px"
+                    width={100}
+                    height={100}
                     onClick={() => goToCategory(1)}
                     alt="Seta para a direita"
                 />

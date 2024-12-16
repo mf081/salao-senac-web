@@ -25,9 +25,7 @@ export default function SideNavBar() {
   return (
     <main>
       <nav className="sidebar">
-        {/* <div className="user-profile">
-          <img src="/img/mulher-branca.png" alt="Foto de perfil" />
-        </div> */}
+
         <AvatarProfile></AvatarProfile>
         <span className="sidebar-username">Seja Bem Vindo {nomeUsuario}!</span>
 
