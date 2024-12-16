@@ -6,12 +6,18 @@ import { AgendamentoHeader } from '@/components/Layout/AgendamentoHeader/Agendam
 import { CarrinhoServicos } from '@/components/UI/CarrinhoServicos/CarrinhoServicos';
 import { EscolherServico } from '@/components/UI/EscolherServico/EscolherServico';
 
+// Define o tipo para os serviços
+interface Service {
+    nome: string;
+    [key: string]: any; // Outras propriedades opcionais
+}
+
 export default function ResumoAgendado() {
     // Estado compartilhado para armazenar os serviços selecionados
-    const [selectedServices, setSelectedServices] = useState([]);
+    const [selectedServices, setSelectedServices] = useState<Service[]>([]);
 
     // Função para adicionar ou remover serviços no carrinho
-    const handleServiceSelection = (service) => {
+    const handleServiceSelection = (service: Service) => {
         setSelectedServices((prev) => {
             const exists = prev.find((s) => s.nome === service.nome);
             if (exists) {
@@ -26,7 +32,7 @@ export default function ResumoAgendado() {
         <main>
             <SideNavBar></SideNavBar>
             <div className='resumo-agendado-container'>
-                <AgendamentoHeader title="Agendamento" />
+                <AgendamentoHeader title="Agendamento" pAgendamento='1/3 - Selecione os serviços desejados por você, role para baixo e aperte em confirmar.' />
 
                 <div className="container-para-row-resumo-agendado">
                     {/* Passa a função e o estado para os componentes */}

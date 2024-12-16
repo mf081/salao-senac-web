@@ -11,7 +11,7 @@ export default function Agendamento() {
         <main className='agendamento-main'>
             <SideNavBar />
             <div className='main-agendamento-container'>
-                <AgendamentoHeader title="Agendamento" />
+                <AgendamentoHeader title="Agendamento" pAgendamento='2/3 Selecione data e hora disponiveis e aperte em confirmar.'/>
                 <div className='agendamento-container-column'>
                     <div className='agendamento-container-left'>
                         <CalendarVersaoDois />

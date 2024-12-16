@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sen:wght@400..800&display=swap');
 
 
+.agendamento-concluido-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .agendamento-concluido-main {
     display: flex;
     flex-direction: row;
@@ -20,6 +26,7 @@
     height: 70vh;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    width: 750px;
 }
 
 .summary-box h2 {

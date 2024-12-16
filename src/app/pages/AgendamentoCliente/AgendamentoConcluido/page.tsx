@@ -3,13 +3,19 @@ import React from 'react';
 import './AgendamentoConcluido.css'
 import SideNavBar from '@/components/Layout/SideNavBar/SideNavBar';
 import DownloadButton from '/workspaces/salao-senac-web/src/components/Button/ButtonDownloadPDF/DownloadButton'; // Corrigi o caminho para a importação
+import { AgendamentoHeader } from '@/components/Layout/AgendamentoHeader/AgendamentoHeader';
 
 
 export default function AgendamentoConcluido (){
     return(
         <main className='agendamento-concluido-main'>
             <SideNavBar></SideNavBar>
+            <section className='agendamento-concluido-section'>
+                <AgendamentoHeader title="Agendamento" pAgendamento='3/3 Verifique seu agendamento e baixe o comprovante caso queira.'/>
+                
+
             <section className="summary-box">
+                
                 <div className='.container-sumary'>
 
                     <h2>Agendamento realizado com sucesso !</h2>
@@ -43,6 +49,8 @@ export default function AgendamentoConcluido (){
                     </div>
             
                 </div>
+            </section>
+
             </section>
         </main>
     );
