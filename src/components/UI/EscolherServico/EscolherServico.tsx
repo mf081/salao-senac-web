@@ -1,12 +1,32 @@
 'use client';
 import React, { useState, useCallback } from "react";
 import "./EscolherServico.css";
-import servicesData from '/workspaces/salao-senac-web/src/json/product-services.json';
+import servicesData from '/workspaces/salao-senac-web/public/json/product-services.json';
 
-export function EscolherServico({ onServiceSelect, selectedServices }) {
+// Definir os tipos para Preco e Servico
+interface Preco {
+    curto: number;
+    medio: number;
+    longo: number;
+    extralongo: number;
+}
+
+interface Servico {
+    nome: string;
+    descricao: string;
+    preco?: number;
+    precos?: Preco;
+}
+
+interface EscolherServicoProps {
+    onServiceSelect: (servico: Servico) => void;
+    selectedServices: Servico[];
+}
+
+export function EscolherServico({ onServiceSelect, selectedServices }: EscolherServicoProps) {
     const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
 
-    const goToCategory = useCallback((direction) => {
+    const goToCategory = useCallback((direction: number) => {
         setCurrentCategoryIndex((prevIndex) => {
             const nextIndex = (prevIndex + direction + servicesData.categorias.length) % servicesData.categorias.length;
             return nextIndex;
@@ -15,12 +35,16 @@ export function EscolherServico({ onServiceSelect, selectedServices }) {
 
     const currentCategory = servicesData.categorias[currentCategoryIndex];
 
-    const PriceDisplay = ({ servico }) => {
-        if ('precos' in servico) {
+    // Exibir preços de maneira condicional
+    const PriceDisplay = ({ servico }: { servico: Servico }) => {
+        if ('precos' in servico && servico.precos) {
+            // Garantir que precos não é undefined
             const precos = Object.values(servico.precos).join('/');
             return <p className="escolher-price">R$ {precos}</p>;
-        } else {
+        } else if (servico.preco) {
             return <p className="escolher-price">R$ {servico.preco}</p>;
+        } else {
+            return <p className="escolher-price">Preço indisponível</p>;
         }
     };
 

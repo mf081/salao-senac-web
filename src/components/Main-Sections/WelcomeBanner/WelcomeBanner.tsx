@@ -1,7 +1,15 @@
+'use client';
 import * as React from "react";
 import "./WelcomeBanner.css";
+import { useRouter } from 'next/navigation';
 
 export function WelcomeBanner() {
+
+  const router = useRouter();
+  const handleAgendarClick = () => {
+    router.push('/pages/LoginCliente/Login');
+  };
+
   // Renomeando para PascalCase
   return (
     <section id="WelcomeBanner" className="section-01-container">
@@ -20,7 +28,7 @@ export function WelcomeBanner() {
           horário e conte com o cuidado personalizado que você merece. Seu
           momento de brilhar chegou.
         </p>
-        <button className="button-welcome-banner">
+        <button onClick={handleAgendarClick}className="button-welcome-banner">
           Agendar Horário
           <img
             src="/img/icons/Clock-icon.png"

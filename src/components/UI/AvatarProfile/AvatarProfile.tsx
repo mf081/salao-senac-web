@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import './AvatarProfile.css';
 
 export default function AvatarProfile() {
@@ -7,24 +7,29 @@ export default function AvatarProfile() {
     const [nomeUsuario, setNomeUsuario] = useState<string>('Usuário');
     const [imageSrc, setImageSrc] = useState<string>('');
 
-    // Recuperar o nome do usuário do localStorage assim que o componente for montado
     useEffect(() => {
+        // Recuperar informações do localStorage
         const storedUser = localStorage.getItem('user');
         if (storedUser) {
             const user = JSON.parse(storedUser);
-            const nome = user.nome || 'Usuário'; // Pega o nome do usuário, se disponível
+            const nome = user.nome || 'Usuário'; // Nome padrão caso não exista
             setNomeUsuario(nome);
 
-            // Definir a imagem com base no nome
-            if (nome === 'Danilo Farias') {
+            // Definir imagem com base no nome
+            if (
+                nome.toLowerCase() === 'danilo farias' ||
+                nome.toLowerCase() === 'danilo faria' ||
+                nome.toLowerCase() === 'danilo farias' ||
+                nome.toLowerCase() === 'danilo faria'
+            ) {
                 setImageSrc('/img/prof-danilo.jpg');
-            } else if (nome === 'Mateus Fernando') {
+            } else if (nome.toLowerCase() === 'mateus fernando') {
                 setImageSrc('/img/img-mateus.png');
             } else {
                 setImageSrc(''); // Imagem padrão caso não seja nenhum dos dois
             }
         }
-    }, []); // O useEffect é chamado apenas uma vez após a montagem do componente
+    }, []); // Executar apenas uma vez após o componente montar
 
     return (
         <div>

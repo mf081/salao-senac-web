@@ -3,7 +3,6 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import './NavV2.css';
-import Link from 'next/link';
 
 export function NavV2() {
     const router = useRouter();
@@ -45,7 +44,7 @@ export function NavV2() {
                     <button className="v2-nav-button-center" onClick={handleHomeClick}>
                         Home
                     </button>
-                    <button className="v2-nav-button-center" onClick={handleResumoAgendadoClick}>
+                    <button className="v2-nav-button-center" onClick={handleAgendarClick}>
                         AGENDAR HORÁRIO
                     </button>
                     <button className="v2-nav-button-center" onClick={handleContatoClick}>

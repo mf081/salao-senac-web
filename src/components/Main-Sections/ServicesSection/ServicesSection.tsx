@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useCallback } from "react";
 import "./ServicesSection.css";
-import servicesData from '/workspaces/salao-senac-web/src/json/product-services.json';
+import servicesData from '/workspaces/salao-senac-web/public/json/product-services.json';
 
 type Precos = {
   curto: number;

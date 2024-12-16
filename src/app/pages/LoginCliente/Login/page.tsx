@@ -1,18 +1,16 @@
 'use client';
 
 import React, { useState } from 'react';
-import "./login.css";
 import { useRouter } from 'next/navigation';
+import './login.css';
 
 export default function Login() {
     const router = useRouter();
 
-    // Estados para armazenar valores de email, senha e mensagem de erro
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
-    // Credenciais predefinidas para QA
     const predefinedUser = {
         nome: 'Mateus Fernando',
         email: 'mateusfss@368@gmail.com',
@@ -22,27 +20,22 @@ export default function Login() {
     const handleLogin = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
-        // Normalizando o email para minúsculas para não ser sensível ao caso
         const normalizedEmail = email.toLowerCase();
         const normalizedName = predefinedUser.nome.toLowerCase();
 
-        // Verifica se os dados correspondem às credenciais predefinidas
         if (
             (normalizedEmail === predefinedUser.email.toLowerCase() || normalizedEmail === normalizedName) &&
             password === predefinedUser.senha
         ) {
-            // Limpa o localStorage, salva o usuário e define o status de login como true
-            localStorage.clear();
+            // Salva o usuário e marca como logado
             localStorage.setItem('user', JSON.stringify(predefinedUser));
-            localStorage.setItem('isLoggedIn', 'true'); // Define como logado
-            router.push('/pages/AgendamentoCliente/ResumoAgendado'); // Redireciona para a página
+            localStorage.setItem('isLoggedIn', JSON.stringify(true)); // Salvando como booleano
+            router.push('/pages/AgendamentoCliente/ResumoAgendado'); // Redireciona para a página de agendamentos
             return;
         }
 
-        // Recupera os dados do localStorage
         const storedUser = localStorage.getItem('user');
 
-        // Verifica se os dados correspondem aos dados armazenados no localStorage
         if (storedUser) {
             const { nome, email: storedEmail, senha: storedPassword } = JSON.parse(storedUser);
 
@@ -50,8 +43,8 @@ export default function Login() {
                 (normalizedEmail === storedEmail.toLowerCase() || normalizedEmail === nome.toLowerCase()) &&
                 password === storedPassword
             ) {
-                localStorage.setItem('isLoggedIn', 'true'); // Define como logado
-                router.push('/pages/AgendamentoCliente/ResumoAgendado'); // Redireciona para a página
+                localStorage.setItem('isLoggedIn', JSON.stringify(true)); // Salvando como booleano
+                router.push('/pages/AgendamentoCliente/ResumoAgendado');
             } else {
                 setErrorMessage('Email ou senha incorretos. Tente novamente.');
             }
@@ -92,34 +85,12 @@ export default function Login() {
                                 required 
                             />
                             {errorMessage && <p className="error-message">{errorMessage}</p>}
-                            <button 
-                                type="submit" 
-                                className="button-entrar-login"
-                                disabled={!email || !password} // Desabilita o botão se os campos estiverem vazios
-                            >
+                            <button type="submit" className="button-entrar-login" disabled={!email || !password}>
                                 Entrar
                             </button>
-                            <div className="paragrafo-login">
-                                <p>
-                                    Esqueceu email ou senha? <a href="/esqueci-senha" className="esquecer-senha">Clique aqui</a>
-                                </p>
-                                <p>
-                                    Sua primeira vez aqui? <a href="/pages/LoginCliente/Cadastramento" className="cadastre-login">Cadastre-se</a>
-                                </p>
-                            </div>
                         </div>
                     </form>
-
-                    <div className="divider">
-                        <span>OU</span>
-                    </div>
-                    <div className="button-google">
-                        <button className="google-login-button">
-                            <img src="/img/icons/Google-logo-colorido.png" alt="Google Logo" />
-                            Logar com o Google
-                        </button>
-                    </div>
-                </div> 
+                </div>
             </section>
         </main>
     );

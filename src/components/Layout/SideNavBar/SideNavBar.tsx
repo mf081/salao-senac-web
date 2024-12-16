@@ -18,6 +18,9 @@ export default function SideNavBar() {
   const handleHistoricoClick = () => {
     router.push('/pages/AgendamentoCliente/HistoricoAgendamento');
   };
+  const handleHomeClick = () => {
+    router.push('/'); // Voltar para a página inicial
+};
 
   return (
     <main>
@@ -26,12 +29,12 @@ export default function SideNavBar() {
           <img src="/img/mulher-branca.png" alt="Foto de perfil" />
         </div> */}
         <AvatarProfile></AvatarProfile>
-        <span className="sidebar-username">{nomeUsuario}</span>
+        <span className="sidebar-username">Seja Bem Vindo {nomeUsuario}!</span>
 
         <div className="buttons">
           <button onClick={handleEditarPerfilClick} className="button-side-bar">Editar Perfil</button>
           <button onClick={handleHistoricoClick} className="button-side-bar">Histórico</button>
-          <button className="button-side-bar">Sair</button>
+          <button onClick={handleHomeClick} className="button-side-bar">Sair</button>
         </div>
       </nav>
     </main>
