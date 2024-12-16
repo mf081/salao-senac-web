@@ -22,9 +22,13 @@ export default function Login() {
     const handleLogin = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
+        // Normalizando o email para minúsculas para não ser sensível ao caso
+        const normalizedEmail = email.toLowerCase();
+        const normalizedName = predefinedUser.nome.toLowerCase();
+
         // Verifica se os dados correspondem às credenciais predefinidas
         if (
-            (email === predefinedUser.nome || email === predefinedUser.email) &&
+            (normalizedEmail === predefinedUser.email.toLowerCase() || normalizedEmail === normalizedName) &&
             password === predefinedUser.senha
         ) {
             // Limpa o localStorage, salva o usuário e define o status de login como true
@@ -42,7 +46,10 @@ export default function Login() {
         if (storedUser) {
             const { nome, email: storedEmail, senha: storedPassword } = JSON.parse(storedUser);
 
-            if ((email === nome || email === storedEmail) && password === storedPassword) {
+            if (
+                (normalizedEmail === storedEmail.toLowerCase() || normalizedEmail === nome.toLowerCase()) &&
+                password === storedPassword
+            ) {
                 localStorage.setItem('isLoggedIn', 'true'); // Define como logado
                 router.push('/pages/AgendamentoCliente/ResumoAgendado'); // Redireciona para a página
             } else {
