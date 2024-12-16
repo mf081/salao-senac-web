@@ -1,5 +1,6 @@
 'use client';
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
 import './Agendamento.css';
 import SideNavBar from '@/components/Layout/SideNavBar/SideNavBar';
 import { CalendarVersaoDois } from '@/components/UI/CalendarVersaoDois/CalendarVersaoDois';
@@ -7,7 +8,18 @@ import { AgendamentoHeader } from '@/components/Layout/AgendamentoHeader/Agendam
 import { AvailableTimesSection } from '@/components/Main-Sections/AvailableTimes/AvailableTimes';
 
 export default function Agendamento() {
-    
+    const [isClient, setIsClient] = useState(false);
+
+    // Verifica se o código está sendo executado no cliente
+    useEffect(() => {
+        setIsClient(true); // Quando o componente é montado no cliente
+    }, []);
+
+    // Retorna um componente de loading ou outro conteúdo enquanto o código não é executado no cliente
+    if (!isClient) {
+        return <div>Loading...</div>;
+    }
+
     return (
         <main className='agendamento-main'>
             <SideNavBar />
@@ -18,7 +30,7 @@ export default function Agendamento() {
                         <CalendarVersaoDois />
                     </div>
                     <div className='agendamento-container-right'>
-                        <AvailableTimesSection></AvailableTimesSection>
+                        <AvailableTimesSection />
                     </div>
                 </div>
             </div>
