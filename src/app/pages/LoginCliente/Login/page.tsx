@@ -12,17 +12,38 @@ export default function Login() {
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
+    // Credenciais predefinidas para QA
+    const predefinedUser = {
+        nome: 'Mateus Fernando',
+        email: 'mateusfss@368@gmail.com',
+        senha: 'odeiofrontend',
+    };
+
     const handleLogin = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+
+        // Verifica se os dados correspondem às credenciais predefinidas
+        if (
+            (email === predefinedUser.nome || email === predefinedUser.email) &&
+            password === predefinedUser.senha
+        ) {
+            // Limpa o localStorage, salva o usuário e define o status de login como true
+            localStorage.clear();
+            localStorage.setItem('user', JSON.stringify(predefinedUser));
+            localStorage.setItem('isLoggedIn', 'true'); // Define como logado
+            router.push('/pages/AgendamentoCliente/ResumoAgendado'); // Redireciona para a página
+            return;
+        }
 
         // Recupera os dados do localStorage
         const storedUser = localStorage.getItem('user');
 
+        // Verifica se os dados correspondem aos dados armazenados no localStorage
         if (storedUser) {
             const { nome, email: storedEmail, senha: storedPassword } = JSON.parse(storedUser);
 
-            // Verifica se o nome ou email e senha correspondem aos dados armazenados
             if ((email === nome || email === storedEmail) && password === storedPassword) {
+                localStorage.setItem('isLoggedIn', 'true'); // Define como logado
                 router.push('/pages/AgendamentoCliente/ResumoAgendado'); // Redireciona para a página
             } else {
                 setErrorMessage('Email ou senha incorretos. Tente novamente.');

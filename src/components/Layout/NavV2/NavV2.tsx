@@ -31,6 +31,9 @@ export function NavV2() {
     const handleHomeClick = () => {
         router.push('/'); // Voltar para a página inicial
     };
+    const handleResumoAgendadoClick = () => {
+        router.push('/pages/AgendamentoCliente/ResumoAgendado'); // Voltar para a página inicial
+    };
 
     return (
         <nav>
@@ -42,7 +45,7 @@ export function NavV2() {
                     <button className="v2-nav-button-center" onClick={handleHomeClick}>
                         Home
                     </button>
-                    <button className="v2-nav-button-center" onClick={handleCalendarioClick}>
+                    <button className="v2-nav-button-center" onClick={handleResumoAgendadoClick}>
                         AGENDAR HORÁRIO
                     </button>
                     <button className="v2-nav-button-center" onClick={handleContatoClick}>
