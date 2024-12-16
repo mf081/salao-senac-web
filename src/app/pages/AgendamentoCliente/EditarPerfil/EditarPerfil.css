@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne&display=swap');
 
   
   /* Conteúdo */
   .editar-perfil-main {
     margin-top: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    height: 100vh;
   }
   
   .btn-voltar {
@@ -16,24 +18,32 @@
     color: #004587;
     font-weight: 600;
   }
-  
-  
-  .profile-card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    height: 500px;
+  .teste{
     width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .profile-card-editar-perfil > a{
+    font-family: "Croissant One";
+    font-size: 16px;
+  }
+  .profile-card-editar-perfil {
+    
+    
+    padding: 30px;
+    height: 65vh;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-bottom: 300px;
     margin-top: 100px;
+    margin-left: 300px;
   }
   
-  .profile-img {
+  .profile-img-editar-perfil {
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -48,7 +58,7 @@
     margin-bottom: 20px;
   }
   
-  .input-group {
+ .input-group-editar-perfil {
     width: 100%;
     margin-bottom: 20px;
     text-align: left;
@@ -56,14 +66,16 @@
     margin-top: 10px;
   }
   
-  .input-group label {
+  .input-group-editar-perfil label {
     display: block;
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 5px;
+    font-family: 'Montserrat';
+    font-size: 16px;
   }
   
-  .input-group input {
+  .input-group-editar-perfil input {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -72,8 +84,25 @@
     background-color: white;
     color: black;
   }
-  
-  .btn-salvar {
+  .input-group input{
+    width: 430px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+  }
+  .input-group label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--orange-senac-color);
+    font-family: 'Montserrat';
+    font-size: 16px;
+  }
+  .btn-salvar-editar-perfil {
     background-color: #003366;
     color: #fff;
     font-weight: 600;
@@ -83,20 +112,17 @@
     cursor: pointer;
     width: 300px;
     margin-top: 40px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 700;
   }
   
-.back-button {
+.back-button-editar-perfil {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+    width: 50px;
+    justify-content: flex-start;
+    margin-right: 0;
+    
 
-}
-.back-button > a > img{
-  width: 50px;
-  margin-left: 43px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-.back-button > a > img:hover{
-  transform: scale(1.1);
 }
