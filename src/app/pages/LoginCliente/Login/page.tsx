@@ -4,6 +4,7 @@ import "./login.css";
 import { useRouter } from 'next/navigation';
 
 
+
 export default function Login (){
     const router = useRouter();
     const handleEscolherServicosClick = () => {
@@ -58,6 +59,8 @@ export default function Login (){
                             <img src="/img/icons/Google-logo-colorido.png" alt="Google Logo" />
                             Logar com o Google
                         </button>
+                        
+                    
                     </div>
                     
 
