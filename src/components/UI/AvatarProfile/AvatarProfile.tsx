@@ -34,8 +34,16 @@ export default function AvatarProfile() {
         <div>
             <div className="moldura-container">
                 <div className="img-moldura">
-                    {imageSrc && <Image src={imageSrc} alt="Avatar do usuário" />}
+                    {imageSrc && (
+                        <Image
+                            src={imageSrc}
+                            alt="Avatar do usuário"
+                            width={180} // Largura definida
+                            height={180} // Altura definida
+                        />
+                    )}
                 </div>
+
                 <p>{nomeUsuario}</p> {/* Exibindo o nome do usuário */}
             </div>
         </div>

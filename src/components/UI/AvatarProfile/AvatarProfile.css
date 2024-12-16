@@ -1,17 +1,29 @@
-.moldura-container{
-    width: 180px;
-    height: 180px;
-    border: 3px solid var(--orange-senac-color);
-    border-radius: 100%;
-    overflow: hidden;
-    display: flex;        
+.moldura-container {
+    display: flex;
+    flex-direction: column; /* Empilha imagem e nome verticalmente */
     justify-content: center;
     align-items: center;
     margin: 15px;
 }
-.img-moldura > img{
+
+.img-moldura {
+    border: 3px solid var(--orange-senac-color);
     border-radius: 100%;
-    width: 100%;       
-    height: 100%;         
+    overflow: hidden;
+    width: 180px; /* Garantindo tamanho da moldura */
+    height: 180px;
+}
+
+.img-moldura > img {
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.moldura-container p {
+    margin-top: 10px; /* Espaço entre imagem e nome */
+    font-size: 1rem;
+    color: #ffffff; /* Ajuste de cor conforme necessário */
+    text-align: center;
 }
