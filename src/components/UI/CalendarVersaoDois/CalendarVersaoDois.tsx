@@ -19,8 +19,8 @@ type Mes = {
 export function CalendarVersaoDois() {
 
   const router = useRouter();
-  const handleResumoAgendadoClick = () => {
-    router.push('/pages/AgendamentoCliente/ResumoAgendado');
+  const handleAgendamentoConcluidoClick = () => {
+    router.push('/pages/AgendamentoCliente/AgendamentoConcluido');
   };
 
   
@@ -98,7 +98,7 @@ export function CalendarVersaoDois() {
         </div>
       </div>
        <div className="button-confirmar-agendamento-container-home">
-       <button type="submit" onClick={handleResumoAgendadoClick} className="button-confirmar-agendamento-home">CONFIRMAR</button>
+       <button type="submit" onClick={handleAgendamentoConcluidoClick} className="button-confirmar-agendamento-home">CONFIRMAR</button>
        </div>
     </div>
   );

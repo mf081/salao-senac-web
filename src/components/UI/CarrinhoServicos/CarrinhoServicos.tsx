@@ -1,7 +1,18 @@
 import React from "react";
 import './CarrinhoServicos.css';
+import { useRouter } from 'next/navigation';
+
 
 export function CarrinhoServicos({ selectedServices }) {
+    const router = useRouter();
+    const handleCalendarioClick = () => {
+        router.push('/pages/AgendamentoCliente/Agendamento');
+    };
+    
+
+
+
+
     const total = selectedServices.reduce((sum, service) => {
         if ('preco' in service) {
             return sum + service.preco;
@@ -21,7 +32,7 @@ export function CarrinhoServicos({ selectedServices }) {
                 <hr />
                 <p className="total"><strong>Total:</strong> R$ {total.toFixed(2)}</p>
             </div>
-            <button className="botao">AGENDAR</button>
+            <button onClick={handleCalendarioClick} className="botao">AGENDAR</button>
         </div>
     );
 }

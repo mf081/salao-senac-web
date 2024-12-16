@@ -6,6 +6,7 @@ import { AgendamentoHeader } from '@/components/Layout/AgendamentoHeader/Agendam
 import { AvailableTimesSection } from '@/components/Main-Sections/AvailableTimes/AvailableTimes';
 
 export default function Agendamento() {
+    
     return (
         <main className='agendamento-main'>
             <SideNavBar />
