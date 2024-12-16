@@ -3,7 +3,7 @@ import './EditarPerfil.css';
 
 export default function EditarPerfil() {
   return (
-    <main>
+    <main className='editar-perfil-main'>
       <div className='back-button'>
         <a>
           <img src='/img/icons/seta-voltar.png'></img>
