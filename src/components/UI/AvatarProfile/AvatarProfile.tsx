@@ -44,7 +44,7 @@ export default function AvatarProfile() {
                     )}
                 </div>
 
-                <p>{nomeUsuario}</p> {/* Exibindo o nome do usuário */}
+                {/* <p>{nomeUsuario}</p> Exibindo o nome do usuário */}
             </div>
         </div>
     );
